@@ -40,7 +40,7 @@ def load_traces(path: str, limit: int | None) -> Dataset:
             d = json.loads(line)
             messages.append([
                 {"role": "user", "content": d["prompt"]},
-                {"role": "assistant", "content": d["response"]},
+                {"role": "assistant", "content": d.get("response", d.get("resposta"))},  # older data used "resposta"
             ])
     return Dataset.from_dict({"messages": messages})
 

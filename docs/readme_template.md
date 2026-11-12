@@ -1,4 +1,4 @@
-# chess-rlvr — uma LLM aprendendo o modelo de mundo do xadrez
+# chess-world-model — uma LLM aprendendo o modelo de mundo do xadrez
 
 **Tese:** um LLM pequeno não falha no xadrez por falta de tática, e sim por não conseguir
 reconstruir o tabuleiro a partir do texto. Treinar só a resposta ("qual o melhor lance?")

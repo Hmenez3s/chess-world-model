@@ -26,7 +26,8 @@ def carregar_modelo(modelo_id: str, adapter: str):
     tok.padding_side = "left"
     modelo = AutoModelForCausalLM.from_pretrained(
         modelo_id, dtype=torch.bfloat16, device_map="cuda:0")
-    modelo = PeftModel.from_pretrained(modelo, adapter)
+    if adapter:
+        modelo = PeftModel.from_pretrained(modelo, adapter)
     modelo.eval()
     return tok, modelo, torch
 
@@ -92,8 +93,6 @@ def main() -> int:
     args = ap.parse_args()
     if args.partidas <= 0 or args.lote <= 0 or args.max_lances <= 0:
         ap.error("partidas, lote e max-lances devem ser positivos")
-    if not args.jogador_falso and not args.adapter:
-        ap.error("--adapter é obrigatório ao usar o modelo")
 
     rng = random.Random(0)
     tok = modelo = torch = None

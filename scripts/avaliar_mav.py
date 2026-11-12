@@ -70,7 +70,7 @@ def carregar(caminho: str, n: int, seed: int):
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--modelo", default="Qwen/Qwen2.5-1.5B-Instruct")
-    ap.add_argument("--adapter", required=True)
+    ap.add_argument("--adapter", default=None, help="sem adapter = modelo base puro")
     ap.add_argument("--split", default="data/splits/teste.jsonl")
     ap.add_argument("--puzzles", type=int, default=600)
     ap.add_argument("--seed", type=int, default=42)
@@ -78,6 +78,8 @@ def main() -> int:
     ap.add_argument("--max-tokens", type=int, default=440)
     ap.add_argument("--formato", choices=["mav", "direto"], default="mav",
                     help="direto = adapters antigos (so o lance), mesmos puzzles do teste")
+    ap.add_argument("--salvar-texto", action="store_true",
+                    help="guarda a resposta completa de cada item (analise de consistencia)")
     ap.add_argument("--verificar", action="store_true",
                     help="confere o lance final contra a posicao e cai para o top5/legais do proprio modelo")
     ap.add_argument("--espelho", action="store_true",
@@ -117,7 +119,8 @@ def main() -> int:
     tok.padding_side = "left"
     modelo = AutoModelForCausalLM.from_pretrained(args.modelo, dtype=torch.bfloat16,
                                                   device_map="cuda:0")
-    modelo = PeftModel.from_pretrained(modelo, args.adapter)
+    if args.adapter:
+        modelo = PeftModel.from_pretrained(modelo, args.adapter)
     modelo.eval()
 
     textos = []
@@ -172,10 +175,13 @@ def main() -> int:
         legal = bool(m and m in verdade)
         if correto:
             c["melhor_correto"] += 1
-        registros.append({"rating": int(x["rating"]), "solucao": x["solucao"],
-                          "melhor": m, "correto": correto, "legal": legal,
-                          "grade_exata": (campos["grade"] == certa
-                                          if args.formato == "mav" else None)})
+        registro = {"rating": int(x["rating"]), "solucao": x["solucao"],
+                    "melhor": m, "correto": correto, "legal": legal,
+                    "grade_exata": (campos["grade"] == certa
+                                    if args.formato == "mav" else None)}
+        if args.salvar_texto:
+            registro["texto"] = texto
+        registros.append(registro)
         if len(amostras) < 3:
             amostras.append({"esperado": x["solucao"], "texto": texto[:700]})
 
@@ -193,6 +199,7 @@ def main() -> int:
         "melhor_correto_pct": 100 * c["melhor_correto"] / n,
         "melhor_correto_ic95": wilson(c["melhor_correto"], n),
         "amostras": amostras,
+        "registros": registros,
     }
     if args.espelho:
         res["descartados_espelho"] = descartados_espelho

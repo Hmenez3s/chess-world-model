@@ -51,12 +51,12 @@ def tabela_camadas() -> str:
         "| Modelo | Tabuleiro exato | Cor | Lances legais (F1) | Melhor lance = solução |",
         "|---|---|---|---|---|",
     ]
-    base = carregar("aval-teste-sft.json")
-    linhas.append("| Base + SFT direto (só o lance) | não pede | — | — | %s %s |"
-                  % (pct(base["melhor_correto_pct"]), ic(base["melhor_correto_ic95"])))
-    grpo = carregar("aval-teste-grpo-sf.json")
-    linhas.append("| Base + SFT + GRPO com Stockfish | não pede | — | — | %s %s |"
-                  % (pct(grpo["melhor_correto_pct"]), ic(grpo["melhor_correto_ic95"])))
+    for rotulo_b, arq_b in (("Qwen2.5-1.5B puro", "aval-teste-base.json"),
+                            ("+ SFT só com o lance", "aval-teste-sft.json"),
+                            ("+ SFT + GRPO com Stockfish", "aval-teste-grpo-sf.json")):
+        b = carregar(arq_b)
+        linhas.append("| %s | não pede | — | — | %s %s |"
+                      % (rotulo_b, pct(b["melhor_correto_pct"]), ic(b["melhor_correto_ic95"])))
 
     for rotulo, arquivo in (("Modelo de mundo, 30k posições", "aval-mav-30k.json"),
                             ("Modelo de mundo, 70k posições", "aval-mav-final.json"),
@@ -112,7 +112,7 @@ def tabela_partidas() -> str:
 def tabela_generalizacao() -> str:
     base = carregar("generalizacao-base.json")
     treinado = carregar("generalizacao-treinado.json")
-    linhas = ["| Tarefa | Modelo base | Modelo treinado | Δ |", "|---|---|---|---|"]
+    linhas = ["| Tarefa | Início (Qwen puro) | Fim (treinado) | Δ |", "|---|---|---|---|"]
     for rotulo, chave in (("Lig 4: vencer agora", ("lig4", "vencer")),
                           ("Lig 4: bloquear a ameaça", ("lig4", "bloquear")),
                           ("Lig 4: total (acaso: %s)", ("lig4", "total")),
@@ -134,7 +134,7 @@ def tabela_espelho() -> str:
     linhas = ["| Modelo | Original | Espelhado | Queda | Descartados |",
               "|---|---|---|---|---|"]
     for rotulo, arq, esp in (
-            ("SFT direto", "aval-teste-sft.json", "espelho-sft.json"),
+            ("SFT só com o lance", "aval-teste-sft.json", "espelho-sft.json"),
             ("Modelo de mundo", "aval-mav-verificado.json", "espelho-mav-verificado.json")):
         a, b = carregar(arq), carregar(esp)
         queda = a["melhor_correto_pct"] - b["melhor_correto_pct"]
@@ -163,12 +163,11 @@ def tabela_outros_metodos() -> str:
     """Os métodos que não são o foco, com os números medidos."""
     linhas = ["| Método | Acerto em puzzle | Observação |", "|---|---|---|"]
     for rotulo, arquivo, nota in (
-            ("Base, sem treino", "baseline-qwen1.5b.json", "responde `e2e4` sempre"),
             ("SFT direto", "aval-teste-sft.json", "aprende a forma do lance"),
             ("SFT + GRPO com Stockfish", "aval-teste-grpo-sf.json", "recompensa densa"),
-            ("SFT + raciocínio com candidatos", "cot2-600.json", "amostra diferente"),
-            ("Raciocínio + GRPO", "grpo-cot-600.json", "amostra diferente"),
-            ("Varredura de lances forçados", "grpo-forcados-600.json", "amostra diferente")):
+            ("SFT + raciocínio em texto", "cot2-600.json", "amostra anterior ao split de teste"),
+            ("Raciocínio + GRPO", "grpo-cot-600.json", "amostra anterior ao split de teste"),
+            ("Varredura de xeques e capturas", "grpo-forcados-600.json", "amostra anterior ao split de teste")):
         d = carregar(arquivo)
         if "melhor_correto_pct" in d:
             valor, n = d["melhor_correto_pct"], d["n"]
@@ -181,10 +180,73 @@ def tabela_outros_metodos() -> str:
     return "\n".join(linhas)
 
 
+def _elo(chave: str) -> dict:
+    for r in carregar("elo-puzzle.json"):
+        if Path(r["arquivo"]).stem == chave:
+            return r
+    raise Faltando("elo ausente para %s" % chave)
+
+
+def _fmt_elo(r: dict, negrito: bool = False) -> str:
+    if r.get("elo_puzzle") is not None:
+        txt = "%.0f" % r["elo_puzzle"]
+        faixa = "[%.0f; %.0f]" % tuple(r["ic95"]) if r.get("ic95") else ""
+        return ("**%s**" % txt if negrito else txt) + " " + faixa
+    if r.get("elo_maximo") is not None:
+        return "≤ %.0f (0 acertos)" % r["elo_maximo"]
+    return "indefinido"
+
+
+def _placar(d: dict) -> str:
+    return "%d/%d/%d" % (d["vitorias"], d["empates"], d["derrotas"])
+
+
+def tabela_inicio_fim() -> str:
+    """A comparação que importa: o Qwen puro contra o modelo final."""
+    ini, fim = carregar("aval-teste-base.json"), carregar("aval-mav-verificado.json")
+    ali, alf = carregar("partidas-aleatorio-base.json"), carregar("partidas-aleatorio-verificado.json")
+    sfi, sff = carregar("partidas-stockfish-base.json"), carregar("partidas-stockfish-verificado.json")
+    linhas = [
+        "| | Início: Qwen2.5-1.5B puro | Fim: modelo de mundo + lance verificado |",
+        "|---|---|---|",
+        "| **Elo de puzzle (Lichess)** | %s | %s |" % (_fmt_elo(_elo("aval-teste-base")),
+                                                   _fmt_elo(_elo("aval-mav-verificado"), True)),
+        "| Puzzles resolvidos | %s | **%s** %s |" % (pct(ini["melhor_correto_pct"]),
+                                                  pct(fim["melhor_correto_pct"]),
+                                                  ic(fim["melhor_correto_ic95"])),
+        "| Lance legal | %s | %s |" % (pct(ini["melhor_legal_pct"]), pct(fim["melhor_legal_pct"])),
+        "| Desenha o tabuleiro após o lance | não consegue | %s exato |" % pct(fim["grade_exata_pct"]),
+        "| Partidas vs jogador aleatório (V/E/D) | %s | %s |" % (_placar(ali), _placar(alf)),
+        "| Partidas vs Stockfish `UCI_Elo=1320` (V/E/D) | %s | %s |" % (_placar(sfi), _placar(sff)),
+        "| Lances ilegais em partida | %s | %s |" % (pct(100 * sfi["taxa_lances_ilegais"]),
+                                                   pct(100 * sff["taxa_lances_ilegais"])),
+    ]
+    return "\n".join(linhas)
+
+
+def tabela_progressao() -> str:
+    """Elo de puzzle a cada etapa, do início ao fim."""
+    etapas = (
+        ("Qwen2.5-1.5B puro", "aval-teste-base"),
+        ("+ SFT só com o lance", "aval-teste-sft"),
+        ("+ SFT + GRPO com Stockfish", "aval-teste-grpo-sf"),
+        ("Modelo de mundo, 30k posições", "aval-mav-30k"),
+        ("Modelo de mundo, 70k posições", "aval-mav-final"),
+        ("**+ lance verificado (final)**", "aval-mav-verificado"),
+        ("+ GRPO curto (não significativo)", "aval-mav-grpo"),
+    )
+    linhas = ["| Etapa | Puzzles resolvidos | Elo de puzzle |", "|---|---|---|"]
+    for rotulo, chave in etapas:
+        d = carregar(chave + ".json")
+        linhas.append("| %s | %s | %s |" % (rotulo, pct(d["melhor_correto_pct"]),
+                                            _fmt_elo(_elo(chave), "final" in rotulo)))
+    return "\n".join(linhas)
+
+
 TABELAS = {
+    "{{TABELA_INICIO_FIM}}": tabela_inicio_fim,
+    "{{TABELA_PROGRESSAO}}": tabela_progressao,
     "{{TABELA_CAMADAS}}": tabela_camadas,
-    "{{TABELA_ELO}}": tabela_elo,
-    "{{TABELA_PARTIDAS}}": tabela_partidas,
     "{{TABELA_GENERALIZACAO}}": tabela_generalizacao,
     "{{TABELA_ESPELHO}}": tabela_espelho,
     "{{TABELA_ESCALA}}": tabela_escala,

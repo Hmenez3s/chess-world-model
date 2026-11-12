@@ -1,51 +1,48 @@
-# chess-world-model — uma LLM aprendendo o modelo de mundo do xadrez
+# chess-world-model
 
-**Tese:** um LLM pequeno não falha no xadrez por falta de tática, e sim por não conseguir
-reconstruir o tabuleiro a partir do texto. Treinar só a resposta ("qual o melhor lance?")
-ensina a forma da resposta, não o jogo. Este repositório mede isso camada por camada e
-treina a camada que falta: **o modelo de mundo** — o tabuleiro depois do lance, os lances
-legais e o valor de cada lance.
+Uma LLM pequena (Qwen2.5-1.5B) treinada para entender o tabuleiro de xadrez antes de
+escolher o lance. Treinada com LoRA numa única **RTX 3060 de 12 GB**, sem nada treinado do
+zero.
 
-Xadrez aqui é laboratório: é barato de verificar, tem gabarito objetivo e separa
-"raciocínio" de "conhecimento". O que se busca não é um enxadrista, e sim entender como
-uma LLM aprende a **pensar à frente** — e se isso generaliza.
+## Início vs fim
 
-## O problema, medido
+Split de teste sem vazamento (divisão por partida), 600 puzzles do Lichess, mesma amostra
+para os dois lados.
 
-Acurácia em puzzle mistura cinco capacidades num número só. Sondas isoladas (mesma
-representação de tabuleiro em todas, n=150, resposta gulosa) mostram onde o modelo quebra:
+{{TABELA_INICIO_FIM}}
 
-| Nível | Base | Depois do SFT | Acaso |
-|---|---|---|---|
-| Tipo da peça numa casa | 79,33% | 90,00% | ~17% |
-| **Cor da peça numa casa** | **48,67%** | **58,67%** | **50%** |
-| Contagem de peões | 8,67% | 2,00% | ~17% |
-| Quem tem mais material | 33,33% | 36,00% | 33% |
-| Rei em xeque | 0,67% | 17,33% | 50% |
-| Julgar se um lance é legal | 58,67% | 57,33% | 50% |
-| **Enumerar os lances legais de uma peça** | **0,83%** | **0,83%** | ~0% |
+O **Elo de puzzle** é estimado pelos ratings do Lichess dos puzzles que o modelo resolve
+(máxima verossimilhança, IC95 por bootstrap). Quando o modelo não resolve nenhum, o Elo
+não tem estimativa pontual; o limite mostrado é o maior Elo compatível com 0 acertos.
 
-O prompt diz literalmente `a3: peão branco`. O modelo lê o tipo da peça e **não lê a cor** —
-48,67%, exatamente o acaso. Sem cor, metade do tabuleiro é desconhecida. E a enumeração de
-lances legais fica em 0,83%: ele não gera o espaço de ações.
+**Como ler as partidas.** O Qwen puro joga lance ilegal em ~96% das vezes; nesses casos o
+lance é substituído por um lance legal aleatório. Então o placar do início é, na prática, o
+de um jogador aleatório (inclusive o empate contra o Stockfish). O modelo final joga os
+próprios lances (5,21% ilegais) e mesmo assim perde para o Stockfish no nível mais fraco que
+ele aceita (1320). O ganho está na leitura do tabuleiro e na escolha do lance em posições
+táticas; jogar uma partida inteira exige manter um plano por dezenas de lances, e o treino
+não cobriu isso.
 
-Isso explica o que veio antes: SFT direto estaciona em 4,67% no split de teste, GRPO com
-recompensa densa chega a 6,17% e não há ganho significativo. Recompensar a escolha não
-conserta a leitura.
+## Como chegou lá
 
-## O método: modelo de mundo (formato MAV)
+{{TABELA_PROGRESSAO}}
+
+Treinar só o lance certo (SFT) e depois reforçar com RL (GRPO) quase não mexeu no Elo: o
+modelo aprendia a **forma** da resposta, não o jogo. O salto veio quando o treino passou a
+pedir o **modelo de mundo**.
+
+## O método: modelo de mundo
 
 Adaptado de *Mastering Board Games by External and Internal Planning with Language Models*
-(DeepMind, [arXiv 2412.12119](https://arxiv.org/abs/2412.12119)), que treina um transformer
-de 1B com este formato e chega a ~2.820 Elo estimado sem busca externa.
-
-Cada exemplo de treino é um texto único. A partir do FEN anterior e do lance jogado, o
-modelo escreve:
+(DeepMind, [arXiv 2412.12119](https://arxiv.org/abs/2412.12119)). Em vez de pedir só o
+lance, cada exemplo pede ao modelo que escreva o que acontece no jogo. Ele recebe:
 
 ```
 FEN anterior: r4rk1/2q3p1/p1bbp3/1p3p2/4NP2/5Q1P/PPPB2P1/4RRK1 w - - 0 20
 Lance jogado: e4d6
 ```
+
+e tem de escrever:
 
 ```
 estado:
@@ -53,7 +50,7 @@ estado:
 7 . . q . . . p .
 6 p . b N p . . .      ← o cavalo saiu de e4 e capturou o bispo em d6
 5 . p . . . p . .
-4 . . . . . P . .
+4 . . . . . P . .      ← e4 ficou vazia
 3 . . . . . Q . P
 2 P P P B . . P .
 1 . . . . R R K .
@@ -64,211 +61,115 @@ top5: c6f3:85 c7d6:40 a8d8:31 f8d8:31 f8f6:25
 melhor: c6f3
 ```
 
-O `top5` traz, para cada lance, a chance de vitória estimada pelo Stockfish. Isso é o que
-diferencia este treino: o modelo não aprende apenas qual lance foi escolhido, aprende a
-**avaliar** os candidatos. No ChessBench ([arXiv 2402.04494](https://arxiv.org/abs/2402.04494)),
-prever valor por lance acerta 83,3% dos puzzles, contra 65,7% de prever só o melhor lance,
-no mesmo modelo.
+1. **O tabuleiro depois do lance.** Maiúscula é peça branca, minúscula é preta.
+2. **Os lances legais** da nova posição.
+3. **O valor de cada um dos 5 melhores lances**, como chance de vitória (rótulo do
+   Stockfish, usado só para gerar os dados de treino).
+4. **O melhor lance.**
 
-A grade 8×8 usa maiúscula para peça branca e minúscula para preta: a cor fica explícita e
-cada casa ocupa uma posição fixa, sem depender de como o tokenizador BPE quebra o FEN.
+O melhor lance do exemplo, `c6f3` (o bispo captura a dama), só existe porque o cavalo
+**saiu de e4** e abriu a diagonal. Um modelo que não atualiza o tabuleiro não vê esse
+lance. Por isso ensinar o estado melhora a escolha.
 
-### Lance verificado: o modelo confere a própria saída
+**Lance verificado.** Como o modelo escreve a própria lista de lances legais e o top-5,
+quando o `melhor:` sai ilegal a resposta ainda tem candidatos válidos. O lance final passa a
+ser o do modelo se for legal; senão, o primeiro legal do top-5 dele; senão, o primeiro da
+lista dele. Não entra informação externa. Na partida, isso reduz os lances ilegais de 35,86%
+para 5,21%.
 
-O formato tem uma propriedade útil que o treino sozinho não explora: **o modelo escreve a
-lista de lances legais e o top-5 antes de concluir**. Quando o `melhor:` sai ilegal, a saída
-dele ainda contém candidatos válidos na mesma resposta.
-
-`lance_verificado()` usa isso: aceita o lance do modelo se for legal; senão pega o primeiro
-lance legal do `top5:`; senão o primeiro da lista `legais:`. Não dá informação nova ao
-modelo — só impede que ele jogue fora da própria lista. O efeito é grande:
-
-| | Lance legal | Acerto |
-|---|---|---|
-| Saída crua do modelo | 79,67% | 13,67% |
-| **Com lance verificado** | **99,17%** | **16,00%** |
-
-Em partida completa a diferença é maior ainda: os 35,86% de lances ilegais caem para perto de
-zero, porque toda posição passa pela mesma conferência.
-
-## Resultados
-
-Split de teste, sem vazamento (divisão por `GameId`, 0 jogos compartilhados), n=600,
-seed 42, decodificação gulosa. A linha de base foi medida **neste mesmo split**.
-
-### Camadas
+### Detalhe por camada
 
 {{TABELA_CAMADAS}}
 
-Um GRPO curto por cima do modelo de mundo (100 passos, recompensa de acerto + legalidade + valor
-do Stockfish, 4-bit, 3,03 GB de pico) levou a **16,83%** — +0,83 pp sobre o verificado, com
-**z = +0,39: não significativo**. Está na tabela por completude, não como método principal: o
-plano previa descartá-lo se não melhorasse com significância, e é o que os dados dizem. O
-contraste com o GRPO sobre a resposta direta (6,17%, z = +5,79 contra ele) é o ponto: **RL
-funciona quando o modelo já sabe ler o tabuleiro**, e quase não sobra nada a ganhar quando o
-gargalo era o conhecimento, não a política.
+## Generalização
 
-### Elo
-
-Elo de puzzle é estimado por máxima verossimilhança logística sobre os ratings do Lichess
-dos puzzles do teste (IC95 por bootstrap de itens). É um proxy: mede a força implícita na
-taxa de acerto, não a força em partida.
-
-{{TABELA_ELO}}
-
-Partidas completas, cores alternadas, lances gerados em lote:
-
-{{TABELA_PARTIDAS}}
-
-O contraste entre as duas tabelas é o resultado mais instrutivo do repositório:
-
-- **Nos puzzles, o modelo é decente**: 16,00% de acerto e Elo de puzzle **1460**, acima do SFT
-  direto (1190) e do GRPO com Stockfish (1246), com intervalos que não se sobrepõem.
-- **Em partida completa, ele é fraco**: ganha ou empata contra um jogador aleatório (0,583 de
-  pontuação), mas perde todas as 8 partidas para um Stockfish limitado a 1320. Com 0% de
-  pontuação o Elo é matematicamente indefinido; o limite superior compatível é **≤ 1193**.
-  Não é contradição: puzzle é uma posição tática isolada; partida completa exige manter o
-  estado por dezenas de lances, e o treino nunca cobriu essa sequência.
-- **O lance verificado resolveu a legalidade, não a força.** Sem ele, 35,86% dos lances em
-  partida eram ilegais; com ele, 5,21%. Mas o placar contra o Stockfish não melhorou: o modelo
-  passou a jogar **legal e fraco**, em vez de ilegal. Ou seja, o gargalo de partida não era
-  sintaxe, era estratégia — exatamente o que o treino de puzzle não ensina.
-
-Ou seja: o modelo de mundo melhora a **leitura** e a **escolha local**, e ainda não sustenta
-**jogo completo**. As duas coisas são medidas separadamente de propósito, e a distância entre
-elas é o resultado.
-
-### Generalização: o treino ensinou xadrez ou ensinou a pensar?
-
-Mesma bateria no modelo base e no treinado. Lig 4 é um jogo que o modelo nunca viu, com as
-regras no prompt e verificação em Python; GSM8K mede esquecimento.
+Mesma bateria no modelo do início e no do fim. Lig 4 é um jogo que o modelo nunca viu (regras
+no prompt); GSM8K mede se ele esqueceu matemática.
 
 {{TABELA_GENERALIZACAO}}
 
-A leitura honesta dos dois lados:
+- **Não transferiu para outro jogo.** No Lig 4 o modelo final ficou no acaso. Aprender a ler
+  o tabuleiro de xadrez não o ensinou a ler outro tabuleiro.
+- **Esqueceu matemática.** O GSM8K caiu para menos da metade. O modelo passa a responder
+  perguntas de matemática no formato de xadrez (`estado:` seguido de um "tabuleiro"). É o
+  custo de um fine-tune estreito; mistura com dados gerais não foi testada aqui.
 
-- **Não houve transferência para um jogo novo.** No Lig 4 o modelo treinado ficou no acaso
-  nas duas variantes (vencer e bloquear). Aprender a ler *um* tabuleiro não o ensinou a ler
-  outro: o formato de representação faz parte do que foi aprendido, não é um raciocínio
-  transferível.
-- **Houve esquecimento severo de matemática.** O GSM8K caiu para menos da metade. Inspecionando
-  as respostas, o modelo treinado passa a responder perguntas de matemática **no formato de
-  xadrez** — escreve `estado:` e tenta desenhar um tabuleiro com "bolts of fiber". Não é só
-  perda de conteúdo: o formato de saída dominou a distribuição.
-
-Isso é o custo medido de fine-tune estreito com muitas sequências longas num único formato. A
-troca é explícita: **+231 Elo de puzzle dentro do domínio, −30 pp de matemática fora dele.**
-Quem quiser as duas coisas precisa de mistura de dados ou regularização — nenhuma das duas foi
-usada aqui.
-
-### Memorização
-
-Espelho vertical com troca de cores: mesma tática, coordenadas diferentes. Queda grande
-indicaria decoreba.
+**Memorização:** com as posições espelhadas (mesma tática, coordenadas trocadas) o acerto não
+cai, então o modelo não decorou os puzzles.
 
 {{TABELA_ESPELHO}}
 
-### Custo
-
-Treinado do zero? Não. LoRA r=64 sobre `Qwen/Qwen2.5-1.5B-Instruct`, numa única
-**RTX 3060 de 12 GB** (`CUDA_VISIBLE_DEVICES=1`).
+## Custo
 
 {{TABELA_ESCALA}}
+
+## Limites
+
+- **Escala pequena.** São 70 mil posições e LoRA num modelo de 1,5B. Os trabalhos de
+  referência usam centenas de milhões de posições e treinam o transformer do zero.
+- **O Elo de puzzle é uma aproximação.** Ele mede a força implícita na taxa de acerto em
+  posições táticas, não a força numa partida. Em partida o modelo perde para o Stockfish 1320.
+- **Ainda não há busca interna.** O passo seguinte da literatura é o modelo escrever a própria
+  árvore ("eu jogo, ele responde, eu avalio") e treinar nesses traços. Não foi feito.
+- **Generalização negativa.** Não houve transferência para o Lig 4 e houve esquecimento de
+  matemática.
 
 ## Reproduzir
 
 ```bash
-pip install -e .                     # python-chess, torch, transformers, peft, trl, datasets
+pip install -e ".[train]"
 export STOCKFISH_PATH=~/bin/stockfish
 
 # 1. splits sem vazamento a partir do Lichess open database
 python scripts/preparar_splits.py --limite 0
-python scripts/conferir_splits.py
 
-# 2. dados no formato MAV (só o split de treino), rotulados pelo Stockfish
+# 2. dados do modelo de mundo (só o split de treino), rotulados pelo Stockfish
 python scripts/gerar_mav.py --posicoes 32000 --processos 12 --saida data/mav-32k.jsonl
-python scripts/gerar_mav.py --posicoes 40000 --pular 32000 --processos 12 \
-       --saida data/mav-72k.jsonl
+python scripts/gerar_mav.py --posicoes 40000 --pular 32000 --processos 12 --saida data/mav-72k.jsonl
 cat data/mav-32k.jsonl data/mav-72k.jsonl > data/mav-uniao.jsonl
 
-# 3. treino na 3060: ~2,6 h para o primeiro estágio e ~2,9 h para a continuação
+# 3. treino (RTX 3060: ~2,5 h + ~2,9 h)
 python scripts/treinar_sft_cot2.py --adapter-base none --tracos data/mav-32k.jsonl \
        --amostras 30000 --lote 8 --acum 2 --lr 2e-4 --max-length 512 --saida out/mav-30k
 python scripts/treinar_sft_cot2.py --adapter-base out/mav-30k --tracos data/mav-uniao.jsonl \
        --lote 8 --acum 2 --lr 1e-4 --max-length 512 --max-passos 2200 --saida out/mav-final
 
-# 4. avaliação (--verificar = confere o lance contra a posicao, usando a
-#    propria lista de legais e o top5 que o modelo escreveu)
-python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 600 \
-       --verificar --saida out/aval-mav-verificado.json
-python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 600 \
-       --verificar --espelho --saida out/espelho-mav-verificado.json
-python scripts/elo_puzzle.py out/aval-mav-verificado.json out/aval-teste-sft.json
-python scripts/jogar_partidas.py --adapter out/mav-final --oponente stockfish \
-       --elo 1320 --partidas 8 --verificar --saida out/partidas-stockfish-verificado.json
-python scripts/generalizacao.py --adapter out/mav-final --saida out/generalizacao-treinado.json
-python scripts/generalizacao.py --saida out/generalizacao-base.json
+# 4. início vs fim no mesmo teste
+python scripts/avaliar_mav.py --formato direto --puzzles 600 --saida out/aval-teste-base.json
+python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 600 --verificar \
+       --saida out/aval-mav-verificado.json
+python scripts/elo_puzzle.py out/aval-teste-base.json out/aval-mav-verificado.json
+python scripts/jogar_partidas.py --adapter out/mav-final --oponente stockfish --elo 1320 \
+       --partidas 8 --verificar --saida out/partidas-stockfish-verificado.json
 
-# 5. README gerado da evidência (falha se faltar algum JSON)
+# 5. README gerado a partir dos JSONs em out/ (falha se faltar algum)
 python scripts/gerar_readme.py
 ```
 
-## Limites
-
-- **LoRA num modelo de 1,5B, com 70 mil exemplos.** Os trabalhos da área usam centenas de
-  milhões de posições e treinam o transformer do zero. Aqui a escala é ordens de grandeza
-  menor; o resultado mede se a receita move a agulha nesse orçamento, não o teto dela.
-- **Sem busca interna ainda.** O próximo passo da literatura é ensinar o modelo a escrever a
-  própria árvore ("eu jogo, ele responde, eu avalio") e treinar com traços de busca
-  (MAV-IS, Searchformer, Stream of Search). Não foi feito aqui.
-- **Elo de puzzle é proxy.** Vem da taxa de acerto sobre os ratings do Lichess; não é Elo de
-  torneio. O Elo de partida só é reportado quando o placar não é 0% nem 100%.
-- **Generalização medida em três tarefas.** Lig 4 e GSM8K são sondas, não um veredito sobre
-  raciocínio estratégico geral. O resultado encontrado é negativo (sem transferência, com
-  esquecimento) e está reportado como tal.
-- **O formato de treino domina a saída.** O modelo treinado responde fora do domínio no formato
-  de xadrez. Mitigar isso (mistura de dados gerais, regularização, menos passos) é trabalho
-  seguinte, não foi feito aqui.
-- **Amostra de teste de 600 puzzles** para as camadas e o Elo, com IC95 reportado; diferenças
-  dentro do intervalo não devem ser lidas como ganho.
-
-## Outros métodos testados (fora do foco)
-
-Todos medidos no mesmo pipeline. Ficam registrados porque cada um ensinou algo sobre o
-problema — e porque os resultados negativos são parte do resultado.
-
-{{TABELA_OUTROS}}
-
-O que cada um mostrou:
-
-- **GRPO ingênuo faz reward hacking na parte densa da recompensa.** Legalidade sobe a 82,5%
-  enquanto o acerto cai a 3,5%, abaixo do SFT: o modelo otimiza o que é fácil medir.
-- **Currículo por rating conserta o colapso de variância** (grupos com variância zero caem de
-  86% para 35%), e a recompensa contínua do Stockfish reduz para 11–26%. Mas isso é sinal de
-  treino, não acurácia final: a ablação dá +0,34 pp, z = +0,20.
-- **Raciocínio estruturado dobra o acerto dentro do mesmo modelo** (9,67% contra 4,17%
-  forçado a responder direto, z = +3,75), mas não supera o SFT direto no agregado.
-- **Busca e seleção competem pelo mesmo espaço.** Ensinar o modelo a varrer xeques e capturas
-  subiu o recall dos candidatos de 12,83% para 20,83%, mas derrubou a seleção de 74,03% para
-  40,80%: acerto final 8,50%, sem ganho. Com o lance certo na lista ele acerta 74%; a lista só
-  continha o certo em 12,83% — quase o acaso (9,8% para 3 de 31 lances legais). O gargalo é a
-  busca, e foi isso que motivou o modelo de mundo.
-- **Nada disso melhorou a leitura do tabuleiro.** Foi o que a escada mostrou, e é o motivo de
-  o método principal deste repositório atacar estado e regras em vez da resposta.
-
-## Adapter
-
-Os pesos treinados (LoRA r=64, 293 MB) estão na
-[Release](../../releases) deste repositório como `adapter-mav-final.tar.gz`, já que o
-Hugging Face exige token de escrita. Para usar:
+O adapter treinado (LoRA r=64, 275 MB) está na [Release](../../releases):
 
 ```bash
 tar xzf adapter-mav-final.tar.gz -C out/mav-final
 python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 50 --verificar
 ```
 
+## Outros métodos testados
+
+{{TABELA_OUTROS}}
+
+- **GRPO direto** melhora a legalidade, mas não o acerto: o modelo otimiza a parte fácil da
+  recompensa.
+- **Raciocínio em texto** ("situação, candidatos, comparação") dobra o acerto dentro do
+  mesmo modelo, mas não supera o SFT direto: o modelo escreve uma comparação plausível sem
+  ler o tabuleiro.
+- **Ensinar a varrer xeques e capturas** coloca a solução mais vezes na lista de candidatos,
+  mas piora a escolha final.
+
+Todos esses métodos atacam a escolha. O modelo de mundo ataca a leitura do tabuleiro, e só
+ele moveu o Elo.
+
 ## Dados e licenças
 
-Puzzles: [Lichess open database](https://database.lichess.org/#puzzles) (CC0).
-Avaliações de posição geradas com [Stockfish](https://stockfishchess.org/) (GPLv3), usado
-apenas para rotular dados e medir; não é distribuído aqui.
+Puzzles: [Lichess open database](https://database.lichess.org/#puzzles) (CC0). Avaliações
+geradas com [Stockfish](https://stockfishchess.org/) (GPLv3), usado só para rotular dados e
+medir; não é distribuído aqui. Código: MIT.

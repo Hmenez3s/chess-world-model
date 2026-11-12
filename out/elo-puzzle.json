@@ -1,5 +1,17 @@
 [
   {
+    "arquivo": "out/aval-teste-base.json",
+    "n": 600,
+    "acertos": 0,
+    "taxa": 0.0,
+    "elo_puzzle": null,
+    "ic95": null,
+    "elo_maximo": 824.8594147307633,
+    "status": "indefinido",
+    "razao": "0 acertos: máxima verossimilhança tende a -infinito",
+    "bootstrap_validos": 0
+  },
+  {
     "arquivo": "out/aval-teste-sft.json",
     "n": 600,
     "acertos": 28,
@@ -9,6 +21,7 @@
       1108.5599119859116,
       1253.8601548137758
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
@@ -23,6 +36,7 @@
       1179.850294962304,
       1301.7858258928354
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
@@ -37,6 +51,7 @@
       1236.8544086735494,
       1353.2475770316655
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
@@ -51,6 +66,7 @@
       1370.3057414338296,
       1475.2969918360097
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
@@ -65,6 +81,7 @@
       1407.7861393614562,
       1509.4569895626594
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
@@ -79,6 +96,7 @@
       1421.1008997539127,
       1517.7290787521226
     ],
+    "elo_maximo": null,
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000

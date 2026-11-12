@@ -1,0 +1,710 @@
+{
+  "direto": {
+    "resumo": {
+      "legal": {
+        "sucessos": 244,
+        "total": 600,
+        "taxa": 0.4067,
+        "ic95": [
+          0.3681,
+          0.4464
+        ]
+      },
+      "correto": {
+        "sucessos": 38,
+        "total": 600,
+        "taxa": 0.0633,
+        "ic95": [
+          0.0465,
+          0.0857
+        ]
+      },
+      "nao_parseavel": {
+        "sucessos": 0,
+        "total": 600,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0064
+        ]
+      },
+      "por_faixa": {
+        "0-600": {
+          "sucessos": 12,
+          "total": 29,
+          "taxa": 0.4138,
+          "ic95": [
+            0.2551,
+            0.5926
+          ]
+        },
+        "1000-1400": {
+          "sucessos": 6,
+          "total": 165,
+          "taxa": 0.0364,
+          "ic95": [
+            0.0168,
+            0.0771
+          ]
+        },
+        "1400-1800": {
+          "sucessos": 2,
+          "total": 120,
+          "taxa": 0.0167,
+          "ic95": [
+            0.0046,
+            0.0587
+          ]
+        },
+        "1800-2200": {
+          "sucessos": 5,
+          "total": 110,
+          "taxa": 0.0455,
+          "ic95": [
+            0.0196,
+            0.102
+          ]
+        },
+        "2200-2600": {
+          "sucessos": 1,
+          "total": 62,
+          "taxa": 0.0161,
+          "ic95": [
+            0.0029,
+            0.0859
+          ]
+        },
+        "2600-3000": {
+          "sucessos": 0,
+          "total": 19,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.1682
+          ]
+        },
+        "600-1000": {
+          "sucessos": 12,
+          "total": 95,
+          "taxa": 0.1263,
+          "ic95": [
+            0.0738,
+            0.2079
+          ]
+        }
+      },
+      "por_tema": {
+        "advancedPawn": {
+          "sucessos": 1,
+          "total": 40,
+          "taxa": 0.025,
+          "ic95": [
+            0.0044,
+            0.1288
+          ]
+        },
+        "advantage": {
+          "sucessos": 7,
+          "total": 178,
+          "taxa": 0.0393,
+          "ic95": [
+            0.0192,
+            0.0789
+          ]
+        },
+        "attraction": {
+          "sucessos": 0,
+          "total": 29,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.117
+          ]
+        },
+        "backRankMate": {
+          "sucessos": 11,
+          "total": 23,
+          "taxa": 0.4783,
+          "ic95": [
+            0.2924,
+            0.6704
+          ]
+        },
+        "crushing": {
+          "sucessos": 6,
+          "total": 211,
+          "taxa": 0.0284,
+          "ic95": [
+            0.0131,
+            0.0606
+          ]
+        },
+        "defensiveMove": {
+          "sucessos": 0,
+          "total": 35,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.0989
+          ]
+        },
+        "deflection": {
+          "sucessos": 1,
+          "total": 26,
+          "taxa": 0.0385,
+          "ic95": [
+            0.0068,
+            0.1889
+          ]
+        },
+        "discoveredAttack": {
+          "sucessos": 0,
+          "total": 33,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.1043
+          ]
+        },
+        "endgame": {
+          "sucessos": 25,
+          "total": 307,
+          "taxa": 0.0814,
+          "ic95": [
+            0.0558,
+            0.1174
+          ]
+        },
+        "fork": {
+          "sucessos": 2,
+          "total": 73,
+          "taxa": 0.0274,
+          "ic95": [
+            0.0075,
+            0.0945
+          ]
+        },
+        "kingsideAttack": {
+          "sucessos": 2,
+          "total": 55,
+          "taxa": 0.0364,
+          "ic95": [
+            0.01,
+            0.1232
+          ]
+        },
+        "long": {
+          "sucessos": 6,
+          "total": 162,
+          "taxa": 0.037,
+          "ic95": [
+            0.0171,
+            0.0784
+          ]
+        },
+        "master": {
+          "sucessos": 2,
+          "total": 82,
+          "taxa": 0.0244,
+          "ic95": [
+            0.0067,
+            0.0846
+          ]
+        },
+        "mate": {
+          "sucessos": 25,
+          "total": 205,
+          "taxa": 0.122,
+          "ic95": [
+            0.084,
+            0.1738
+          ]
+        },
+        "mateIn1": {
+          "sucessos": 12,
+          "total": 90,
+          "taxa": 0.1333,
+          "ic95": [
+            0.0779,
+            0.2187
+          ]
+        },
+        "mateIn2": {
+          "sucessos": 11,
+          "total": 93,
+          "taxa": 0.1183,
+          "ic95": [
+            0.0673,
+            0.1995
+          ]
+        },
+        "middlegame": {
+          "sucessos": 13,
+          "total": 267,
+          "taxa": 0.0487,
+          "ic95": [
+            0.0287,
+            0.0815
+          ]
+        },
+        "oneMove": {
+          "sucessos": 12,
+          "total": 90,
+          "taxa": 0.1333,
+          "ic95": [
+            0.0779,
+            0.2187
+          ]
+        },
+        "opening": {
+          "sucessos": 0,
+          "total": 26,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.1287
+          ]
+        },
+        "pawnEndgame": {
+          "sucessos": 1,
+          "total": 21,
+          "taxa": 0.0476,
+          "ic95": [
+            0.0085,
+            0.2267
+          ]
+        },
+        "pin": {
+          "sucessos": 2,
+          "total": 38,
+          "taxa": 0.0526,
+          "ic95": [
+            0.0146,
+            0.1729
+          ]
+        },
+        "promotion": {
+          "sucessos": 1,
+          "total": 20,
+          "taxa": 0.05,
+          "ic95": [
+            0.0089,
+            0.2361
+          ]
+        },
+        "quietMove": {
+          "sucessos": 2,
+          "total": 23,
+          "taxa": 0.087,
+          "ic95": [
+            0.0242,
+            0.268
+          ]
+        },
+        "rookEndgame": {
+          "sucessos": 1,
+          "total": 40,
+          "taxa": 0.025,
+          "ic95": [
+            0.0044,
+            0.1288
+          ]
+        },
+        "sacrifice": {
+          "sucessos": 0,
+          "total": 56,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.0642
+          ]
+        },
+        "short": {
+          "sucessos": 18,
+          "total": 292,
+          "taxa": 0.0616,
+          "ic95": [
+            0.0393,
+            0.0953
+          ]
+        },
+        "veryLong": {
+          "sucessos": 2,
+          "total": 51,
+          "taxa": 0.0392,
+          "ic95": [
+            0.0108,
+            0.1322
+          ]
+        }
+      }
+    },
+    "amostra": [
+      "f4d4",
+      "b6h7",
+      "a1a8",
+      "f1f8",
+      "g7f6"
+    ],
+    "sanidade": null
+  },
+  "raciocinio": {
+    "resumo": {
+      "legal": {
+        "sucessos": 324,
+        "total": 600,
+        "taxa": 0.54,
+        "ic95": [
+          0.5,
+          0.5795
+        ]
+      },
+      "correto": {
+        "sucessos": 55,
+        "total": 600,
+        "taxa": 0.0917,
+        "ic95": [
+          0.0711,
+          0.1174
+        ]
+      },
+      "nao_parseavel": {
+        "sucessos": 0,
+        "total": 600,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0064
+        ]
+      },
+      "por_faixa": {
+        "0-600": {
+          "sucessos": 14,
+          "total": 29,
+          "taxa": 0.4828,
+          "ic95": [
+            0.3139,
+            0.6557
+          ]
+        },
+        "1000-1400": {
+          "sucessos": 10,
+          "total": 165,
+          "taxa": 0.0606,
+          "ic95": [
+            0.0332,
+            0.108
+          ]
+        },
+        "1400-1800": {
+          "sucessos": 5,
+          "total": 120,
+          "taxa": 0.0417,
+          "ic95": [
+            0.0179,
+            0.0938
+          ]
+        },
+        "1800-2200": {
+          "sucessos": 3,
+          "total": 110,
+          "taxa": 0.0273,
+          "ic95": [
+            0.0093,
+            0.0771
+          ]
+        },
+        "2200-2600": {
+          "sucessos": 2,
+          "total": 62,
+          "taxa": 0.0323,
+          "ic95": [
+            0.0089,
+            0.1102
+          ]
+        },
+        "2600-3000": {
+          "sucessos": 1,
+          "total": 19,
+          "taxa": 0.0526,
+          "ic95": [
+            0.0094,
+            0.2464
+          ]
+        },
+        "600-1000": {
+          "sucessos": 20,
+          "total": 95,
+          "taxa": 0.2105,
+          "ic95": [
+            0.1406,
+            0.3029
+          ]
+        }
+      },
+      "por_tema": {
+        "advancedPawn": {
+          "sucessos": 2,
+          "total": 40,
+          "taxa": 0.05,
+          "ic95": [
+            0.0138,
+            0.165
+          ]
+        },
+        "advantage": {
+          "sucessos": 9,
+          "total": 178,
+          "taxa": 0.0506,
+          "ic95": [
+            0.0268,
+            0.0933
+          ]
+        },
+        "attraction": {
+          "sucessos": 1,
+          "total": 29,
+          "taxa": 0.0345,
+          "ic95": [
+            0.0061,
+            0.1718
+          ]
+        },
+        "backRankMate": {
+          "sucessos": 13,
+          "total": 23,
+          "taxa": 0.5652,
+          "ic95": [
+            0.3681,
+            0.7437
+          ]
+        },
+        "crushing": {
+          "sucessos": 8,
+          "total": 211,
+          "taxa": 0.0379,
+          "ic95": [
+            0.0193,
+            0.073
+          ]
+        },
+        "defensiveMove": {
+          "sucessos": 1,
+          "total": 35,
+          "taxa": 0.0286,
+          "ic95": [
+            0.0051,
+            0.1453
+          ]
+        },
+        "deflection": {
+          "sucessos": 1,
+          "total": 26,
+          "taxa": 0.0385,
+          "ic95": [
+            0.0068,
+            0.1889
+          ]
+        },
+        "discoveredAttack": {
+          "sucessos": 3,
+          "total": 33,
+          "taxa": 0.0909,
+          "ic95": [
+            0.0314,
+            0.2357
+          ]
+        },
+        "endgame": {
+          "sucessos": 32,
+          "total": 307,
+          "taxa": 0.1042,
+          "ic95": [
+            0.0748,
+            0.1434
+          ]
+        },
+        "fork": {
+          "sucessos": 5,
+          "total": 73,
+          "taxa": 0.0685,
+          "ic95": [
+            0.0296,
+            0.1505
+          ]
+        },
+        "kingsideAttack": {
+          "sucessos": 8,
+          "total": 55,
+          "taxa": 0.1455,
+          "ic95": [
+            0.0756,
+            0.2616
+          ]
+        },
+        "long": {
+          "sucessos": 8,
+          "total": 162,
+          "taxa": 0.0494,
+          "ic95": [
+            0.0252,
+            0.0944
+          ]
+        },
+        "master": {
+          "sucessos": 4,
+          "total": 82,
+          "taxa": 0.0488,
+          "ic95": [
+            0.0191,
+            0.1188
+          ]
+        },
+        "mate": {
+          "sucessos": 38,
+          "total": 205,
+          "taxa": 0.1854,
+          "ic95": [
+            0.1381,
+            0.2442
+          ]
+        },
+        "mateIn1": {
+          "sucessos": 17,
+          "total": 90,
+          "taxa": 0.1889,
+          "ic95": [
+            0.1214,
+            0.2818
+          ]
+        },
+        "mateIn2": {
+          "sucessos": 19,
+          "total": 93,
+          "taxa": 0.2043,
+          "ic95": [
+            0.1349,
+            0.2972
+          ]
+        },
+        "middlegame": {
+          "sucessos": 23,
+          "total": 267,
+          "taxa": 0.0861,
+          "ic95": [
+            0.0581,
+            0.1259
+          ]
+        },
+        "oneMove": {
+          "sucessos": 17,
+          "total": 90,
+          "taxa": 0.1889,
+          "ic95": [
+            0.1214,
+            0.2818
+          ]
+        },
+        "opening": {
+          "sucessos": 0,
+          "total": 26,
+          "taxa": 0.0,
+          "ic95": [
+            0.0,
+            0.1287
+          ]
+        },
+        "pawnEndgame": {
+          "sucessos": 1,
+          "total": 21,
+          "taxa": 0.0476,
+          "ic95": [
+            0.0085,
+            0.2267
+          ]
+        },
+        "pin": {
+          "sucessos": 2,
+          "total": 38,
+          "taxa": 0.0526,
+          "ic95": [
+            0.0146,
+            0.1729
+          ]
+        },
+        "promotion": {
+          "sucessos": 2,
+          "total": 20,
+          "taxa": 0.1,
+          "ic95": [
+            0.0279,
+            0.301
+          ]
+        },
+        "quietMove": {
+          "sucessos": 2,
+          "total": 23,
+          "taxa": 0.087,
+          "ic95": [
+            0.0242,
+            0.268
+          ]
+        },
+        "rookEndgame": {
+          "sucessos": 4,
+          "total": 40,
+          "taxa": 0.1,
+          "ic95": [
+            0.0396,
+            0.2305
+          ]
+        },
+        "sacrifice": {
+          "sucessos": 6,
+          "total": 56,
+          "taxa": 0.1071,
+          "ic95": [
+            0.05,
+            0.2147
+          ]
+        },
+        "short": {
+          "sucessos": 27,
+          "total": 292,
+          "taxa": 0.0925,
+          "ic95": [
+            0.0643,
+            0.1312
+          ]
+        },
+        "veryLong": {
+          "sucessos": 3,
+          "total": 51,
+          "taxa": 0.0588,
+          "ic95": [
+            0.0202,
+            0.1592
+          ]
+        }
+      }
+    },
+    "amostra": [
+      "Situação:\n- Desvantagem material de 1 ponto(s).\n- Em xeque: não.\n\nXeques:\n- f4f1: dá xeque-mate  <-- escolhido\n- f4f3: captura peão e dá xeque\n\nCapturas e promoções:\n- g1g2: ataca peão\n\nComparação: entre os lances forçados, f4f1 é o melhor porque é xeque, então força a resposta do oponente e dá xeque-mate.\n\nLANCE: f4f1",
+      "Situação:\n- Desvantagem material de 1 ponto(s).\n- Em xeque: não.\n\nXeques:\n- b6b8: dá xeque-mate  <-- escolhido\n- b6c6: captura peão e dá xeque\n- c6c5: captura torre e dá xeque\n\nCapturas e promoções:\n- b6a8: captura rei e ataca torre\n- b6d6: captura peão e ataca torre\n- b6c4: captura peão e ataca torre\n\nComparação: entre os lances forçados, b6b8 é o melhor porque é xeque, então força a resposta do oponente e dá xeque-mate.\n\nLANCE: b6b8",
+      "Situação:\n- Desvantagem material de 1 ponto(s).\n- Em xeque: não.\n\nXeques:\n- d6c8: dá xeque-mate  <-- escolhido\n- d6d7: dá xeque\n- d6b6: dá xeque\n- d6d5: captura peão e dá xeque\n\nCapturas e promoções:\n- d6f7: captura peão e ataca torre\n- g3h7: captura peão e ataca torre\n\nComparação: entre os lances forçados, d6c8 é o melhor porque é xeque, então força a resposta do oponente e dá xeque-mate.\n\nLANCE: d6c8",
+      "Situação:\n- Desvantagem material de 1 ponto(s).\n- Em xeque: não.\n\nXeques:\n- f4d8: dá xeque-mate  <-- escolhido\n- f4f7: captura peão e dá xeque\n- f4f6: dá xeque\n- f4f5: dá xeque\n\nCapturas e promoções:\n- f4c5: captura dama e ataca torre\n- f4h6: captura torre e ataca dama\n- c4c5: captura dama e ataca torre\n\nComparação: entre os lances forçados, f4d8 é o melhor porque é xeque, então força a resposta do oponente e dá xeque-mate.\n\nLANCE: f4d8",
+      "Situação:\n- Desvantagem material de 1 ponto(s).\n- Em xeque: não.\n\nXeques:\n- f8c2: dá xeque-mate  <-- escolhido\n\nCapturas e promoções:\n- g8f7: captura peão e ataca peão\n- f8e6: captura peão e ataca peão\n- f8a2: captura dama e ataca peão\n\nComparação: entre os lances forçados, f8c2 é o melhor porque é xeque, então força a resposta do oponente e dá xeque-mate.\n\nLANCE: f8c2"
+    ],
+    "sanidade": {
+      "validos": 600,
+      "invalidos": 0
+    }
+  },
+  "correlacao": {
+    "n": 600,
+    "correlacao": 0.0,
+    "taxa_acerto_com_raciocinio": 0.0917,
+    "taxa_acerto_sem_raciocinio": 0.0,
+    "media_palavras": 66.5
+  }
+}

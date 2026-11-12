@@ -1,0 +1,426 @@
+{
+  "modelo": "Qwen/Qwen2.5-1.5B-Instruct",
+  "puzzles": 200,
+  "seed": 42,
+  "max_novos": 16,
+  "original": {
+    "legal": {
+      "sucessos": 10,
+      "total": 200,
+      "taxa": 0.05,
+      "ic95": [
+        0.0274,
+        0.0896
+      ]
+    },
+    "correto": {
+      "sucessos": 0,
+      "total": 200,
+      "taxa": 0.0,
+      "ic95": [
+        0.0,
+        0.0188
+      ]
+    },
+    "nao_parseavel": {
+      "sucessos": 6,
+      "total": 200,
+      "taxa": 0.03,
+      "ic95": [
+        0.0138,
+        0.0639
+      ]
+    },
+    "por_faixa": {
+      "0-600": {
+        "sucessos": 0,
+        "total": 7,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.3543
+        ]
+      },
+      "1000-1400": {
+        "sucessos": 0,
+        "total": 62,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0583
+        ]
+      },
+      "1400-1800": {
+        "sucessos": 0,
+        "total": 37,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0941
+        ]
+      },
+      "1800-2200": {
+        "sucessos": 0,
+        "total": 39,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0897
+        ]
+      },
+      "2200-2600": {
+        "sucessos": 0,
+        "total": 21,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1546
+        ]
+      },
+      "2600-3000": {
+        "sucessos": 0,
+        "total": 3,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.5615
+        ]
+      },
+      "600-1000": {
+        "sucessos": 0,
+        "total": 31,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1103
+        ]
+      }
+    },
+    "por_tema": {
+      "advantage": {
+        "sucessos": 0,
+        "total": 63,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0575
+        ]
+      },
+      "crushing": {
+        "sucessos": 0,
+        "total": 67,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0542
+        ]
+      },
+      "endgame": {
+        "sucessos": 0,
+        "total": 100,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.037
+        ]
+      },
+      "fork": {
+        "sucessos": 0,
+        "total": 25,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1332
+        ]
+      },
+      "long": {
+        "sucessos": 0,
+        "total": 52,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0688
+        ]
+      },
+      "master": {
+        "sucessos": 0,
+        "total": 25,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1332
+        ]
+      },
+      "mate": {
+        "sucessos": 0,
+        "total": 69,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0527
+        ]
+      },
+      "mateIn1": {
+        "sucessos": 0,
+        "total": 27,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1246
+        ]
+      },
+      "mateIn2": {
+        "sucessos": 0,
+        "total": 35,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0989
+        ]
+      },
+      "middlegame": {
+        "sucessos": 0,
+        "total": 87,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0423
+        ]
+      },
+      "oneMove": {
+        "sucessos": 0,
+        "total": 27,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1246
+        ]
+      },
+      "short": {
+        "sucessos": 0,
+        "total": 104,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0356
+        ]
+      }
+    }
+  },
+  "espelhado": {
+    "legal": {
+      "sucessos": 5,
+      "total": 200,
+      "taxa": 0.025,
+      "ic95": [
+        0.0107,
+        0.0572
+      ]
+    },
+    "correto": {
+      "sucessos": 0,
+      "total": 200,
+      "taxa": 0.0,
+      "ic95": [
+        0.0,
+        0.0188
+      ]
+    },
+    "nao_parseavel": {
+      "sucessos": 6,
+      "total": 200,
+      "taxa": 0.03,
+      "ic95": [
+        0.0138,
+        0.0639
+      ]
+    },
+    "por_faixa": {
+      "0-600": {
+        "sucessos": 0,
+        "total": 7,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.3543
+        ]
+      },
+      "1000-1400": {
+        "sucessos": 0,
+        "total": 62,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0583
+        ]
+      },
+      "1400-1800": {
+        "sucessos": 0,
+        "total": 37,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0941
+        ]
+      },
+      "1800-2200": {
+        "sucessos": 0,
+        "total": 39,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0897
+        ]
+      },
+      "2200-2600": {
+        "sucessos": 0,
+        "total": 21,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1546
+        ]
+      },
+      "2600-3000": {
+        "sucessos": 0,
+        "total": 3,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.5615
+        ]
+      },
+      "600-1000": {
+        "sucessos": 0,
+        "total": 31,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1103
+        ]
+      }
+    },
+    "por_tema": {
+      "advantage": {
+        "sucessos": 0,
+        "total": 63,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0575
+        ]
+      },
+      "crushing": {
+        "sucessos": 0,
+        "total": 67,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0542
+        ]
+      },
+      "endgame": {
+        "sucessos": 0,
+        "total": 100,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.037
+        ]
+      },
+      "fork": {
+        "sucessos": 0,
+        "total": 25,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1332
+        ]
+      },
+      "long": {
+        "sucessos": 0,
+        "total": 52,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0688
+        ]
+      },
+      "master": {
+        "sucessos": 0,
+        "total": 25,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1332
+        ]
+      },
+      "mate": {
+        "sucessos": 0,
+        "total": 69,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0527
+        ]
+      },
+      "mateIn1": {
+        "sucessos": 0,
+        "total": 27,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1246
+        ]
+      },
+      "mateIn2": {
+        "sucessos": 0,
+        "total": 35,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0989
+        ]
+      },
+      "middlegame": {
+        "sucessos": 0,
+        "total": 87,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0423
+        ]
+      },
+      "oneMove": {
+        "sucessos": 0,
+        "total": 27,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.1246
+        ]
+      },
+      "short": {
+        "sucessos": 0,
+        "total": 104,
+        "taxa": 0.0,
+        "ic95": [
+          0.0,
+          0.0356
+        ]
+      }
+    }
+  },
+  "amostra_respostas": [
+    "d2d4",
+    "e2e4",
+    "e2e4",
+    "e3e5",
+    "e2e4",
+    "e2e4",
+    "e2e4",
+    "e2e4",
+    "e2e4",
+    "e5e6"
+  ]
+}

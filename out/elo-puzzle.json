@@ -1,0 +1,72 @@
+[
+  {
+    "arquivo": "out/aval-teste-sft.json",
+    "n": 600,
+    "acertos": 28,
+    "taxa": 0.04666666666666667,
+    "elo_puzzle": 1190.0022913099901,
+    "ic95": [
+      1108.5599119859116,
+      1253.8601548137758
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
+  },
+  {
+    "arquivo": "out/aval-teste-grpo-sf.json",
+    "n": 600,
+    "acertos": 37,
+    "taxa": 0.06166666666666667,
+    "elo_puzzle": 1245.6009370912911,
+    "ic95": [
+      1179.850294962304,
+      1301.7858258928354
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
+  },
+  {
+    "arquivo": "out/aval-mav-30k.json",
+    "n": 600,
+    "acertos": 48,
+    "taxa": 0.08,
+    "elo_puzzle": 1299.6768929221616,
+    "ic95": [
+      1236.8544086735494,
+      1353.2475770316655
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
+  },
+  {
+    "arquivo": "out/aval-mav-final.json",
+    "n": 600,
+    "acertos": 82,
+    "taxa": 0.13666666666666666,
+    "elo_puzzle": 1420.6317383881615,
+    "ic95": [
+      1370.3057414338296,
+      1475.2969918360097
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
+  },
+  {
+    "arquivo": "out/aval-mav-verificado.json",
+    "n": 600,
+    "acertos": 96,
+    "taxa": 0.16,
+    "elo_puzzle": 1459.7332216708014,
+    "ic95": [
+      1407.7861393614562,
+      1509.4569895626594
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
+  }
+]

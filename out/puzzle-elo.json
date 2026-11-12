@@ -1,0 +1,104 @@
+[
+  {
+    "file": "out/eval-base.json",
+    "n": 600,
+    "correct": 0,
+    "rate": 0.0,
+    "elo_puzzle": null,
+    "ci95": null,
+    "elo_max": 824.8594147307633,
+    "status": "undefined",
+    "reason": "0 solved: maximum likelihood diverges to -infinity",
+    "bootstrap_valid": 0
+  },
+  {
+    "file": "out/eval-sft.json",
+    "n": 600,
+    "correct": 28,
+    "rate": 0.04666666666666667,
+    "elo_puzzle": 1190.0022913099901,
+    "ci95": [
+      1108.5599119859116,
+      1253.8601548137758
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  },
+  {
+    "file": "out/eval-sft-grpo.json",
+    "n": 600,
+    "correct": 37,
+    "rate": 0.06166666666666667,
+    "elo_puzzle": 1245.6009370912911,
+    "ci95": [
+      1179.850294962304,
+      1301.7858258928354
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  },
+  {
+    "file": "out/eval-mav-30k.json",
+    "n": 600,
+    "correct": 48,
+    "rate": 0.08,
+    "elo_puzzle": 1299.6768929221616,
+    "ci95": [
+      1236.8544086735494,
+      1353.2475770316655
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  },
+  {
+    "file": "out/eval-mav-70k.json",
+    "n": 600,
+    "correct": 82,
+    "rate": 0.13666666666666666,
+    "elo_puzzle": 1420.6317383881615,
+    "ci95": [
+      1370.3057414338296,
+      1475.2969918360097
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  },
+  {
+    "file": "out/eval-mav-verified.json",
+    "n": 600,
+    "correct": 96,
+    "rate": 0.16,
+    "elo_puzzle": 1459.7332216708014,
+    "ci95": [
+      1407.7861393614562,
+      1509.4569895626594
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  },
+  {
+    "file": "out/eval-mav-grpo.json",
+    "n": 600,
+    "correct": 101,
+    "rate": 0.16833333333333333,
+    "elo_puzzle": 1472.7675408724508,
+    "ci95": [
+      1421.1008997539127,
+      1517.7290787521226
+    ],
+    "elo_max": null,
+    "status": "estimated",
+    "reason": null,
+    "bootstrap_valid": 1000
+  }
+]

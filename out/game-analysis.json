@@ -1,0 +1,77 @@
+{
+  "games": 8,
+  "model_moves": 192,
+  "blunders": 30,
+  "mistakes": 43,
+  "moves_per_blunder": 6.4,
+  "median_loss_cp": 66,
+  "mean_first_blunder_move": 5.125,
+  "games_with_blunder_by_move_5": 7,
+  "depth": 12,
+  "per_game": [
+    {
+      "model_color": "white",
+      "result": "L",
+      "model_moves": 28,
+      "blunders": 2,
+      "mistakes": 11,
+      "first_blunder_move": 24
+    },
+    {
+      "model_color": "black",
+      "result": "L",
+      "model_moves": 27,
+      "blunders": 5,
+      "mistakes": 3,
+      "first_blunder_move": 2
+    },
+    {
+      "model_color": "white",
+      "result": "L",
+      "model_moves": 13,
+      "blunders": 3,
+      "mistakes": 3,
+      "first_blunder_move": 3
+    },
+    {
+      "model_color": "black",
+      "result": "L",
+      "model_moves": 40,
+      "blunders": 4,
+      "mistakes": 10,
+      "first_blunder_move": 2
+    },
+    {
+      "model_color": "white",
+      "result": "L",
+      "model_moves": 31,
+      "blunders": 4,
+      "mistakes": 7,
+      "first_blunder_move": 4
+    },
+    {
+      "model_color": "black",
+      "result": "L",
+      "model_moves": 27,
+      "blunders": 5,
+      "mistakes": 6,
+      "first_blunder_move": 2
+    },
+    {
+      "model_color": "white",
+      "result": "L",
+      "model_moves": 7,
+      "blunders": 3,
+      "mistakes": 0,
+      "first_blunder_move": 2
+    },
+    {
+      "model_color": "black",
+      "result": "L",
+      "model_moves": 19,
+      "blunders": 4,
+      "mistakes": 3,
+      "first_blunder_move": 2
+    }
+  ]
+}

@@ -1,10 +1,10 @@
-"""Avaliação de lances com Stockfish, para recompensa parcial.
+"""Move evaluation with Stockfish, for partial reward.
 
-Sem isto, a recompensa é binária (acertou/errou) e ~90% dos grupos do GRPO ficam
-com variância zero — o modelo não aprende. Stockfish dá um gradiente contínuo:
-"não é o lance da solução, mas também não estraga a posição".
+Without this, the reward is binary (correct/incorrect) and ~90% of GRPO groups
+end up with zero variance, so the model learns nothing. Stockfish provides a
+continuous signal: "not the solution move, but it does not ruin the position either".
 
-O motor é usado em profundidade baixa e determinística para ser rápido e reprodutível.
+The engine runs at a low, deterministic depth to be fast and reproducible.
 """
 
 from __future__ import annotations
@@ -16,37 +16,37 @@ from dataclasses import dataclass
 import chess
 import chess.engine
 
-PROFUNDIDADE_PADRAO = 8
+DEFAULT_DEPTH = 8
 
 
-def localizar_motor() -> str | None:
-    """Acha o binário do Stockfish sem depender de sudo ou PATH global."""
-    candidatos = [
+def find_engine() -> str | None:
+    """Locate the Stockfish binary without relying on sudo or a global PATH."""
+    candidates = [
         os.environ.get("STOCKFISH_PATH"),
         os.path.expanduser("~/bin/stockfish"),
         "/usr/games/stockfish",
         "/usr/local/bin/stockfish",
         shutil.which("stockfish"),
     ]
-    for c in candidatos:
+    for c in candidates:
         if c and os.path.isfile(c) and os.access(c, os.X_OK):
             return c
     return None
 
 
 @dataclass
-class Motor:
-    """Wrapper fino sobre python-chess.engine, com fechamento garantido."""
-    caminho: str
-    profundidade: int = PROFUNDIDADE_PADRAO
+class Engine:
+    """Thin wrapper over python-chess.engine that guarantees the process is closed."""
+    path: str
+    depth: int = DEFAULT_DEPTH
     _engine: object = None
 
-    def abrir(self):
+    def open(self):
         if self._engine is None:
-            self._engine = chess.engine.SimpleEngine.popen_uci(self.caminho)
+            self._engine = chess.engine.SimpleEngine.popen_uci(self.path)
         return self._engine
 
-    def fechar(self) -> None:
+    def close(self) -> None:
         if self._engine is not None:
             try:
                 self._engine.quit()
@@ -54,35 +54,36 @@ class Motor:
                 self._engine = None
 
     def __enter__(self):
-        self.abrir()
+        self.open()
         return self
 
     def __exit__(self, *exc):
-        self.fechar()
+        self.close()
         return False
 
-    def avaliar_apos(self, tabuleiro: chess.Board, lance: chess.Move) -> float:
-        """Avaliação em centipeões do ponto de vista de QUEM JOGA em `tabuleiro`.
+    def eval_after(self, board: chess.Board, move: chess.Move) -> float:
+        """Evaluation in centipawns from the point of view of the side TO MOVE in `board`.
 
-        Positivo = bom para quem tem o lance. Escala Mate como ±10000.
+        Positive = good for the side making the move. Mate is scaled to ±10000.
         """
-        copia = tabuleiro.copy()
-        copia.push(lance)
-        info = self.abrir().analyse(copia, chess.engine.Limit(depth=self.profundidade))
-        score = info["score"].pov(tabuleiro.turn)
-        # `score(mate_score=...)` ja converte mate para o valor sentinela com o
-        # sinal correto. Nao tratar mate a mao: mate em 0 (xeque-mate ja dado)
-        # tem `mate() == 0` e cairia no ramo negativo.
+        after = board.copy()
+        after.push(move)
+        info = self.open().analyse(after, chess.engine.Limit(depth=self.depth))
+        score = info["score"].pov(board.turn)
+        # `score(mate_score=...)` already converts mate to the sentinel value with
+        # the correct sign. Do not special-case mate by hand: mate in 0 (checkmate
+        # already delivered) has `mate() == 0` and would fall into the negative branch.
         return float(score.score(mate_score=10000))
 
 
-def normalizar_vantagem(centipeoes: float, escala: float = 300.0) -> float:
-    """Comprime a avaliação para [-1, 1], saturando em ~3 peões.
+def normalize_advantage(centipawns: float, scale: float = 300.0) -> float:
+    """Compress the evaluation to [-1, 1], saturating at ~3 pawns.
 
-    Evita que uma posição já ganha domine a recompensa: a diferença entre +8 e +12
-    peões não interessa ao aprendizado, mas a diferença entre 0 e +1 interessa muito.
+    Keeps an already-won position from dominating the reward: the difference
+    between +8 and +12 pawns does not matter for learning, but the difference
+    between 0 and +1 matters a lot.
     """
-    if escala <= 0:
+    if scale <= 0:
         return 0.0
-    x = centipeoes / escala
+    x = centipawns / scale
     return max(-1.0, min(1.0, x))

@@ -1,175 +1,202 @@
 # chess-world-model
 
-Uma LLM pequena (Qwen2.5-1.5B) treinada para entender o tabuleiro de xadrez antes de
-escolher o lance. Treinada com LoRA numa única **RTX 3060 de 12 GB**, sem nada treinado do
-zero.
+Teaching a small LLM (Qwen2.5-1.5B-Instruct) to **model the chess board before choosing a
+move**. LoRA fine-tuning on a single **RTX 3060 (12 GB)**; nothing trained from scratch.
 
-## Início vs fim
+## Start vs. end
 
-Split de teste sem vazamento (divisão por partida), 600 puzzles do Lichess, mesma amostra
-para os dois lados.
+Leak-free test split (split by game), 600 Lichess puzzles, same sample for both models.
 
-{{TABELA_INICIO_FIM}}
+{{START_VS_END}}
 
-O **Elo de puzzle** é estimado pelos ratings do Lichess dos puzzles que o modelo resolve
-(máxima verossimilhança, IC95 por bootstrap). Quando o modelo não resolve nenhum, o Elo
-não tem estimativa pontual; o limite mostrado é o maior Elo compatível com 0 acertos.
+**What improved:** the model now reads and updates the board (93.83% exact), almost never
+plays an illegal move, and solves 16% of tactical puzzles instead of none.
 
-**Como ler as partidas.** O Qwen puro joga lance ilegal em ~96% das vezes; nesses casos o
-lance é substituído por um lance legal aleatório. Então o placar do início é, na prática, o
-de um jogador aleatório (inclusive o empate contra o Stockfish). O modelo final joga os
-próprios lances (5,21% ilegais) e mesmo assim perde para o Stockfish no nível mais fraco que
-ele aceita (1320). O ganho está na leitura do tabuleiro e na escolha do lance em posições
-táticas; jogar uma partida inteira exige manter um plano por dezenas de lances, e o treino
-não cobriu isso.
+**What did not:** it still loses every game to Stockfish at its weakest setting. Its real
+playing strength is **below 1320 Elo** (0/8 games; the 95% upper bound is about 1193).
 
-## Como chegou lá
+### Why it solves puzzles but loses games
 
-{{TABELA_PROGRESSAO}}
+{{GAME_ANALYSIS}}
 
-Treinar só o lance certo (SFT) e depois reforçar com RL (GRPO) quase não mexeu no Elo: o
-modelo aprendia a **forma** da resposta, não o jogo. O salto veio quando o treino passou a
-pedir o **modelo de mundo**.
+It blunders (loses three pawns or more) about once every six moves, and in 7 of 8 games the
+first blunder comes **within the first five moves**. The training data are puzzle positions —
+middlegame and endgame tactics — so the model never saw an opening. A puzzle asks for one
+forcing move in a position that is known to contain a tactic; a game asks for dozens of
+moves without a single blunder.
 
-## O método: modelo de mundo
+### A note on "puzzle Elo"
 
-Adaptado de *Mastering Board Games by External and Internal Planning with Language Models*
-(DeepMind, [arXiv 2412.12119](https://arxiv.org/abs/2412.12119)). Em vez de pedir só o
-lance, cada exemplo pede ao modelo que escreva o que acontece no jogo. Ele recebe:
+{{DIFFICULTY}}
+
+A rated solver gets fewer puzzles right as they get harder. This model barely does: its
+accuracy is almost flat across difficulty. Fitting an Elo to the 16% it solves on this
+(hard, mean rating 1837) test set gives ~1460, but that number depends on how hard the set
+is and **does not measure playing strength**. It is reported in the per-layer table only, for
+comparison between training steps.
+
+## Training recipe
+
+{{RECIPE}}
+
+Supervising only the final move (SFT) and then reinforcing it (GRPO) barely moves the
+rating: the model learns the *format* of an answer, not the game. The jump comes from
+**world-model SFT**.
+
+## Method: world-model SFT
+
+Adapted from *Mastering Board Games by External and Internal Planning with Language Models*
+(DeepMind, [arXiv 2412.12119](https://arxiv.org/abs/2412.12119)). Instead of asking for the
+move alone, each training example asks the model to write out the consequences of the
+previous move. Input:
 
 ```
-FEN anterior: r4rk1/2q3p1/p1bbp3/1p3p2/4NP2/5Q1P/PPPB2P1/4RRK1 w - - 0 20
-Lance jogado: e4d6
+Previous FEN: r4rk1/2q3p1/p1bbp3/1p3p2/4NP2/5Q1P/PPPB2P1/4RRK1 w - - 0 20
+Move played: e4d6
 ```
 
-e tem de escrever:
+Target:
 
 ```
-estado:
+board:
 8 r . . . . r k .
 7 . . q . . . p .
-6 p . b N p . . .      ← o cavalo saiu de e4 e capturou o bispo em d6
+6 p . b N p . . .      <- the knight left e4 and captured the bishop on d6
 5 . p . . . p . .
-4 . . . . . P . .      ← e4 ficou vazia
+4 . . . . . P . .      <- e4 is now empty
 3 . . . . . Q . P
 2 P P P B . . P .
 1 . . . . R R K .
   a b c d e f g h
-vez: pretas
-legais: a6a5 a8a7 ... c6f3 ... c7d6 ... (35 lances)
+to move: black
+legal: a6a5 a8a7 ... c6f3 ... c7d6 ... (35 moves)
 top5: c6f3:85 c7d6:40 a8d8:31 f8d8:31 f8f6:25
-melhor: c6f3
+best: c6f3
 ```
 
-1. **O tabuleiro depois do lance.** Maiúscula é peça branca, minúscula é preta.
-2. **Os lances legais** da nova posição.
-3. **O valor de cada um dos 5 melhores lances**, como chance de vitória (rótulo do
-   Stockfish, usado só para gerar os dados de treino).
-4. **O melhor lance.**
+1. **State transition** — the board after the move (uppercase = white, lowercase = black).
+2. **Legal moves** of the new position.
+3. **Action values** — win probability for the top 5 moves (Stockfish labels, used only to
+   build training data).
+4. **Best move.**
 
-O melhor lance do exemplo, `c6f3` (o bispo captura a dama), só existe porque o cavalo
-**saiu de e4** e abriu a diagonal. Um modelo que não atualiza o tabuleiro não vê esse
-lance. Por isso ensinar o estado melhora a escolha.
+The best move here, `c6f3` (bishop takes queen), only exists because the knight **left e4**
+and opened the diagonal. A model that does not update the board cannot see it — which is why
+supervising the state improves the choice. Predicting a value per move instead of only the
+best move is also what [ChessBench](https://arxiv.org/abs/2402.04494) found to work best
+(83.3% vs 65.7% puzzle accuracy in the same model).
 
-**Lance verificado.** Como o modelo escreve a própria lista de lances legais e o top-5,
-quando o `melhor:` sai ilegal a resposta ainda tem candidatos válidos. O lance final passa a
-ser o do modelo se for legal; senão, o primeiro legal do top-5 dele; senão, o primeiro da
-lista dele. Não entra informação externa. Na partida, isso reduz os lances ilegais de 35,86%
-para 5,21%.
+**Legal-move verification.** The model writes its own legal-move list and top-5 before the
+answer, so an illegal `best:` can be repaired from its own output: take the first legal move of
+its top-5, else the first legal move of its list. No external information is used. In games
+this cuts illegal moves from 35.86% to 5.21%.
 
-### Detalhe por camada
+### Per-layer results
 
-{{TABELA_CAMADAS}}
+{{LAYERS}}
 
-## Generalização
+## Inference-time compute
 
-Mesma bateria no modelo do início e no do fim. Lig 4 é um jogo que o modelo nunca viu (regras
-no prompt); GSM8K mede se ele esqueceu matemática.
+Same model, no extra training, 200 test puzzles.
 
-{{TABELA_GENERALIZACAO}}
+{{INFERENCE}}
 
-- **Não transferiu para outro jogo.** No Lig 4 o modelo final ficou no acaso. Aprender a ler
-  o tabuleiro de xadrez não o ensinou a ler outro tabuleiro.
-- **Esqueceu matemática.** O GSM8K caiu para menos da metade. O modelo passa a responder
-  perguntas de matemática no formato de xadrez (`estado:` seguido de um "tabuleiro"). É o
-  custo de um fine-tune estreito; mistura com dados gerais não foi testada aqui.
+- **Self-consistency helps a little** (majority of 6 samples).
+- **Searching with its own value estimates hurts.** Depth-2 minimax, where the model scores
+  the opponent's replies with its own top-5 values, turns more right answers into wrong ones
+  than the reverse (13 vs 5). The world model is accurate enough to *simulate* a move, not
+  yet accurate enough to *evaluate* the opponent's position.
+- **pass@6 is 42.5%.** The correct move is already among 6 sampled answers more than twice
+  as often as greedy decoding finds it. That is the headroom for rejection-sampling
+  fine-tuning (STaR / expert iteration) and RL on outcome reward — the natural next step.
 
-**Memorização:** com as posições espelhadas (mesma tática, coordenadas trocadas) o acerto não
-cai, então o modelo não decorou os puzzles.
+## Generalization
 
-{{TABELA_ESPELHO}}
+Same battery for the start and end models. Connect Four is a game the model never saw (rules
+in the prompt); GSM8K measures forgetting.
 
-## Custo
+{{GENERALIZATION}}
 
-{{TABELA_ESCALA}}
+- **No transfer to a new game.** On Connect Four the final model stays at chance.
+- **Catastrophic forgetting on math.** GSM8K drops by more than half; the model starts
+  answering math questions in the chess format (`board:` followed by a "grid"). Mixing in
+  general data was not tested.
 
-## Limites
+**Memorization check:** on mirrored positions (same tactic, flipped coordinates and colors)
+accuracy does not drop, so the model did not memorize the puzzles.
 
-- **Escala pequena.** São 70 mil posições e LoRA num modelo de 1,5B. Os trabalhos de
-  referência usam centenas de milhões de posições e treinam o transformer do zero.
-- **O Elo de puzzle é uma aproximação.** Ele mede a força implícita na taxa de acerto em
-  posições táticas, não a força numa partida. Em partida o modelo perde para o Stockfish 1320.
-- **Ainda não há busca interna.** O passo seguinte da literatura é o modelo escrever a própria
-  árvore ("eu jogo, ele responde, eu avalio") e treinar nesses traços. Não foi feito.
-- **Generalização negativa.** Não houve transferência para o Lig 4 e houve esquecimento de
-  matemática.
+{{MIRROR}}
 
-## Reproduzir
+## Cost
+
+{{COST}}
+
+## Limitations
+
+- **Small scale.** 70k positions and LoRA on a 1.5B model; reference work uses hundreds of
+  millions of positions and trains from scratch.
+- **Weak in games.** Playing strength is below 1320; it blunders about once every six moves,
+  mostly in the opening, which the puzzle-only training never covered. Training on positions
+  from full games is the obvious fix and was not done.
+- **No learned search yet.** Search with the model's own values hurts (see above); training on
+  search traces (MAV-IS, Searchformer, Stream of Search) was not done.
+- **Negative generalization.** No transfer to Connect Four; forgetting on GSM8K.
+
+## Reproduce
 
 ```bash
 pip install -e ".[train]"
 export STOCKFISH_PATH=~/bin/stockfish
 
-# 1. splits sem vazamento a partir do Lichess open database
-python scripts/preparar_splits.py --limite 0
+# 1. leak-free splits from the Lichess open database
+python scripts/prepare_splits.py --limit 0
 
-# 2. dados do modelo de mundo (só o split de treino), rotulados pelo Stockfish
-python scripts/gerar_mav.py --posicoes 32000 --processos 12 --saida data/mav-32k.jsonl
-python scripts/gerar_mav.py --posicoes 40000 --pular 32000 --processos 12 --saida data/mav-72k.jsonl
-cat data/mav-32k.jsonl data/mav-72k.jsonl > data/mav-uniao.jsonl
+# 2. world-model data (train split only), labeled by Stockfish
+python scripts/generate_mav.py --positions 32000 --workers 12 --out data/mav-32k.jsonl
+python scripts/generate_mav.py --positions 40000 --skip 32000 --workers 12 --out data/mav-72k.jsonl
+cat data/mav-32k.jsonl data/mav-72k.jsonl > data/mav-all.jsonl
 
-# 3. treino (RTX 3060: ~2,5 h + ~2,9 h)
-python scripts/treinar_sft_cot2.py --adapter-base none --tracos data/mav-32k.jsonl \
-       --amostras 30000 --lote 8 --acum 2 --lr 2e-4 --max-length 512 --saida out/mav-30k
-python scripts/treinar_sft_cot2.py --adapter-base out/mav-30k --tracos data/mav-uniao.jsonl \
-       --lote 8 --acum 2 --lr 1e-4 --max-length 512 --max-passos 2200 --saida out/mav-final
+# 3. training (RTX 3060: ~2.5 h + ~2.9 h)
+python scripts/train_sft.py --base-adapter none --data data/mav-32k.jsonl \
+       --samples 30000 --batch 8 --grad-accum 2 --lr 2e-4 --max-length 512 --out out/mav-30k
+python scripts/train_sft.py --base-adapter out/mav-30k --data data/mav-all.jsonl \
+       --batch 8 --grad-accum 2 --lr 1e-4 --max-length 512 --max-steps 2200 --out out/mav-final
 
-# 4. início vs fim no mesmo teste
-python scripts/avaliar_mav.py --formato direto --puzzles 600 --saida out/aval-teste-base.json
-python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 600 --verificar \
-       --saida out/aval-mav-verificado.json
-python scripts/elo_puzzle.py out/aval-teste-base.json out/aval-mav-verificado.json
-python scripts/jogar_partidas.py --adapter out/mav-final --oponente stockfish --elo 1320 \
-       --partidas 8 --verificar --saida out/partidas-stockfish-verificado.json
+# 4. start vs. end on the same test split
+python scripts/evaluate.py --format direct --puzzles 600 --out out/eval-base.json
+python scripts/evaluate.py --adapter out/mav-final --puzzles 600 --verify --out out/eval-mav-verified.json
+python scripts/puzzle_elo.py out/eval-base.json out/eval-mav-verified.json
+python scripts/play_games.py --adapter out/mav-final --opponent stockfish --elo 1320 \
+       --games 8 --verify --out out/games-stockfish-verified.json
 
-# 5. README gerado a partir dos JSONs em out/ (falha se faltar algum)
-python scripts/gerar_readme.py
+# 5. README is generated from the JSON files in out/ (fails if any is missing)
+python scripts/build_readme.py
 ```
 
-O adapter treinado (LoRA r=64, 275 MB) está na [Release](../../releases):
+The trained adapter (LoRA r=64, 275 MB) is attached to the [release](../../releases):
 
 ```bash
 tar xzf adapter-mav-final.tar.gz -C out/mav-final
-python scripts/avaliar_mav.py --adapter out/mav-final --puzzles 50 --verificar
+python scripts/evaluate.py --adapter out/mav-final --puzzles 50 --verify
 ```
 
-## Outros métodos testados
+## Other methods tried
 
-{{TABELA_OUTROS}}
+{{OTHER_METHODS}}
 
-- **GRPO direto** melhora a legalidade, mas não o acerto: o modelo otimiza a parte fácil da
-  recompensa.
-- **Raciocínio em texto** ("situação, candidatos, comparação") dobra o acerto dentro do
-  mesmo modelo, mas não supera o SFT direto: o modelo escreve uma comparação plausível sem
-  ler o tabuleiro.
-- **Ensinar a varrer xeques e capturas** coloca a solução mais vezes na lista de candidatos,
-  mas piora a escolha final.
+- **GRPO on the bare answer** raises legality but not accuracy: the model optimizes the easy
+  part of the reward.
+- **Free-text chain of thought** ("situation, candidates, comparison") doubles accuracy within
+  the same model but does not beat plain SFT: the model writes a plausible comparison without
+  reading the board.
+- **Teaching a checks-and-captures sweep** puts the solution in the candidate list more often
+  but makes the final choice worse.
 
-Todos esses métodos atacam a escolha. O modelo de mundo ataca a leitura do tabuleiro, e só
-ele moveu o Elo.
+All of these target the choice. World-model SFT targets reading the board, and it is the only
+one that moved the rating.
 
-## Dados e licenças
+## Data and licenses
 
-Puzzles: [Lichess open database](https://database.lichess.org/#puzzles) (CC0). Avaliações
-geradas com [Stockfish](https://stockfishchess.org/) (GPLv3), usado só para rotular dados e
-medir; não é distribuído aqui. Código: MIT.
+Puzzles: [Lichess open database](https://database.lichess.org/#puzzles) (CC0). Labels generated
+with [Stockfish](https://stockfishchess.org/) (GPLv3), used only to build data and measure; not
+distributed here. Code: MIT.

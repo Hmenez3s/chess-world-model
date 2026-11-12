@@ -1,0 +1,119 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "out/mav-final",
+  "seed": 42,
+  "connect4": {
+    "win": {
+      "n": 100,
+      "correct": 20,
+      "accuracy_pct": 20.0,
+      "ci95": [
+        13.33659225590988,
+        28.883096192650235
+      ],
+      "chance_pct": 15.945238095238096,
+      "samples": [
+        {
+          "board": ". . . . . . .\n. . . . . O .\nO . . . . X .\nO O . . . X .\nX X . . . O .\nO O X . X X .\n1 2 3 4 5 6 7",
+          "side": "X",
+          "correct_columns": [
+            4
+          ],
+          "answer": "6"
+        },
+        {
+          "board": ". . . . O . .\n. . . . O . .\nO O . . X . .\nX O . X X X .\nO X . X O O .\nX O X O X X .\n1 2 3 4 5 6 7",
+          "side": "O",
+          "correct_columns": [
+            3
+          ],
+          "answer": "1"
+        },
+        {
+          "board": ". . . . . . .\n. . . . . . X\n. . . . . . X\nO O O . . . O\nX X O X . . O\nX O X O . X X\n1 2 3 4 5 6 7",
+          "side": "O",
+          "correct_columns": [
+            1,
+            4
+          ],
+          "answer": "1"
+        }
+      ]
+    },
+    "block": {
+      "n": 100,
+      "correct": 9,
+      "accuracy_pct": 9.0,
+      "ci95": [
+        4.807199516388487,
+        16.226374696643667
+      ],
+      "chance_pct": 14.619047619047617,
+      "samples": [
+        {
+          "board": ". . . . . . .\n. . . . . O .\n. . . . . X .\nO O . . . X .\nX X . . . O .\nO O X . X X .\n1 2 3 4 5 6 7",
+          "side": "O",
+          "correct_columns": [
+            4
+          ],
+          "answer": "1"
+        },
+        {
+          "board": ". . . . . . .\n. . . . . . .\nO . . . . . .\nX . . . . . .\nO . . . . . .\nX X . X O . .\n1 2 3 4 5 6 7",
+          "side": "O",
+          "correct_columns": [
+            3
+          ],
+          "answer": "1"
+        },
+        {
+          "board": ". . . . . . .\n. . . . O . .\n. . . . O . .\n. O . . X X .\n. O . X X O .\nO X X X O X .\n1 2 3 4 5 6 7",
+          "side": "O",
+          "correct_columns": [
+            6
+          ],
+          "answer": "1"
+        }
+      ]
+    },
+    "total": {
+      "n": 200,
+      "correct": 29,
+      "accuracy_pct": 14.5,
+      "ci95": [
+        10.28928513530641,
+        20.048781284894375
+      ],
+      "chance_pct": 15.282142857142855
+    }
+  },
+  "gsm8k": {
+    "n": 200,
+    "correct": 41,
+    "accuracy_pct": 20.5,
+    "ci95": [
+      15.486094831106376,
+      26.625819518074557
+    ],
+    "samples": [
+      {
+        "question": "Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?",
+        "expected": "18",
+        "extracted_answer": "18",
+        "text": "estado:\n- janet's ducks lay 16 eggs per day\n- she eats 3 for breakfast every morning\n- she bakes muffins for her friends every day with 4\n- she sells the remainder at the farmers' market daily for $2 per fresh duck egg\nobjetivo: determinar o valor em dólares que ela faz na feira de produtores\npassos:\n1. calcule o total de ovos: 16 - 3 - 4 = 9\n2. calcule o total de dinheiro: 9 * 2 = 18\n3. o resultado é 18\nresposta: 18"
+      },
+      {
+        "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+        "expected": "3",
+        "extracted_answer": "4",
+        "text": "estado:\n  blue:   . . bolts\nwhite:  . . . . . f\n  red:    .\n  green: .\n  yellow: .\n\npasso 1: cálculo\nblue: 2 * 2 = 4 bolts\nwhite: 0 * 2 = 0 bolts\ntotal: 4 + 0 = 4 bolts\n\nresposta: 4"
+      },
+      {
+        "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?",
+        "expected": "70000",
+        "extracted_answer": "65000",
+        "text": "estado:\n  capital: 80000\n  investimento: 50000\n  aumento: 150%\nvalor_final: ?\nproteção: 0\nlance: compra\nresolução:\n1. o valor do lances é o preço de compra\n2. o valor total é o preço de compra + o investimento\n3. o aumento é o valor total / 100\n4. o novo valor é o valor total - o aumento\n5. o lucro é o novo valor - o preço de compra\nresult: 65000\nresposta: 65000"
+      }
+    ]
+  }
+}

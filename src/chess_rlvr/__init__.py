@@ -1,3 +1,3 @@
-"""chess-rlvr: RL com recompensa verificável em puzzles de xadrez."""
+"""chess-rlvr: RL with verifiable rewards on chess puzzles."""
 
 __version__ = "0.1.0"

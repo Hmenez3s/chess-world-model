@@ -1,0 +1,23 @@
+[
+  {
+    "method": "SFT + free-text chain of thought",
+    "best_correct_pct": 9.17,
+    "n": 600,
+    "note": "earlier sample, before the leak-free split",
+    "source": "cot2-600.json"
+  },
+  {
+    "method": "Chain of thought + GRPO",
+    "best_correct_pct": 9.67,
+    "n": 600,
+    "note": "earlier sample, before the leak-free split",
+    "source": "grpo-cot-600.json"
+  },
+  {
+    "method": "Checks-and-captures sweep + GRPO",
+    "best_correct_pct": 9.17,
+    "n": 600,
+    "note": "earlier sample, before the leak-free split",
+    "source": "grpo-forcados-600.json"
+  }
+]

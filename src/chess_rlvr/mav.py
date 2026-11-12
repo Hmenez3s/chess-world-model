@@ -1,22 +1,22 @@
-"""Formato de treino de "modelo de mundo" do jogo, adaptado do MAV.
+"""World-model training format, adapted from MAV.
 
-Referência: Schultz et al., "Mastering Board Games by External and Internal
-Planning with Language Models" (DeepMind, arXiv 2412.12119, v3 2025).
-Um transformer de 1B treinado assim chega a ~2.820 Elo estimado sem busca.
+Reference: Schultz et al., "Mastering Board Games by External and Internal
+Planning with Language Models" (DeepMind, arXiv 2412.12119, v3 2025). A 1B
+transformer trained this way reaches an estimated ~2,820 Elo without search.
 
-O que o MAV ensina e o nosso treino anterior não ensinava:
-  1. transição de estado: posição anterior + lance -> tabuleiro resultante
-  2. lances legais da posição
-  3. valor de cada lance (top-k ordenado com chance de vitória)
-  4. melhor lance
+What the format teaches, and plain move-only training does not:
+  1. state transition: previous position + move -> resulting board
+  2. the legal moves of the new position
+  3. the value of each candidate move (top-k with win probability)
+  4. the best move
 
-Nós treinávamos só o item 4 ("behavioral cloning"), que é o alvo mais fraco:
-no ChessBench (arXiv 2402.04494) valor-por-lance acerta 83,3% dos puzzles,
-contra 65,7% de prever só o melhor lance, no mesmo modelo.
+Training only item 4 ("behavioral cloning") is the weakest target: in
+ChessBench (arXiv 2402.04494) predicting a value per move solves 83.3% of
+puzzles versus 65.7% for predicting only the best move, in the same model.
 
-O tabuleiro sai como grade 8x8, um caractere por casa (maiúscula = branca,
-minúscula = preta), com rótulos de fileira e coluna. Cada casa vira um token
-em posição fixa, como no MAV, em vez de depender de como o BPE quebra o FEN.
+The board is written as an 8x8 grid, one character per square (uppercase =
+white, lowercase = black), with rank and file labels. Each square lands on a
+fixed position, as in MAV, instead of depending on how BPE splits a FEN.
 """
 
 from __future__ import annotations
@@ -24,119 +24,152 @@ from __future__ import annotations
 import math
 
 import chess
+import chess.engine
 
 TOP_K = 5
 
+# The released adapter was trained on the Portuguese strings below. Keep
+# LEGACY_FORMAT = True to evaluate or play with it; set it to False to train a
+# new model on the English format. extract_fields() reads both formats.
+LEGACY_FORMAT = True
 
-def grade(tab: chess.Board) -> str:
-    linhas = []
-    for fileira in range(7, -1, -1):
-        casas = []
-        for coluna in range(8):
-            peca = tab.piece_at(chess.square(coluna, fileira))
-            casas.append(peca.symbol() if peca else ".")
-        linhas.append("%d %s" % (fileira + 1, " ".join(casas)))
-    linhas.append("  a b c d e f g h")
-    return "\n".join(linhas)
+_LEGACY = {
+    "transition": ("FEN anterior: %s\nLance jogado: %s\n"
+                   "Mostre o tabuleiro resultante, os lances legais, os %d melhores "
+                   "com chance de vitória e o melhor lance."),
+    "position": ("FEN: %s\nMostre o tabuleiro, os lances legais, os %d melhores "
+                 "com chance de vitória e o melhor lance."),
+    "board": "estado:", "to_move": "vez: %s", "white": "brancas", "black": "pretas",
+    "legal": "legais: %s", "best": "melhor: %s",
+}
+_ENGLISH = {
+    "transition": ("Previous FEN: %s\nMove played: %s\n"
+                   "Show the resulting board, the legal moves, the %d best moves "
+                   "with their win probability, and the best move."),
+    "position": ("FEN: %s\nShow the board, the legal moves, the %d best moves "
+                 "with their win probability, and the best move."),
+    "board": "board:", "to_move": "to move: %s", "white": "white", "black": "black",
+    "legal": "legal: %s", "best": "best: %s",
+}
+
+_BOARD_LABELS = ("estado:", "board:")
+_LEGAL_LABELS = ("legais:", "legal:")
+_BEST_LABELS = ("melhor:", "best:")
 
 
-def chance_vitoria(cp: int) -> int:
-    """Centipeões -> chance de vitória 0..100 (fórmula do Lichess)."""
+def _strings() -> dict:
+    return _LEGACY if LEGACY_FORMAT else _ENGLISH
+
+
+def board_grid(board: chess.Board) -> str:
+    rows = []
+    for rank in range(7, -1, -1):
+        squares = []
+        for file in range(8):
+            piece = board.piece_at(chess.square(file, rank))
+            squares.append(piece.symbol() if piece else ".")
+        rows.append("%d %s" % (rank + 1, " ".join(squares)))
+    rows.append("  a b c d e f g h")
+    return "\n".join(rows)
+
+
+def win_probability(cp: int) -> int:
+    """Centipawns -> win probability 0..100 (Lichess formula)."""
     p = 50 + 50 * (2 / (1 + math.exp(-0.00368208 * cp)) - 1)
     return max(0, min(100, int(round(p))))
 
 
-def _lado(tab: chess.Board) -> str:
-    return "brancas" if tab.turn == chess.WHITE else "pretas"
+def _side_name(board: chess.Board) -> str:
+    s = _strings()
+    return s["white"] if board.turn == chess.WHITE else s["black"]
 
 
-def prompt_transicao(fen_anterior: str, lance: str) -> str:
-    return ("FEN anterior: %s\nLance jogado: %s\n"
-            "Mostre o tabuleiro resultante, os lances legais, os %d melhores "
-            "com chance de vitória e o melhor lance." % (fen_anterior, lance, TOP_K))
+def transition_prompt(previous_fen: str, move: str) -> str:
+    return _strings()["transition"] % (previous_fen, move, TOP_K)
 
 
-def prompt_posicao(fen: str) -> str:
-    return ("FEN: %s\nMostre o tabuleiro, os lances legais, os %d melhores "
-            "com chance de vitória e o melhor lance." % (fen, TOP_K))
+def position_prompt(fen: str) -> str:
+    return _strings()["position"] % (fen, TOP_K)
 
 
-def resposta(tab: chess.Board, top: list[tuple[str, int]]) -> str:
-    """top: [(uci, chance 0..100)] ordenado do melhor para o pior."""
-    legais = " ".join(sorted(m.uci() for m in tab.legal_moves))
-    linhas = [
-        "estado:",
-        grade(tab),
-        "vez: %s" % _lado(tab),
-        "legais: %s" % legais,
+def response(board: chess.Board, top: list[tuple[str, int]]) -> str:
+    """top: [(uci, win probability 0..100)] sorted from best to worst."""
+    s = _strings()
+    legal = " ".join(sorted(m.uci() for m in board.legal_moves))
+    lines = [
+        s["board"],
+        board_grid(board),
+        s["to_move"] % _side_name(board),
+        s["legal"] % legal,
         "top%d: %s" % (TOP_K, " ".join("%s:%d" % (m, v) for m, v in top)),
-        "melhor: %s" % top[0][0],
+        s["best"] % top[0][0],
     ]
-    return "\n".join(linhas)
+    return "\n".join(lines)
 
 
-def avaliar_top(tab: chess.Board, motor, profundidade: int = 10) -> list[tuple[str, int]]:
-    """Top-k lances com chance de vitória, do ponto de vista de quem joga."""
-    infos = motor.analyse(tab, chess.engine.Limit(depth=profundidade),
-                          multipv=min(TOP_K, tab.legal_moves.count()))
+def evaluate_top(board: chess.Board, engine, depth: int = 10) -> list[tuple[str, int]]:
+    """Top-k moves with win probability, from the side to move's point of view."""
+    infos = engine.analyse(board, chess.engine.Limit(depth=depth),
+                           multipv=min(TOP_K, board.legal_moves.count()))
     if isinstance(infos, dict):
         infos = [infos]
     top = []
     for info in infos:
         if "pv" not in info or not info["pv"]:
             continue
-        cp = info["score"].pov(tab.turn).score(mate_score=10000)
-        top.append((info["pv"][0].uci(), chance_vitoria(cp)))
+        cp = info["score"].pov(board.turn).score(mate_score=10000)
+        top.append((info["pv"][0].uci(), win_probability(cp)))
     return top
 
 
 # --------------------------------------------------------------------------
-# Leitura da resposta (avaliação)
+# Reading a model answer (evaluation)
 # --------------------------------------------------------------------------
 
-def extrair_campos(texto: str) -> dict:
-    campos: dict = {"grade": None, "legais": None, "melhor": None}
-    linhas = (texto or "").splitlines()
-    for i, ln in enumerate(linhas):
-        if ln.strip() == "estado:" and i + 9 <= len(linhas):
-            campos["grade"] = "\n".join(linhas[i + 1:i + 10])
-        elif ln.startswith("legais:"):
-            campos["legais"] = set(ln.split(":", 1)[1].split())
-        elif ln.startswith("melhor:"):
-            v = ln.split(":", 1)[1].strip().split()
-            campos["melhor"] = v[0] if v else None
-    return campos
+def extract_fields(text: str) -> dict:
+    """Parse an answer in either format into {"board", "legal", "best"}."""
+    fields: dict = {"board": None, "legal": None, "best": None}
+    lines = (text or "").splitlines()
+    for i, line in enumerate(lines):
+        if line.strip() in _BOARD_LABELS and i + 9 <= len(lines):
+            fields["board"] = "\n".join(lines[i + 1:i + 10])
+        elif line.startswith(_LEGAL_LABELS):
+            fields["legal"] = set(line.split(":", 1)[1].split())
+        elif line.startswith(_BEST_LABELS):
+            value = line.split(":", 1)[1].strip().split()
+            fields["best"] = value[0] if value else None
+    return fields
 
 
-def lance_verificado(texto: str, tabuleiro: chess.Board) -> tuple[str | None, str]:
-    """Lance final conferido contra a posição real.
+def verified_move(text: str, board: chess.Board) -> tuple[str | None, str]:
+    """Final move checked against the real position.
 
-    O modelo escreve a própria lista de lances legais e um top-5 com valores.
-    Quando o `melhor:` sai ilegal, a saída dele ainda contém candidatos válidos:
-    usa o primeiro lance do `top5:` que seja legal; se nenhum for, o primeiro de
-    `legais:` que seja legal.
+    The model writes its own legal-move list and a top-5 with values. When
+    `best:` is illegal, its own answer still contains valid candidates: use the
+    first legal move of its top-5; if none is legal, the first legal move of its
+    list.
 
-    Devolve (lance, origem), com origem em {"modelo", "top5", "legais", "nenhum"}.
-    Isso não dá informação nova ao modelo — só impede que ele jogue fora da
-    própria lista.
+    Returns (move, source) with source in {"model", "top5", "legal", "none"}.
+    This gives the model no new information; it only stops it from playing
+    outside its own list.
     """
-    campos = extrair_campos(texto)
-    legais_reais = {m.uci() for m in tabuleiro.legal_moves}
+    fields = extract_fields(text)
+    real_legal = {m.uci() for m in board.legal_moves}
 
-    melhor = campos["melhor"]
-    if melhor in legais_reais:
-        return melhor, "modelo"
+    best = fields["best"]
+    if best in real_legal:
+        return best, "model"
 
-    for linha in (texto or "").splitlines():
-        if not linha.startswith("top"):
+    for line in (text or "").splitlines():
+        if not line.startswith("top"):
             continue
-        for item in linha.split(":", 1)[1].split():
+        for item in line.split(":", 1)[1].split():
             uci = item.split(":")[0].strip().lower()
-            if uci in legais_reais:
+            if uci in real_legal:
                 return uci, "top5"
 
-    for uci in sorted(campos["legais"] or ()):
-        if uci in legais_reais:
-            return uci, "legais"
+    for uci in sorted(fields["legal"] or ()):
+        if uci in real_legal:
+            return uci, "legal"
 
-    return None, "nenhum"
+    return None, "none"

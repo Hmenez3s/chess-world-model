@@ -1,0 +1,6450 @@
+{
+  "n": 200,
+  "k": 6,
+  "adapter": "out/mav-final",
+  "items": [
+    {
+      "rating": 2022,
+      "solution": "e6f4",
+      "greedy": "f5g6",
+      "search_depth2": "f5g6",
+      "candidates": [
+        [
+          "f5g6",
+          50.0
+        ],
+        [
+          "f5f6",
+          50.0
+        ],
+        [
+          "f5f4",
+          30.0
+        ],
+        [
+          "f5f2",
+          30.0
+        ],
+        [
+          "f5f1",
+          30.0
+        ]
+      ],
+      "samples": [
+        "e6g7",
+        "e6g7",
+        "e6f4",
+        "f5e4",
+        "e6g7",
+        "e1e5"
+      ]
+    },
+    {
+      "rating": 1482,
+      "solution": "b4d4",
+      "greedy": "b4d4",
+      "search_depth2": "b4d4",
+      "candidates": [
+        [
+          "b4d4",
+          10.0
+        ],
+        [
+          "d1d4",
+          10.0
+        ],
+        [
+          "b4b1",
+          10.0
+        ],
+        [
+          "b4b2",
+          10.0
+        ],
+        [
+          "b4b6",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b4b6",
+        "b4b6",
+        "b4d4",
+        "d1d4",
+        null,
+        "d1d4"
+      ]
+    },
+    {
+      "rating": 1853,
+      "solution": "d7g4",
+      "greedy": "d7a4",
+      "search_depth2": "d7e7",
+      "candidates": [
+        [
+          "d7a4",
+          26.0
+        ],
+        [
+          "d7e7",
+          30.0
+        ],
+        [
+          "d7f7",
+          30.0
+        ],
+        [
+          "d7e6",
+          30.0
+        ],
+        [
+          "d7f5",
+          30.0
+        ]
+      ],
+      "samples": [
+        "d6g3",
+        "a6e2",
+        "d7a4",
+        "d7e6",
+        "h8e8",
+        "h8d8"
+      ]
+    },
+    {
+      "rating": 1690,
+      "solution": "c5e7",
+      "greedy": "c5e7",
+      "search_depth2": "c5b4",
+      "candidates": [
+        [
+          "c5e7",
+          81.0
+        ],
+        [
+          "c5b4",
+          82.0
+        ],
+        [
+          "c5d4",
+          82.0
+        ],
+        [
+          "c5a3",
+          50.0
+        ],
+        [
+          "c5b6",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c5e7",
+        "c5e7",
+        "c5e7",
+        "c5e7",
+        "d5d6",
+        "c5e7"
+      ]
+    },
+    {
+      "rating": 2192,
+      "solution": "f4g3",
+      "greedy": "f4f6",
+      "search_depth2": "f4f3",
+      "candidates": [
+        [
+          "f4f6",
+          71.0
+        ],
+        [
+          "f4e5",
+          71.0
+        ],
+        [
+          "f4f3",
+          80.0
+        ],
+        [
+          "f4f2",
+          80.0
+        ],
+        [
+          "f4f1",
+          80.0
+        ]
+      ],
+      "samples": [
+        "e4e5",
+        "f4f6",
+        "e4e5",
+        "f4e5",
+        "f4f6",
+        "e4e5"
+      ]
+    },
+    {
+      "rating": 1436,
+      "solution": "c5b4",
+      "greedy": "c5d5",
+      "search_depth2": "c5b4",
+      "candidates": [
+        [
+          "c5d5",
+          10.0
+        ],
+        [
+          "c5b4",
+          100.0
+        ],
+        [
+          "c5c6",
+          10.0
+        ],
+        [
+          "c5d4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c5b4",
+        "c5d6",
+        "c5d6",
+        "c5d5",
+        "c5d6",
+        "c5d4"
+      ]
+    },
+    {
+      "rating": 2089,
+      "solution": "g4f2",
+      "greedy": "h4h3",
+      "search_depth2": "h4d8",
+      "candidates": [
+        [
+          "h4h3",
+          10.0
+        ],
+        [
+          "h4h5",
+          10.0
+        ],
+        [
+          "h4f2",
+          10.0
+        ],
+        [
+          "h4e7",
+          21.0
+        ],
+        [
+          "h4d8",
+          80.0
+        ]
+      ],
+      "samples": [
+        "h4f2",
+        "h4h3",
+        "g4e5",
+        "g4f2",
+        "g4f2",
+        "h4f2"
+      ]
+    },
+    {
+      "rating": 1428,
+      "solution": "d2e2",
+      "greedy": "d2d3",
+      "search_depth2": "d2d3",
+      "candidates": [
+        [
+          "d2d3",
+          100.0
+        ],
+        [
+          "d2d4",
+          100.0
+        ]
+      ],
+      "samples": [
+        "d2e2",
+        null,
+        "d2d3",
+        null,
+        "d2e2",
+        "d2d4"
+      ]
+    },
+    {
+      "rating": 1783,
+      "solution": "g1e1",
+      "greedy": "g1g4",
+      "search_depth2": "g1g2",
+      "candidates": [
+        [
+          "g1g4",
+          91.0
+        ],
+        [
+          "g1g3",
+          50.0
+        ],
+        [
+          "g1g2",
+          100.0
+        ],
+        [
+          "g1f1",
+          100.0
+        ],
+        [
+          "g1h1",
+          100.0
+        ]
+      ],
+      "samples": [
+        "g1g2",
+        "g1g4",
+        null,
+        "g1g2",
+        "g1g2",
+        "g1g2"
+      ]
+    },
+    {
+      "rating": 1598,
+      "solution": "g2h3",
+      "greedy": "e4d3",
+      "search_depth2": "e4d3",
+      "candidates": [
+        [
+          "e4d3",
+          100.0
+        ],
+        [
+          "a4a5",
+          0.0
+        ]
+      ],
+      "samples": [
+        "g2h3",
+        "g2g3",
+        "e4e5",
+        "a4a5",
+        "a4a5",
+        "g2g3"
+      ]
+    },
+    {
+      "rating": 2024,
+      "solution": "h5g6",
+      "greedy": "f1a1",
+      "search_depth2": "f1a1",
+      "candidates": [
+        [
+          "f1a1",
+          91.0
+        ],
+        [
+          "d3d1",
+          0.0
+        ],
+        [
+          "d3d2",
+          0.0
+        ],
+        [
+          "d3c2",
+          0.0
+        ],
+        [
+          "d3c4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6g5",
+        "g1h2",
+        "f1a1",
+        "d3d1",
+        "f1a1",
+        "g1h2"
+      ]
+    },
+    {
+      "rating": 2074,
+      "solution": "f1h1",
+      "greedy": "d1d5",
+      "search_depth2": "d1d5",
+      "candidates": [
+        [
+          "d1d5",
+          10.0
+        ],
+        [
+          "d1d3",
+          10.0
+        ],
+        [
+          "d1d2",
+          10.0
+        ],
+        [
+          "d1c2",
+          10.0
+        ]
+      ],
+      "samples": [
+        "d1h5",
+        "d1d5",
+        "g3g4",
+        "f1f3",
+        "g3h3",
+        "g3g4"
+      ]
+    },
+    {
+      "rating": 1863,
+      "solution": "e4e5",
+      "greedy": "d3d4",
+      "search_depth2": "d3d2",
+      "candidates": [
+        [
+          "d3d4",
+          27.0
+        ],
+        [
+          "d3d2",
+          30.0
+        ],
+        [
+          "d3e2",
+          30.0
+        ],
+        [
+          "d3g3",
+          30.0
+        ],
+        [
+          "d3f3",
+          30.0
+        ]
+      ],
+      "samples": [
+        "g4f6",
+        "g4f6",
+        "g4f6",
+        "f1f4",
+        "d3d4",
+        "d3g3"
+      ]
+    },
+    {
+      "rating": 2178,
+      "solution": "a1h1",
+      "greedy": "e5g6",
+      "search_depth2": "f3d1",
+      "candidates": [
+        [
+          "e5g6",
+          71.0
+        ],
+        [
+          "f3e3",
+          21.0
+        ],
+        [
+          "f3e2",
+          21.0
+        ],
+        [
+          "f3d1",
+          80.0
+        ],
+        [
+          "f3f2",
+          21.0
+        ]
+      ],
+      "samples": [
+        "a1f1",
+        "f3f1",
+        "a1f1",
+        "f3d3",
+        "f3f1",
+        "a1h1"
+      ]
+    },
+    {
+      "rating": 2107,
+      "solution": "g6g7",
+      "greedy": null,
+      "search_depth2": null,
+      "candidates": [],
+      "samples": [
+        "d3f3",
+        "g6g7",
+        null,
+        "g6g7",
+        "c1b1",
+        null
+      ]
+    },
+    {
+      "rating": 2093,
+      "solution": "h8a8",
+      "greedy": "b6b5",
+      "search_depth2": "b6a7",
+      "candidates": [
+        [
+          "b6b5",
+          10.0
+        ],
+        [
+          "b6b7",
+          10.0
+        ],
+        [
+          "b6d8",
+          10.0
+        ],
+        [
+          "b6a7",
+          50.0
+        ]
+      ],
+      "samples": [
+        null,
+        null,
+        "g7g6",
+        "f7f6",
+        "f5d4",
+        "b6b5"
+      ]
+    },
+    {
+      "rating": 1462,
+      "solution": "g6e6",
+      "greedy": "a3f3",
+      "search_depth2": "a3f3",
+      "candidates": [
+        [
+          "a3f3",
+          82.0
+        ],
+        [
+          "a3e3",
+          50.0
+        ],
+        [
+          "a3d3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "a3f3",
+        "a3f3",
+        "a3f3",
+        "g6f6",
+        "a3e3",
+        "a3f3"
+      ]
+    },
+    {
+      "rating": 1917,
+      "solution": "e2f2",
+      "greedy": "e2d1",
+      "search_depth2": "e2d1",
+      "candidates": [
+        [
+          "e2d1",
+          50.0
+        ]
+      ],
+      "samples": [
+        "e2d1",
+        "e2d1",
+        "e2f2",
+        "e2d1",
+        "e2d1",
+        "e2d2"
+      ]
+    },
+    {
+      "rating": 1528,
+      "solution": "e7f6",
+      "greedy": "e7e3",
+      "search_depth2": "e7e5",
+      "candidates": [
+        [
+          "e7e3",
+          50.0
+        ],
+        [
+          "c5d3",
+          10.0
+        ],
+        [
+          "e7e4",
+          10.0
+        ],
+        [
+          "e7e8",
+          10.0
+        ],
+        [
+          "e7e5",
+          80.0
+        ]
+      ],
+      "samples": [
+        "e7e3",
+        "e7f6",
+        "f7f1",
+        "e7e3",
+        "e7e4",
+        "e7d7"
+      ]
+    },
+    {
+      "rating": 2084,
+      "solution": "e2d1",
+      "greedy": "c1d1",
+      "search_depth2": "c1d1",
+      "candidates": [
+        [
+          "c1d1",
+          71.0
+        ]
+      ],
+      "samples": [
+        "c1d1",
+        "c1d1",
+        "c1d1",
+        "c1d1",
+        "c1d1",
+        "c1d1"
+      ]
+    },
+    {
+      "rating": 2020,
+      "solution": "b2b3",
+      "greedy": "d1d8",
+      "search_depth2": "d1d8",
+      "candidates": [
+        [
+          "d1d8",
+          50.0
+        ],
+        [
+          "c2h7",
+          21.0
+        ],
+        [
+          "c2e4",
+          50.0
+        ],
+        [
+          "c2f5",
+          50.0
+        ],
+        [
+          "c2b3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g1g2",
+        "d1d8",
+        "d1d8",
+        "h4f6",
+        "d1d8",
+        "d1d8"
+      ]
+    },
+    {
+      "rating": 1856,
+      "solution": "f3d1",
+      "greedy": "c3c6",
+      "search_depth2": "c3c6",
+      "candidates": [
+        [
+          "c3c6",
+          50.0
+        ],
+        [
+          "c3c1",
+          50.0
+        ],
+        [
+          "c3b3",
+          50.0
+        ],
+        [
+          "c3c2",
+          50.0
+        ],
+        [
+          "c3d3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "c3c2",
+        "c3c1",
+        "c3c6",
+        "c3c6",
+        "c3c2",
+        "c3c6"
+      ]
+    },
+    {
+      "rating": 1834,
+      "solution": "e1e4",
+      "greedy": "h6g7",
+      "search_depth2": "f3h3",
+      "candidates": [
+        [
+          "h6g7",
+          24.0
+        ],
+        [
+          "f3h3",
+          30.0
+        ],
+        [
+          "f3f1",
+          30.0
+        ],
+        [
+          "f3f2",
+          30.0
+        ],
+        [
+          "f3f4",
+          30.0
+        ]
+      ],
+      "samples": [
+        "f3h3",
+        "f3g4",
+        "f3f2",
+        "f3f2",
+        "f3h3",
+        "h6g7"
+      ]
+    },
+    {
+      "rating": 1450,
+      "solution": "e5e6",
+      "greedy": "e5e1",
+      "search_depth2": "e5e1",
+      "candidates": [
+        [
+          "e5e1",
+          10.0
+        ],
+        [
+          "e5e2",
+          10.0
+        ],
+        [
+          "e5e8",
+          10.0
+        ],
+        [
+          "e5e3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e5e7",
+        null,
+        "e5a5",
+        "e5g5",
+        "e5e1",
+        null
+      ]
+    },
+    {
+      "rating": 2190,
+      "solution": "e5g7",
+      "greedy": "e5c7",
+      "search_depth2": "g2g7",
+      "candidates": [
+        [
+          "e5c7",
+          10.0
+        ],
+        [
+          "g2g7",
+          50.0
+        ],
+        [
+          "g2g3",
+          10.0
+        ],
+        [
+          "g2g4",
+          10.0
+        ],
+        [
+          "g2g5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g2g7",
+        "d1d3",
+        "d1d7",
+        "g2f1",
+        "g2h3",
+        "g2g7"
+      ]
+    },
+    {
+      "rating": 2091,
+      "solution": "g3g6",
+      "greedy": "d6c6",
+      "search_depth2": "d6c6",
+      "candidates": [
+        [
+          "d6c6",
+          10.0
+        ],
+        [
+          "d6d1",
+          10.0
+        ],
+        [
+          "d6d2",
+          10.0
+        ],
+        [
+          "d6d3",
+          10.0
+        ],
+        [
+          "d6d4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g3g6",
+        "d6c6",
+        "d6c6",
+        "d6c6",
+        "d6c6",
+        "d6c6"
+      ]
+    },
+    {
+      "rating": 1832,
+      "solution": "e3b6",
+      "greedy": "e3e4",
+      "search_depth2": "e3e4",
+      "candidates": [
+        [
+          "e3e4",
+          10.0
+        ],
+        [
+          "e3e2",
+          10.0
+        ],
+        [
+          "e3d2",
+          10.0
+        ],
+        [
+          "e3d4",
+          10.0
+        ],
+        [
+          "e3f2",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c4d2",
+        "e3e4",
+        "d1d7",
+        "c4d6",
+        "d1d7",
+        "e3g5"
+      ]
+    },
+    {
+      "rating": 1820,
+      "solution": "e8e2",
+      "greedy": "f2f3",
+      "search_depth2": "f2d2",
+      "candidates": [
+        [
+          "f2f3",
+          10.0
+        ],
+        [
+          "f2f1",
+          10.0
+        ],
+        [
+          "f2g2",
+          10.0
+        ],
+        [
+          "f2e1",
+          10.0
+        ],
+        [
+          "f2d2",
+          50.0
+        ]
+      ],
+      "samples": [
+        "b2e2",
+        "e8e2",
+        "f2d4",
+        "e8e1",
+        "b2e2",
+        "f2e2"
+      ]
+    },
+    {
+      "rating": 1858,
+      "solution": "e6d5",
+      "greedy": "e6f5",
+      "search_depth2": "e6f5",
+      "candidates": [
+        [
+          "e6f5",
+          10.0
+        ],
+        [
+          "h6g7",
+          10.0
+        ],
+        [
+          "h6g6",
+          10.0
+        ],
+        [
+          "h6h5",
+          10.0
+        ],
+        [
+          "h6h4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e7b4",
+        "e7f8",
+        "h6g6",
+        "h6f4",
+        "h6e3",
+        "f6g6"
+      ]
+    },
+    {
+      "rating": 1473,
+      "solution": "e6f6",
+      "greedy": "g7f7",
+      "search_depth2": "g7f7",
+      "candidates": [
+        [
+          "g7f7",
+          10.0
+        ],
+        [
+          "g7h7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g7f8",
+        "e6f6",
+        null,
+        "g7h7",
+        "g3e5",
+        "e6e5"
+      ]
+    },
+    {
+      "rating": 1883,
+      "solution": "a1b1",
+      "greedy": "c3b5",
+      "search_depth2": "d1b1",
+      "candidates": [
+        [
+          "c3b5",
+          21.0
+        ],
+        [
+          "d1b3",
+          21.0
+        ],
+        [
+          "d1c2",
+          21.0
+        ],
+        [
+          "d1b1",
+          50.0
+        ],
+        [
+          "d1c1",
+          50.0
+        ]
+      ],
+      "samples": [
+        "d1e2",
+        "c3e4",
+        "c3d5",
+        "e5c4",
+        "e5f7",
+        "c3e4"
+      ]
+    },
+    {
+      "rating": 2068,
+      "solution": "f3e5",
+      "greedy": "f3e5",
+      "search_depth2": "f3e5",
+      "candidates": [
+        [
+          "f3e5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "f3e5",
+        "e2a6",
+        "f3e5",
+        "f3e5",
+        "f3e5",
+        "f3e5"
+      ]
+    },
+    {
+      "rating": 2150,
+      "solution": "g5f4",
+      "greedy": "g5f5",
+      "search_depth2": "g5f5",
+      "candidates": [
+        [
+          "g5f5",
+          50.0
+        ],
+        [
+          "g5f6",
+          50.0
+        ],
+        [
+          "g5e7",
+          50.0
+        ],
+        [
+          "g5d8",
+          50.0
+        ],
+        [
+          "g5c1",
+          50.0
+        ]
+      ],
+      "samples": [
+        "c7a8",
+        "g4f2",
+        "g4f2",
+        "g4f2",
+        "c7b5",
+        "c7d5"
+      ]
+    },
+    {
+      "rating": 1950,
+      "solution": "g7h6",
+      "greedy": "a1b1",
+      "search_depth2": "a1b1",
+      "candidates": [
+        [
+          "a1b1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a1c1",
+        "d4f6",
+        "a1b1",
+        "a1b1",
+        "a1b1",
+        "d4f4"
+      ]
+    },
+    {
+      "rating": 1931,
+      "solution": "e8e4",
+      "greedy": "d7h3",
+      "search_depth2": "d7h3",
+      "candidates": [
+        [
+          "d7h3",
+          21.0
+        ],
+        [
+          "d7g4",
+          21.0
+        ],
+        [
+          "d7c6",
+          20.0
+        ],
+        [
+          "d7f5",
+          20.0
+        ],
+        [
+          "d7b5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d7g4",
+        "d7h3",
+        "e8e4",
+        "e8e4",
+        "d6e7",
+        "g6g2"
+      ]
+    },
+    {
+      "rating": 1789,
+      "solution": "g7g3",
+      "greedy": "g7f6",
+      "search_depth2": "g7g4",
+      "candidates": [
+        [
+          "g7f6",
+          0.0
+        ],
+        [
+          "g7g4",
+          50.0
+        ],
+        [
+          "g7g5",
+          50.0
+        ],
+        [
+          "g7g6",
+          0.0
+        ],
+        [
+          "g7h6",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g7f6",
+        "g7f6",
+        "g7b7",
+        "g7h6",
+        "g7b7",
+        "h2h3"
+      ]
+    },
+    {
+      "rating": 2008,
+      "solution": "c2c4",
+      "greedy": "g5f7",
+      "search_depth2": "g5f7",
+      "candidates": [
+        [
+          "g5f7",
+          71.0
+        ],
+        [
+          "g5e4",
+          21.0
+        ],
+        [
+          "g5e6",
+          21.0
+        ],
+        [
+          "g5f3",
+          21.0
+        ]
+      ],
+      "samples": [
+        "g5f7",
+        "g5f7",
+        "g5f7",
+        "e2h5",
+        "g5f7",
+        "e2g4"
+      ]
+    },
+    {
+      "rating": 1599,
+      "solution": "g8g3",
+      "greedy": "f2f1",
+      "search_depth2": "f2f1",
+      "candidates": [
+        [
+          "f2f1",
+          10.0
+        ],
+        [
+          "d5d4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g8g3",
+        "f2e1",
+        "f2f1",
+        "g8g3",
+        "g8g3",
+        "f2f1"
+      ]
+    },
+    {
+      "rating": 1819,
+      "solution": "f7g5",
+      "greedy": "f6d4",
+      "search_depth2": "f6e5",
+      "candidates": [
+        [
+          "f6d4",
+          21.0
+        ],
+        [
+          "f6e5",
+          50.0
+        ],
+        [
+          "f6g5",
+          21.0
+        ],
+        [
+          "f6h4",
+          10.0
+        ],
+        [
+          "f6d8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6e5",
+        "d6e7",
+        "f6g5",
+        "d6b4",
+        "g4f2",
+        "g4e5"
+      ]
+    },
+    {
+      "rating": 1903,
+      "solution": "g6h5",
+      "greedy": "h7h6",
+      "search_depth2": "h7h6",
+      "candidates": [
+        [
+          "h7h6",
+          10.0
+        ],
+        [
+          "h7h8",
+          10.0
+        ],
+        [
+          "g6g7",
+          10.0
+        ],
+        [
+          "h7g8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g6h5",
+        "h7g8",
+        "h7h6",
+        "g6h5",
+        "h7h6",
+        "f7f6"
+      ]
+    },
+    {
+      "rating": 1613,
+      "solution": "b3f3",
+      "greedy": "g3g7",
+      "search_depth2": "b3b2",
+      "candidates": [
+        [
+          "g3g7",
+          10.0
+        ],
+        [
+          "b3b1",
+          10.0
+        ],
+        [
+          "b3b2",
+          50.0
+        ],
+        [
+          "b3b6",
+          10.0
+        ],
+        [
+          "b3b4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g3f3",
+        "b3f3",
+        "b3f3",
+        "g3g7",
+        "b3f3",
+        "g3g7"
+      ]
+    },
+    {
+      "rating": 2008,
+      "solution": "c1d2",
+      "greedy": "b7b8",
+      "search_depth2": "b7b4",
+      "candidates": [
+        [
+          "b7b8",
+          21.0
+        ],
+        [
+          "b7a6",
+          10.0
+        ],
+        [
+          "b7b3",
+          21.0
+        ],
+        [
+          "b7b4",
+          80.0
+        ]
+      ],
+      "samples": [
+        "b7d7",
+        "b7d7",
+        "b7a6",
+        "b7b8",
+        "b7b3",
+        "b7d7"
+      ]
+    },
+    {
+      "rating": 2094,
+      "solution": "d8g5",
+      "greedy": "e8g8",
+      "search_depth2": "e8g8",
+      "candidates": [
+        [
+          "e8g8",
+          10.0
+        ],
+        [
+          "e8e7",
+          10.0
+        ],
+        [
+          "e8f8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c3c7",
+        "d7e5",
+        "d8b6",
+        "c3c7",
+        "e8e7",
+        "c3c7"
+      ]
+    },
+    {
+      "rating": 1448,
+      "solution": "d1g1",
+      "greedy": "d1d8",
+      "search_depth2": "d1d8",
+      "candidates": [
+        [
+          "d1d8",
+          81.0
+        ]
+      ],
+      "samples": [
+        "d1d7",
+        "e4f3",
+        "d1a1",
+        "e4d3",
+        "d1d3",
+        "d1h1"
+      ]
+    },
+    {
+      "rating": 1915,
+      "solution": "h3g4",
+      "greedy": "g1g2",
+      "search_depth2": "e3g5",
+      "candidates": [
+        [
+          "g1g2",
+          21.0
+        ],
+        [
+          "e3g5",
+          50.0
+        ],
+        [
+          "e3e2",
+          21.0
+        ],
+        [
+          "e3d4",
+          30.0
+        ]
+      ],
+      "samples": [
+        "g1g2",
+        "g1g2",
+        "c1b1",
+        "g1g2",
+        "e3h6",
+        "h3g4"
+      ]
+    },
+    {
+      "rating": 2137,
+      "solution": "d2g5",
+      "greedy": "d1c2",
+      "search_depth2": "d1c1",
+      "candidates": [
+        [
+          "d1c2",
+          51.0
+        ],
+        [
+          "d1e2",
+          50.0
+        ],
+        [
+          "d1b3",
+          51.0
+        ],
+        [
+          "d1c1",
+          81.0
+        ]
+      ],
+      "samples": [
+        "e4h4",
+        "h3f5",
+        "e4e1",
+        "e4h4",
+        "e4h4",
+        "e4d4"
+      ]
+    },
+    {
+      "rating": 1479,
+      "solution": "f6g6",
+      "greedy": "f6f1",
+      "search_depth2": "f6f1",
+      "candidates": [
+        [
+          "f6f1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6f2",
+        "f6f2",
+        "f6f1",
+        "f6f1",
+        "f6f1",
+        "f6f1"
+      ]
+    },
+    {
+      "rating": 1821,
+      "solution": "e1e4",
+      "greedy": "e1e4",
+      "search_depth2": "e1e4",
+      "candidates": [
+        [
+          "e1e4",
+          71.0
+        ],
+        [
+          "f3e5",
+          21.0
+        ],
+        [
+          "f3d4",
+          21.0
+        ],
+        [
+          "f3d2",
+          21.0
+        ],
+        [
+          "b1d2",
+          21.0
+        ]
+      ],
+      "samples": [
+        "e1e4",
+        "f3d4",
+        "f3e5",
+        "e1e4",
+        "f3e5",
+        "f3d4"
+      ]
+    },
+    {
+      "rating": 1594,
+      "solution": "f7f6",
+      "greedy": "a6a5",
+      "search_depth2": "a6a5",
+      "candidates": [
+        [
+          "a6a5",
+          81.0
+        ]
+      ],
+      "samples": [
+        "a6a5",
+        "f7c7",
+        "a6a5",
+        "f7f8",
+        "f7c7",
+        "a6a5"
+      ]
+    },
+    {
+      "rating": 2061,
+      "solution": "a5g5",
+      "greedy": "a5c5",
+      "search_depth2": "a5a3",
+      "candidates": [
+        [
+          "a5c5",
+          21.0
+        ],
+        [
+          "a5a6",
+          21.0
+        ],
+        [
+          "a5a2",
+          21.0
+        ],
+        [
+          "a5a3",
+          50.0
+        ],
+        [
+          "a5a4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d6h2",
+        "f8f2",
+        "a5c5",
+        "a5b6",
+        "a5f5",
+        "a5e5"
+      ]
+    },
+    {
+      "rating": 1782,
+      "solution": "a2a8",
+      "greedy": "e7f5",
+      "search_depth2": "e7f5",
+      "candidates": [
+        [
+          "e7f5",
+          10.0
+        ],
+        [
+          "e7c6",
+          10.0
+        ],
+        [
+          "e7g6",
+          10.0
+        ],
+        [
+          "e7d5",
+          10.0
+        ],
+        [
+          "e7c8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a2g2",
+        "c4d5",
+        "c4d5",
+        "e1e3",
+        "e1e4",
+        "e7f5"
+      ]
+    },
+    {
+      "rating": 1410,
+      "solution": "e5e6",
+      "greedy": "e2f2",
+      "search_depth2": "e2f2",
+      "candidates": [
+        [
+          "e2f2",
+          100.0
+        ],
+        [
+          "e2f1",
+          100.0
+        ],
+        [
+          "e2d1",
+          100.0
+        ],
+        [
+          "e2e1",
+          100.0
+        ]
+      ],
+      "samples": [
+        "e2d1",
+        "e2f2",
+        "e2f2",
+        "e2f2",
+        "e2e1",
+        "e2f2"
+      ]
+    },
+    {
+      "rating": 1820,
+      "solution": "d5d1",
+      "greedy": "d5d1",
+      "search_depth2": "d5d6",
+      "candidates": [
+        [
+          "d5d1",
+          10.0
+        ],
+        [
+          "d5d6",
+          21.0
+        ],
+        [
+          "d5d2",
+          21.0
+        ],
+        [
+          "d5d3",
+          21.0
+        ],
+        [
+          "d5d4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d5d1",
+        "d5d1",
+        "d5a2",
+        "d5d1",
+        "d5a5",
+        "d5c5"
+      ]
+    },
+    {
+      "rating": 1763,
+      "solution": "b3b7",
+      "greedy": "b3f7",
+      "search_depth2": "b3f7",
+      "candidates": [
+        [
+          "b3f7",
+          50.0
+        ],
+        [
+          "b3g3",
+          10.0
+        ],
+        [
+          "b3b7",
+          50.0
+        ],
+        [
+          "b3b8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b3f3",
+        null,
+        "f2g2",
+        "b2g7",
+        "b2f6",
+        "f2f1"
+      ]
+    },
+    {
+      "rating": 1775,
+      "solution": "c4c3",
+      "greedy": "b4b2",
+      "search_depth2": "b4b3",
+      "candidates": [
+        [
+          "b4b2",
+          71.0
+        ],
+        [
+          "b4b3",
+          90.0
+        ],
+        [
+          "b4b8",
+          81.0
+        ],
+        [
+          "b4b6",
+          81.0
+        ],
+        [
+          "b4b7",
+          80.0
+        ]
+      ],
+      "samples": [
+        "b4c3",
+        "b4b3",
+        "b4b3",
+        "b4d2",
+        "b4b2",
+        "b4a4"
+      ]
+    },
+    {
+      "rating": 2123,
+      "solution": "f4h3",
+      "greedy": "f4g2",
+      "search_depth2": "f4g2",
+      "candidates": [
+        [
+          "f4g2",
+          50.0
+        ],
+        [
+          "f4h3",
+          50.0
+        ],
+        [
+          "f4g6",
+          50.0
+        ],
+        [
+          "f4h5",
+          50.0
+        ],
+        [
+          "f4d3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g4g3",
+        "f4g6",
+        "f4g2",
+        "g4g3",
+        "g4h3",
+        "g4g3"
+      ]
+    },
+    {
+      "rating": 1959,
+      "solution": "h5g6",
+      "greedy": "d1d2",
+      "search_depth2": "h5g6",
+      "candidates": [
+        [
+          "d1d2",
+          71.0
+        ],
+        [
+          "h5g6",
+          82.0
+        ],
+        [
+          "h5h6",
+          10.0
+        ],
+        [
+          "h5h3",
+          10.0
+        ],
+        [
+          "h5h2",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d1d2",
+        "d1d2",
+        "d1d2",
+        "d1d2",
+        "h5h4",
+        "d1d2"
+      ]
+    },
+    {
+      "rating": 1957,
+      "solution": "d1d8",
+      "greedy": "d1d8",
+      "search_depth2": "d1d8",
+      "candidates": [
+        [
+          "d1d8",
+          71.0
+        ],
+        [
+          "c2d2",
+          21.0
+        ],
+        [
+          "c2b3",
+          21.0
+        ],
+        [
+          "c2e4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d1d8",
+        "d1d8",
+        "d1d8",
+        "d1d8",
+        "d1d8",
+        "d1d8"
+      ]
+    },
+    {
+      "rating": 1990,
+      "solution": "b7g2",
+      "greedy": "f5f2",
+      "search_depth2": "f5f3",
+      "candidates": [
+        [
+          "f5f2",
+          10.0
+        ],
+        [
+          "f5f3",
+          21.0
+        ],
+        [
+          "f5f4",
+          21.0
+        ],
+        [
+          "f5e5",
+          21.0
+        ],
+        [
+          "f5c5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "b7f3",
+        "f5f2",
+        "b7g2",
+        "b7f3",
+        "b7e4",
+        "b7f3"
+      ]
+    },
+    {
+      "rating": 2072,
+      "solution": "h5d5",
+      "greedy": "h5h2",
+      "search_depth2": "d8d5",
+      "candidates": [
+        [
+          "h5h2",
+          10.0
+        ],
+        [
+          "d8d5",
+          71.0
+        ],
+        [
+          "f6d5",
+          71.0
+        ],
+        [
+          "h5h6",
+          21.0
+        ],
+        [
+          "h5h4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "h5h6",
+        "d8d5",
+        "h5h2",
+        "h5h2",
+        "h5d5",
+        "h5h6"
+      ]
+    },
+    {
+      "rating": 1915,
+      "solution": "e1e3",
+      "greedy": "a2b3",
+      "search_depth2": "h6h4",
+      "candidates": [
+        [
+          "a2b3",
+          71.0
+        ],
+        [
+          "c2b3",
+          71.0
+        ],
+        [
+          "h6h3",
+          21.0
+        ],
+        [
+          "h6h4",
+          80.0
+        ],
+        [
+          "h6h5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "a2b3",
+        "h6h3",
+        "a2b3",
+        "a2b3",
+        "a2b3",
+        "e1e3"
+      ]
+    },
+    {
+      "rating": 1597,
+      "solution": "g5g6",
+      "greedy": "d4a7",
+      "search_depth2": "d4e3",
+      "candidates": [
+        [
+          "d4a7",
+          0.0
+        ],
+        [
+          "d4c5",
+          81.0
+        ],
+        [
+          "d4e3",
+          83.0
+        ],
+        [
+          "d4b2",
+          81.0
+        ],
+        [
+          "d4c3",
+          81.0
+        ]
+      ],
+      "samples": [
+        "d4g7",
+        "f2f4",
+        "d4a7",
+        "g5g6",
+        "d4e5",
+        "d4g7"
+      ]
+    },
+    {
+      "rating": 1596,
+      "solution": "a8a4",
+      "greedy": "a8a4",
+      "search_depth2": "f8d8",
+      "candidates": [
+        [
+          "a8a4",
+          71.0
+        ],
+        [
+          "f8d8",
+          80.0
+        ],
+        [
+          "f8b8",
+          80.0
+        ],
+        [
+          "f8c8",
+          80.0
+        ],
+        [
+          "f8e8",
+          80.0
+        ]
+      ],
+      "samples": [
+        "a8a4",
+        "a8a4",
+        "a8a4",
+        "a8a4",
+        "a8a4",
+        "a8a4"
+      ]
+    },
+    {
+      "rating": 1704,
+      "solution": "f4f5",
+      "greedy": "f4f5",
+      "search_depth2": "f4f5",
+      "candidates": [
+        [
+          "f4f5",
+          81.0
+        ]
+      ],
+      "samples": [
+        "g3g2",
+        "g3f2",
+        "h4h5",
+        "f4f5",
+        "f4f5",
+        "f4f5"
+      ]
+    },
+    {
+      "rating": 1987,
+      "solution": "g8h7",
+      "greedy": "a2a1",
+      "search_depth2": "a2a1",
+      "candidates": [
+        [
+          "a2a1",
+          10.0
+        ],
+        [
+          "a2a3",
+          10.0
+        ],
+        [
+          "a2a7",
+          10.0
+        ],
+        [
+          "a2a6",
+          10.0
+        ],
+        [
+          "a2a4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c3h3",
+        "c3c2",
+        "c3c1",
+        "c3c1",
+        "c3h3",
+        "a2c2"
+      ]
+    },
+    {
+      "rating": 1931,
+      "solution": "d2c3",
+      "greedy": "e5e8",
+      "search_depth2": "e5e8",
+      "candidates": [
+        [
+          "e5e8",
+          30.0
+        ],
+        [
+          "f3f7",
+          24.0
+        ],
+        [
+          "f3e2",
+          30.0
+        ],
+        [
+          "f3e4",
+          30.0
+        ]
+      ],
+      "samples": [
+        "f3f7",
+        "e5e1",
+        "e5a5",
+        "e5e7",
+        "e5e1",
+        "d2e1"
+      ]
+    },
+    {
+      "rating": 1886,
+      "solution": "c1c4",
+      "greedy": "h5g6",
+      "search_depth2": "h5h7",
+      "candidates": [
+        [
+          "h5g6",
+          10.0
+        ],
+        [
+          "h5h6",
+          10.0
+        ],
+        [
+          "h5h3",
+          10.0
+        ],
+        [
+          "h5h4",
+          10.0
+        ],
+        [
+          "h5h7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "h5f3",
+        "h5h7",
+        "d3g6",
+        "h5h7",
+        "d3g6",
+        "h5h4"
+      ]
+    },
+    {
+      "rating": 1891,
+      "solution": "f5e6",
+      "greedy": "f5f8",
+      "search_depth2": "f5f8",
+      "candidates": [
+        [
+          "f5f8",
+          83.0
+        ],
+        [
+          "f5f3",
+          10.0
+        ],
+        [
+          "f5f2",
+          10.0
+        ],
+        [
+          "f5f4",
+          10.0
+        ],
+        [
+          "f5f1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f5f8",
+        "f5f8",
+        "f5e6",
+        "f5f8",
+        "d5e7",
+        "f5f8"
+      ]
+    },
+    {
+      "rating": 1614,
+      "solution": "f1f5",
+      "greedy": "f1f5",
+      "search_depth2": "f1f5",
+      "candidates": [
+        [
+          "f1f5",
+          71.0
+        ],
+        [
+          "d8d3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f1f5",
+        "d8d3",
+        "b1a1",
+        "d8d3",
+        "d8d3",
+        "f1f5"
+      ]
+    },
+    {
+      "rating": 1770,
+      "solution": "e2e4",
+      "greedy": "e2e4",
+      "search_depth2": "e2e4",
+      "candidates": [
+        [
+          "e2e4",
+          10.0
+        ],
+        [
+          "e2e1",
+          10.0
+        ],
+        [
+          "e2e3",
+          10.0
+        ],
+        [
+          "e2f2",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e2e4",
+        "e2e4",
+        "e2e4",
+        "e2e4",
+        "e2e4",
+        "e2e4"
+      ]
+    },
+    {
+      "rating": 1864,
+      "solution": "f6e8",
+      "greedy": "h4h6",
+      "search_depth2": "f6h5",
+      "candidates": [
+        [
+          "h4h6",
+          10.0
+        ],
+        [
+          "f6d5",
+          10.0
+        ],
+        [
+          "f6e4",
+          10.0
+        ],
+        [
+          "f6g4",
+          10.0
+        ],
+        [
+          "f6h5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "h4a4",
+        "h4h6",
+        "h4h6",
+        "c1c6",
+        "h4h6",
+        "h4h6"
+      ]
+    },
+    {
+      "rating": 1963,
+      "solution": "f2h4",
+      "greedy": "c7c8",
+      "search_depth2": "c7c3",
+      "candidates": [
+        [
+          "c7c8",
+          10.0
+        ],
+        [
+          "c7c2",
+          20.0
+        ],
+        [
+          "c7c3",
+          41.0
+        ],
+        [
+          "c7c4",
+          21.0
+        ],
+        [
+          "c7c5",
+          20.0
+        ]
+      ],
+      "samples": [
+        "c7c8",
+        "f2e3",
+        "c7c8",
+        "c7c8",
+        "c7c8",
+        "c7c8"
+      ]
+    },
+    {
+      "rating": 1845,
+      "solution": "f1b5",
+      "greedy": "d6c6",
+      "search_depth2": "d6c6",
+      "candidates": [
+        [
+          "d6c6",
+          50.0
+        ],
+        [
+          "d6d2",
+          10.0
+        ],
+        [
+          "d6d3",
+          10.0
+        ],
+        [
+          "d6d4",
+          10.0
+        ],
+        [
+          "d6d7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "e4e5",
+        "c1d2",
+        "e3a7",
+        "d6b8",
+        "c1d2",
+        "d1d2"
+      ]
+    },
+    {
+      "rating": 1567,
+      "solution": "e6f5",
+      "greedy": "c6d6",
+      "search_depth2": "c6d6",
+      "candidates": [
+        [
+          "c6d6",
+          100.0
+        ]
+      ],
+      "samples": [
+        "c6b7",
+        "c6b6",
+        "c6d6",
+        "c6b7",
+        "c6b6",
+        "c6d6"
+      ]
+    },
+    {
+      "rating": 2108,
+      "solution": "d3e4",
+      "greedy": "d3e4",
+      "search_depth2": "a4a7",
+      "candidates": [
+        [
+          "d3e4",
+          21.0
+        ],
+        [
+          "a4c6",
+          21.0
+        ],
+        [
+          "a4a7",
+          51.0
+        ],
+        [
+          "a4a3",
+          50.0
+        ],
+        [
+          "a4a5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "f3e5",
+        "a4e4",
+        "a4c2",
+        "d3e4",
+        "f3e5",
+        "d3e4"
+      ]
+    },
+    {
+      "rating": 1963,
+      "solution": "h5g6",
+      "greedy": "d4e2",
+      "search_depth2": "d1d2",
+      "candidates": [
+        [
+          "d4e2",
+          10.0
+        ],
+        [
+          "c1d2",
+          10.0
+        ],
+        [
+          "d1d2",
+          80.0
+        ]
+      ],
+      "samples": [
+        "c1d2",
+        "c1d2",
+        "d1d3",
+        "d1d2",
+        "c2b3",
+        "c2b3"
+      ]
+    },
+    {
+      "rating": 2198,
+      "solution": "f3e5",
+      "greedy": "f3e5",
+      "search_depth2": "f3e5",
+      "candidates": [
+        [
+          "f3e5",
+          80.0
+        ],
+        [
+          "d2d5",
+          80.0
+        ],
+        [
+          "d2d1",
+          30.0
+        ],
+        [
+          "d2d6",
+          80.0
+        ],
+        [
+          "d2d3",
+          30.0
+        ]
+      ],
+      "samples": [
+        "f3e5",
+        "f3e5",
+        "f3e5",
+        "d2e3",
+        "f3e5",
+        "f3e5"
+      ]
+    },
+    {
+      "rating": 1540,
+      "solution": "e2f2",
+      "greedy": "e2e3",
+      "search_depth2": "e2e3",
+      "candidates": [
+        [
+          "e2e3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e2e3",
+        "e2e3",
+        "e2e3",
+        "e2e3",
+        "e2e3",
+        "e2e3"
+      ]
+    },
+    {
+      "rating": 1994,
+      "solution": "b5c6",
+      "greedy": "b5d7",
+      "search_depth2": "f4g3",
+      "candidates": [
+        [
+          "b5d7",
+          71.0
+        ],
+        [
+          "f4d6",
+          21.0
+        ],
+        [
+          "f4g3",
+          81.0
+        ],
+        [
+          "f4e5",
+          80.0
+        ]
+      ],
+      "samples": [
+        "b5a6",
+        "f4d6",
+        "d3d1",
+        "b5d7",
+        "f4c7",
+        "f3g5"
+      ]
+    },
+    {
+      "rating": 1839,
+      "solution": "a1f6",
+      "greedy": "d2h6",
+      "search_depth2": "g6g7",
+      "candidates": [
+        [
+          "d2h6",
+          81.0
+        ],
+        [
+          "g6g7",
+          100.0
+        ],
+        [
+          "g6g3",
+          10.0
+        ],
+        [
+          "g6g4",
+          10.0
+        ],
+        [
+          "g6g5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "d2a5",
+        "d2a5",
+        "d2e3",
+        "g6g7",
+        "d2e2",
+        "g6g7"
+      ]
+    },
+    {
+      "rating": 1729,
+      "solution": "c3d2",
+      "greedy": "c3d2",
+      "search_depth2": "c3g7",
+      "candidates": [
+        [
+          "c3d2",
+          10.0
+        ],
+        [
+          "c3b2",
+          10.0
+        ],
+        [
+          "c3e5",
+          50.0
+        ],
+        [
+          "c3g7",
+          100.0
+        ],
+        [
+          "c3f6",
+          100.0
+        ]
+      ],
+      "samples": [
+        "b3b2",
+        "c3d2",
+        "c2c1",
+        "c2c1",
+        "c3d2",
+        "c3d2"
+      ]
+    },
+    {
+      "rating": 1480,
+      "solution": "d7d6",
+      "greedy": "d7d6",
+      "search_depth2": "a2a1",
+      "candidates": [
+        [
+          "d7d6",
+          50.0
+        ],
+        [
+          "a2a1",
+          52.0
+        ],
+        [
+          "a2a3",
+          10.0
+        ],
+        [
+          "a2a6",
+          10.0
+        ],
+        [
+          "a2a7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a2a1",
+        "a2a3",
+        "h1h6",
+        "d7g7",
+        "d7d6",
+        "a2f2"
+      ]
+    },
+    {
+      "rating": 1669,
+      "solution": "h3h4",
+      "greedy": "f2f3",
+      "search_depth2": "f2f3",
+      "candidates": [
+        [
+          "f2f3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "f2f3",
+        "f2f3",
+        "f2f3",
+        "f2f3",
+        "f2f3",
+        "f2f3"
+      ]
+    },
+    {
+      "rating": 1654,
+      "solution": "b5b6",
+      "greedy": "c6f6",
+      "search_depth2": "c6f6",
+      "candidates": [
+        [
+          "c6f6",
+          82.0
+        ],
+        [
+          "c6c2",
+          80.0
+        ],
+        [
+          "c6c3",
+          80.0
+        ],
+        [
+          "c6c4",
+          80.0
+        ],
+        [
+          "c6c5",
+          80.0
+        ]
+      ],
+      "samples": [
+        "c6c8",
+        "c6d7",
+        "c6f6",
+        "c6c8",
+        "c6f6",
+        "c6c2"
+      ]
+    },
+    {
+      "rating": 1561,
+      "solution": "d8e8",
+      "greedy": "g5f4",
+      "search_depth2": "g5e3",
+      "candidates": [
+        [
+          "g5f4",
+          10.0
+        ],
+        [
+          "g5e7",
+          10.0
+        ],
+        [
+          "g5h4",
+          10.0
+        ],
+        [
+          "g5f6",
+          10.0
+        ],
+        [
+          "g5e3",
+          90.0
+        ]
+      ],
+      "samples": [
+        "g4h5",
+        "d8d2",
+        "d8d2",
+        "g4f3",
+        "g5e7",
+        "g5f4"
+      ]
+    },
+    {
+      "rating": 1513,
+      "solution": "b7a7",
+      "greedy": "a1a2",
+      "search_depth2": "a1a2",
+      "candidates": [
+        [
+          "a1a2",
+          10.0
+        ],
+        [
+          "a1f1",
+          10.0
+        ],
+        [
+          "a1g1",
+          10.0
+        ],
+        [
+          "a1h1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a1a2",
+        "a1g1",
+        "a1f1",
+        "a1a3",
+        "a1a3",
+        "a1g1"
+      ]
+    },
+    {
+      "rating": 1546,
+      "solution": "b8a6",
+      "greedy": "c7a6",
+      "search_depth2": "b8c6",
+      "candidates": [
+        [
+          "c7a6",
+          50.0
+        ],
+        [
+          "b8c6",
+          52.0
+        ],
+        [
+          "c7e8",
+          50.0
+        ],
+        [
+          "c7a8",
+          52.0
+        ]
+      ],
+      "samples": [
+        "b8d7",
+        "b8d7",
+        "b8c6",
+        "b8a6",
+        "b8c6",
+        "c7e8"
+      ]
+    },
+    {
+      "rating": 1819,
+      "solution": "b1b7",
+      "greedy": "b1b7",
+      "search_depth2": "b1b7",
+      "candidates": [
+        [
+          "b1b7",
+          50.0
+        ],
+        [
+          "b1b8",
+          10.0
+        ],
+        [
+          "b1b2",
+          10.0
+        ],
+        [
+          "b1b3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "b1b3",
+        "h3d3",
+        "b1b7",
+        "h3h6",
+        "b1b2",
+        "f1f5"
+      ]
+    },
+    {
+      "rating": 1990,
+      "solution": "e4g3",
+      "greedy": "f6f3",
+      "search_depth2": "e4g3",
+      "candidates": [
+        [
+          "f6f3",
+          51.0
+        ],
+        [
+          "e4f2",
+          50.0
+        ],
+        [
+          "e4c5",
+          50.0
+        ],
+        [
+          "e4d2",
+          50.0
+        ],
+        [
+          "e4g3",
+          71.0
+        ]
+      ],
+      "samples": [
+        "e8f8",
+        "f6f3",
+        "d6e5",
+        "f6f3",
+        "f6g6",
+        "f6e7"
+      ]
+    },
+    {
+      "rating": 1847,
+      "solution": "d2f3",
+      "greedy": "e1e3",
+      "search_depth2": "d2c4",
+      "candidates": [
+        [
+          "e1e3",
+          10.0
+        ],
+        [
+          "d2c4",
+          21.0
+        ],
+        [
+          "d2b3",
+          21.0
+        ]
+      ],
+      "samples": [
+        "e1e3",
+        "e5e6",
+        "e1e3",
+        "e1e3",
+        "e1e3",
+        "e1e3"
+      ]
+    },
+    {
+      "rating": 1506,
+      "solution": "e3c2",
+      "greedy": "e3c2",
+      "search_depth2": "e3c2",
+      "candidates": [
+        [
+          "e3c2",
+          91.0
+        ],
+        [
+          "f6e7",
+          50.0
+        ],
+        [
+          "f6e6",
+          50.0
+        ]
+      ],
+      "samples": [
+        "f6e7",
+        "f6e6",
+        "e3c2",
+        "f6e7",
+        "f5f4",
+        "f6g5"
+      ]
+    },
+    {
+      "rating": 1825,
+      "solution": "b5b3",
+      "greedy": "b5f5",
+      "search_depth2": "b5d5",
+      "candidates": [
+        [
+          "b5f5",
+          10.0
+        ],
+        [
+          "b5d5",
+          21.0
+        ],
+        [
+          "b5e5",
+          10.0
+        ],
+        [
+          "b5c5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b5d7",
+        "g4f2",
+        "g4f2",
+        "b7d5",
+        "b5f5",
+        "g4f6"
+      ]
+    },
+    {
+      "rating": 1857,
+      "solution": "f8f7",
+      "greedy": "f8f7",
+      "search_depth2": "f8f7",
+      "candidates": [
+        [
+          "f8f7",
+          50.0
+        ],
+        [
+          "c6g2",
+          50.0
+        ],
+        [
+          "c6f3",
+          10.0
+        ],
+        [
+          "c6b7",
+          10.0
+        ],
+        [
+          "c6d7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f8f7",
+        "c6d5",
+        "f8f7",
+        "d8d4",
+        "f8f7",
+        "f8f7"
+      ]
+    },
+    {
+      "rating": 1822,
+      "solution": "h8h7",
+      "greedy": "c7c3",
+      "search_depth2": "c7c4",
+      "candidates": [
+        [
+          "c7c3",
+          21.0
+        ],
+        [
+          "c7c4",
+          50.0
+        ],
+        [
+          "c7c6",
+          21.0
+        ]
+      ],
+      "samples": [
+        "f4d5",
+        "c8f5",
+        "c8g4",
+        "c8g4",
+        "h8e8",
+        "c8g4"
+      ]
+    },
+    {
+      "rating": 1970,
+      "solution": "c8c4",
+      "greedy": "b6f6",
+      "search_depth2": "b6f6",
+      "candidates": [
+        [
+          "b6f6",
+          50.0
+        ],
+        [
+          "b6b4",
+          21.0
+        ],
+        [
+          "b6c7",
+          21.0
+        ],
+        [
+          "b6d4",
+          21.0
+        ],
+        [
+          "b6b5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b6b4",
+        "b6c7",
+        "c8c4",
+        "c8c4",
+        "g7h6",
+        "c8c4"
+      ]
+    },
+    {
+      "rating": 2086,
+      "solution": "e6d5",
+      "greedy": "c7c2",
+      "search_depth2": "c7c6",
+      "candidates": [
+        [
+          "c7c2",
+          24.0
+        ],
+        [
+          "c7c3",
+          30.0
+        ],
+        [
+          "c7c4",
+          30.0
+        ],
+        [
+          "c7c6",
+          52.0
+        ]
+      ],
+      "samples": [
+        "c7d6",
+        "c7d7",
+        "a6a5",
+        "c7d7",
+        "f6f5",
+        "c7h2"
+      ]
+    },
+    {
+      "rating": 1993,
+      "solution": "f7f3",
+      "greedy": "f7f2",
+      "search_depth2": "f7f3",
+      "candidates": [
+        [
+          "f7f2",
+          10.0
+        ],
+        [
+          "f7f3",
+          80.0
+        ],
+        [
+          "f7f4",
+          21.0
+        ],
+        [
+          "f7f5",
+          10.0
+        ],
+        [
+          "f7f6",
+          10.0
+        ]
+      ],
+      "samples": [
+        "h4h3",
+        "h4f6",
+        "h4f2",
+        "h4f2",
+        "h4h5",
+        "f7f2"
+      ]
+    },
+    {
+      "rating": 1826,
+      "solution": "b3b4",
+      "greedy": "d2c1",
+      "search_depth2": "d2c3",
+      "candidates": [
+        [
+          "d2c1",
+          20.0
+        ],
+        [
+          "d2b2",
+          20.0
+        ],
+        [
+          "d2c3",
+          61.0
+        ],
+        [
+          "d2b4",
+          20.0
+        ],
+        [
+          "d2a5",
+          20.0
+        ]
+      ],
+      "samples": [
+        "d2c1",
+        "d2e2",
+        "d2a5",
+        "e3e7",
+        "d3f5",
+        "d2b2"
+      ]
+    },
+    {
+      "rating": 1746,
+      "solution": "f6f7",
+      "greedy": "f6f3",
+      "search_depth2": "f6f3",
+      "candidates": [
+        [
+          "f6f3",
+          10.0
+        ],
+        [
+          "f6f4",
+          10.0
+        ],
+        [
+          "f6f2",
+          10.0
+        ],
+        [
+          "f6f5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6f7",
+        "h4d4",
+        "h4h7",
+        "h4c4",
+        "f1f5",
+        "f6f7"
+      ]
+    },
+    {
+      "rating": 1847,
+      "solution": "b2b3",
+      "greedy": "h6h7",
+      "search_depth2": "h6h3",
+      "candidates": [
+        [
+          "h6h7",
+          29.0
+        ],
+        [
+          "h6g5",
+          50.0
+        ],
+        [
+          "h6h3",
+          63.0
+        ],
+        [
+          "h6h4",
+          51.0
+        ]
+      ],
+      "samples": [
+        "d3d4",
+        "h6h7",
+        "d3d4",
+        "g3f5",
+        "d3d1",
+        "f4g5"
+      ]
+    },
+    {
+      "rating": 1780,
+      "solution": "c2e2",
+      "greedy": "c2c7",
+      "search_depth2": "c2c7",
+      "candidates": [
+        [
+          "c2c7",
+          100.0
+        ]
+      ],
+      "samples": [
+        "c2c5",
+        "d3d2",
+        "c2c7",
+        "c2c6",
+        "c2c7",
+        "c2c4"
+      ]
+    },
+    {
+      "rating": 1400,
+      "solution": "h4c4",
+      "greedy": "e6f7",
+      "search_depth2": "e6d5",
+      "candidates": [
+        [
+          "e6f7",
+          10.0
+        ],
+        [
+          "e6f6",
+          10.0
+        ],
+        [
+          "e6e5",
+          10.0
+        ],
+        [
+          "e6d5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "e6d5",
+        "e6f6",
+        "e6e5",
+        "e6d7",
+        "h6h5",
+        "e6f6"
+      ]
+    },
+    {
+      "rating": 1888,
+      "solution": "b5a7",
+      "greedy": "e2d3",
+      "search_depth2": "e2d3",
+      "candidates": [
+        [
+          "e2d3",
+          30.0
+        ],
+        [
+          "e2d1",
+          30.0
+        ],
+        [
+          "e2f3",
+          30.0
+        ],
+        [
+          "e2c4",
+          30.0
+        ]
+      ],
+      "samples": [
+        "d6d7",
+        "d6d7",
+        "g3f3",
+        "b5a7",
+        "g3c3",
+        "e2d1"
+      ]
+    },
+    {
+      "rating": 1915,
+      "solution": "c1f4",
+      "greedy": "f1f4",
+      "search_depth2": "c2d3",
+      "candidates": [
+        [
+          "f1f4",
+          10.0
+        ],
+        [
+          "c1f4",
+          71.0
+        ],
+        [
+          "c2e4",
+          10.0
+        ],
+        [
+          "c1e3",
+          21.0
+        ],
+        [
+          "c2d3",
+          80.0
+        ]
+      ],
+      "samples": [
+        "c2e4",
+        "f1f4",
+        "f1f4",
+        "f1f4",
+        "f1f4",
+        "c2e4"
+      ]
+    },
+    {
+      "rating": 2097,
+      "solution": "d5f6",
+      "greedy": "d5f6",
+      "search_depth2": "d5f4",
+      "candidates": [
+        [
+          "d5f6",
+          10.0
+        ],
+        [
+          "d5f4",
+          50.0
+        ],
+        [
+          "d5e3",
+          10.0
+        ],
+        [
+          "d5b4",
+          10.0
+        ],
+        [
+          "d5b6",
+          10.0
+        ]
+      ],
+      "samples": [
+        null,
+        "d5f6",
+        "d5f6",
+        "e1e8",
+        "e1e8",
+        "d5e3"
+      ]
+    },
+    {
+      "rating": 1794,
+      "solution": "f6f7",
+      "greedy": "f3f2",
+      "search_depth2": "f3f2",
+      "candidates": [
+        [
+          "f3f2",
+          10.0
+        ],
+        [
+          "f3f1",
+          10.0
+        ],
+        [
+          "f3f4",
+          10.0
+        ],
+        [
+          "f3e2",
+          10.0
+        ],
+        [
+          "f3e4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f3f1",
+        "d1d7",
+        "f6f7",
+        "g1f2",
+        "f3f4",
+        "f3h1"
+      ]
+    },
+    {
+      "rating": 2014,
+      "solution": "e2h5",
+      "greedy": "g5e6",
+      "search_depth2": "g5h7",
+      "candidates": [
+        [
+          "g5e6",
+          71.0
+        ],
+        [
+          "g5f7",
+          72.0
+        ],
+        [
+          "g5e4",
+          80.0
+        ],
+        [
+          "g5h7",
+          81.0
+        ],
+        [
+          "g5f3",
+          80.0
+        ]
+      ],
+      "samples": [
+        "e2f1",
+        "g5e6",
+        "e2e6",
+        "g5e6",
+        "g5e6",
+        "g5e6"
+      ]
+    },
+    {
+      "rating": 2016,
+      "solution": "f3h5",
+      "greedy": "f3f7",
+      "search_depth2": "f3f7",
+      "candidates": [
+        [
+          "f3f7",
+          50.0
+        ],
+        [
+          "f3f8",
+          50.0
+        ],
+        [
+          "f3f2",
+          10.0
+        ],
+        [
+          "f3f4",
+          10.0
+        ],
+        [
+          "f3f5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f1d1",
+        "g1f2",
+        "f3f8",
+        "f1b1",
+        "f3f8",
+        "f3f8"
+      ]
+    },
+    {
+      "rating": 1685,
+      "solution": "d4e4",
+      "greedy": "d4c3",
+      "search_depth2": "d4c3",
+      "candidates": [
+        [
+          "d4c3",
+          0.0
+        ],
+        [
+          "d4e3",
+          0.0
+        ],
+        [
+          "d4d3",
+          0.0
+        ],
+        [
+          "a4a5",
+          0.0
+        ],
+        [
+          "d5d6",
+          0.0
+        ]
+      ],
+      "samples": [
+        "d4c3",
+        "d4d3",
+        "d5d6",
+        "d4c3",
+        "d4e4",
+        "d5d6"
+      ]
+    },
+    {
+      "rating": 2125,
+      "solution": "d1f3",
+      "greedy": "e5f6",
+      "search_depth2": "e5f6",
+      "candidates": [
+        [
+          "e5f6",
+          71.0
+        ],
+        [
+          "e5f4",
+          21.0
+        ],
+        [
+          "e5d4",
+          21.0
+        ],
+        [
+          "e5c3",
+          21.0
+        ]
+      ],
+      "samples": [
+        "e5g3",
+        "c4b5",
+        "e5f6",
+        "e5d4",
+        "e5f6",
+        "e5f6"
+      ]
+    },
+    {
+      "rating": 2069,
+      "solution": "d3d4",
+      "greedy": "f1f6",
+      "search_depth2": "f1f6",
+      "candidates": [
+        [
+          "f1f6",
+          21.0
+        ],
+        [
+          "d3d5",
+          21.0
+        ],
+        [
+          "d3d1",
+          21.0
+        ],
+        [
+          "d3d2",
+          21.0
+        ],
+        [
+          "d3c2",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d3d2",
+        "f1f6",
+        "f1f6",
+        "f1f3",
+        "e2f4",
+        "d3h7"
+      ]
+    },
+    {
+      "rating": 2030,
+      "solution": "d4c5",
+      "greedy": "d4d8",
+      "search_depth2": "d4d5",
+      "candidates": [
+        [
+          "d4d8",
+          50.0
+        ],
+        [
+          "d4d2",
+          21.0
+        ],
+        [
+          "d4d3",
+          21.0
+        ],
+        [
+          "d4d5",
+          80.0
+        ],
+        [
+          "d4d6",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d4d8",
+        "d4d8",
+        "d4d8",
+        "d4d8",
+        "d4d8",
+        "d4d8"
+      ]
+    },
+    {
+      "rating": 2093,
+      "solution": "c2h7",
+      "greedy": "c2g6",
+      "search_depth2": "c2g6",
+      "candidates": [
+        [
+          "c2g6",
+          50.0
+        ],
+        [
+          "c1d2",
+          50.0
+        ]
+      ],
+      "samples": [
+        "h1h3",
+        "h4g5",
+        "c2g6",
+        "d1h5",
+        "c2g6",
+        "d1h5"
+      ]
+    },
+    {
+      "rating": 1819,
+      "solution": "c1c2",
+      "greedy": "e3f2",
+      "search_depth2": "e3f2",
+      "candidates": [
+        [
+          "e3f2",
+          21.0
+        ],
+        [
+          "e3f4",
+          21.0
+        ],
+        [
+          "e3d2",
+          21.0
+        ],
+        [
+          "e3g5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e3e5",
+        "e3d2",
+        "c1a1",
+        "e1f1",
+        "c1a1",
+        "c1a1"
+      ]
+    },
+    {
+      "rating": 1824,
+      "solution": "c3a4",
+      "greedy": "d4c6",
+      "search_depth2": "d4c6",
+      "candidates": [
+        [
+          "d4c6",
+          21.0
+        ],
+        [
+          "d4e6",
+          21.0
+        ],
+        [
+          "d4f5",
+          21.0
+        ],
+        [
+          "d4b5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "c3e4",
+        "d4c6",
+        "c3b5",
+        "d4c6",
+        "c3d5",
+        "c3e2"
+      ]
+    },
+    {
+      "rating": 1822,
+      "solution": "a2d5",
+      "greedy": "d7d5",
+      "search_depth2": "a2a6",
+      "candidates": [
+        [
+          "d7d5",
+          10.0
+        ],
+        [
+          "a2a1",
+          10.0
+        ],
+        [
+          "a2a6",
+          80.0
+        ],
+        [
+          "a2a5",
+          80.0
+        ],
+        [
+          "a2a3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a2f2",
+        "d7d5",
+        "b7a6",
+        "d7d5",
+        "d7d5",
+        "d7d5"
+      ]
+    },
+    {
+      "rating": 1512,
+      "solution": "e2e5",
+      "greedy": "a7a8",
+      "search_depth2": "a7a6",
+      "candidates": [
+        [
+          "a7a8",
+          10.0
+        ],
+        [
+          "a7a6",
+          20.0
+        ],
+        [
+          "a7a3",
+          20.0
+        ],
+        [
+          "a7a4",
+          20.0
+        ],
+        [
+          "a7a5",
+          20.0
+        ]
+      ],
+      "samples": [
+        "e2e5",
+        "a7a8",
+        "a7a8",
+        "a7a8",
+        "e2e5",
+        "e2e5"
+      ]
+    },
+    {
+      "rating": 1736,
+      "solution": "e5e1",
+      "greedy": "f3f1",
+      "search_depth2": "f3f1",
+      "candidates": [
+        [
+          "f3f1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e5e1",
+        "g3e1",
+        "f3f1",
+        "e5e1",
+        "e5e1",
+        "f3f1"
+      ]
+    },
+    {
+      "rating": 1663,
+      "solution": "e6f5",
+      "greedy": "b7g2",
+      "search_depth2": "b7f7",
+      "candidates": [
+        [
+          "b7g2",
+          10.0
+        ],
+        [
+          "b7f7",
+          50.0
+        ],
+        [
+          "b7c6",
+          10.0
+        ],
+        [
+          "b7b4",
+          10.0
+        ],
+        [
+          "b7b5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b7f3",
+        "b7g7",
+        "b7b8",
+        "b7h1",
+        "b7g7",
+        "b7f7"
+      ]
+    },
+    {
+      "rating": 1502,
+      "solution": "h4h3",
+      "greedy": "h4h3",
+      "search_depth2": "h4h3",
+      "candidates": [
+        [
+          "h4h3",
+          50.0
+        ]
+      ],
+      "samples": [
+        "h4h3",
+        "h4h5",
+        "h4h5",
+        "h4h3",
+        "h4h3",
+        "h4g5"
+      ]
+    },
+    {
+      "rating": 1544,
+      "solution": "f3f8",
+      "greedy": "e7e8",
+      "search_depth2": "e7e8",
+      "candidates": [
+        [
+          "e7e8",
+          100.0
+        ],
+        [
+          "e7e6",
+          0.0
+        ],
+        [
+          "e7e2",
+          0.0
+        ],
+        [
+          "e7e3",
+          0.0
+        ],
+        [
+          "e7e4",
+          0.0
+        ]
+      ],
+      "samples": [
+        "e7g7",
+        "e1e3",
+        "g1h1",
+        "g1g2",
+        "g1h2",
+        "e7f8"
+      ]
+    },
+    {
+      "rating": 1569,
+      "solution": "a5a1",
+      "greedy": "a5a1",
+      "search_depth2": "a5a1",
+      "candidates": [
+        [
+          "a5a1",
+          50.0
+        ],
+        [
+          "a5a2",
+          50.0
+        ],
+        [
+          "a5a6",
+          10.0
+        ],
+        [
+          "a5a7",
+          10.0
+        ],
+        [
+          "a5a3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e7e6",
+        "e7e8",
+        "a5a4",
+        "a5a4",
+        "a5b4",
+        "a8a6"
+      ]
+    },
+    {
+      "rating": 2150,
+      "solution": "f5h5",
+      "greedy": "c7d6",
+      "search_depth2": "f5f6",
+      "candidates": [
+        [
+          "c7d6",
+          10.0
+        ],
+        [
+          "f5f6",
+          21.0
+        ],
+        [
+          "f5f7",
+          21.0
+        ],
+        [
+          "f5f8",
+          21.0
+        ]
+      ],
+      "samples": [
+        "c7d6",
+        "h4h5",
+        "h4h3",
+        "h4g4",
+        "f5f7",
+        "h4g3"
+      ]
+    },
+    {
+      "rating": 2061,
+      "solution": "e4g6",
+      "greedy": "g4g6",
+      "search_depth2": "g4g2",
+      "candidates": [
+        [
+          "g4g6",
+          10.0
+        ],
+        [
+          "g4g2",
+          50.0
+        ],
+        [
+          "g4g3",
+          50.0
+        ],
+        [
+          "g4f3",
+          10.0
+        ],
+        [
+          "g4f4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g4g6",
+        "g4e6",
+        "e4c6",
+        "e4c6",
+        "e4c2",
+        "e4d5"
+      ]
+    },
+    {
+      "rating": 1745,
+      "solution": "f5f3",
+      "greedy": "f5f2",
+      "search_depth2": "f5f2",
+      "candidates": [
+        [
+          "f5f2",
+          50.0
+        ],
+        [
+          "f5f8",
+          10.0
+        ],
+        [
+          "f5f7",
+          10.0
+        ],
+        [
+          "f5f6",
+          10.0
+        ],
+        [
+          "f5f3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f5f2",
+        "e4e3",
+        "f5h5",
+        "f5f2",
+        "f5h3",
+        "f5f2"
+      ]
+    },
+    {
+      "rating": 1826,
+      "solution": "d8d4",
+      "greedy": "b6b2",
+      "search_depth2": "b6b2",
+      "candidates": [
+        [
+          "b6b2",
+          10.0
+        ],
+        [
+          "b6b3",
+          10.0
+        ],
+        [
+          "b6b4",
+          10.0
+        ],
+        [
+          "b6b5",
+          10.0
+        ],
+        [
+          "b6b7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "b6c5",
+        "b6b2",
+        "d8d4",
+        "b6c5",
+        "b6b2",
+        "d8d4"
+      ]
+    },
+    {
+      "rating": 2114,
+      "solution": "d8h4",
+      "greedy": "d8g5",
+      "search_depth2": "f5d4",
+      "candidates": [
+        [
+          "d8g5",
+          10.0
+        ],
+        [
+          "f5d4",
+          71.0
+        ],
+        [
+          "f5e3",
+          10.0
+        ],
+        [
+          "f5g3",
+          10.0
+        ],
+        [
+          "f5h4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f5g3",
+        "d8g5",
+        "d8g5",
+        "h8h2",
+        "d8d6",
+        "f5e7"
+      ]
+    },
+    {
+      "rating": 1436,
+      "solution": "b6e6",
+      "greedy": "b6e6",
+      "search_depth2": "b6b8",
+      "candidates": [
+        [
+          "b6e6",
+          10.0
+        ],
+        [
+          "b6b7",
+          10.0
+        ],
+        [
+          "b6b8",
+          21.0
+        ],
+        [
+          "b6a6",
+          10.0
+        ],
+        [
+          "b6c6",
+          21.0
+        ]
+      ],
+      "samples": [
+        "b6e6",
+        "b6e6",
+        "b6e6",
+        "b6e6",
+        "f7e6",
+        "f7e6"
+      ]
+    },
+    {
+      "rating": 2145,
+      "solution": "c3d3",
+      "greedy": "c3d3",
+      "search_depth2": "c3d3",
+      "candidates": [
+        [
+          "c3d3",
+          10.0
+        ],
+        [
+          "c1c2",
+          10.0
+        ],
+        [
+          "c1d1",
+          10.0
+        ],
+        [
+          "c1e1",
+          10.0
+        ],
+        [
+          "c1f1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c3d3",
+        "c3c4",
+        "g2g3",
+        "c3d3",
+        "c3d3",
+        "c3d3"
+      ]
+    },
+    {
+      "rating": 1815,
+      "solution": "b2b4",
+      "greedy": "h6g6",
+      "search_depth2": "h6h5",
+      "candidates": [
+        [
+          "h6g6",
+          21.0
+        ],
+        [
+          "h6h4",
+          50.0
+        ],
+        [
+          "h6h5",
+          81.0
+        ]
+      ],
+      "samples": [
+        "h6h7",
+        "e2d4",
+        "h6h4",
+        "h6g6",
+        "e2c3",
+        "e2f4"
+      ]
+    },
+    {
+      "rating": 1621,
+      "solution": "g5g6",
+      "greedy": "g5g6",
+      "search_depth2": "g5g6",
+      "candidates": [
+        [
+          "g5g6",
+          81.0
+        ]
+      ],
+      "samples": [
+        "g5g6",
+        "g5g6",
+        "g5g6",
+        "g5g6",
+        "g5g6",
+        null
+      ]
+    },
+    {
+      "rating": 1498,
+      "solution": "b5b6",
+      "greedy": "c6e5",
+      "search_depth2": "c6d4",
+      "candidates": [
+        [
+          "c6e5",
+          10.0
+        ],
+        [
+          "c6d4",
+          100.0
+        ],
+        [
+          "c6b4",
+          10.0
+        ],
+        [
+          "c6e7",
+          82.0
+        ],
+        [
+          "c6a5",
+          10.0
+        ]
+      ],
+      "samples": [
+        null,
+        "a2b3",
+        "c6d4",
+        "b5b6",
+        "a2b3",
+        "a2b3"
+      ]
+    },
+    {
+      "rating": 1415,
+      "solution": "a4d1",
+      "greedy": "a4a1",
+      "search_depth2": "a4a2",
+      "candidates": [
+        [
+          "a4a1",
+          50.0
+        ],
+        [
+          "a4a2",
+          80.0
+        ],
+        [
+          "a4a5",
+          10.0
+        ],
+        [
+          "a4a3",
+          10.0
+        ],
+        [
+          "a4b5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a4h4",
+        "e8e6",
+        "e8e6",
+        "a4h4",
+        "e8e6",
+        "a4e4"
+      ]
+    },
+    {
+      "rating": 1896,
+      "solution": "c1e3",
+      "greedy": "c1f4",
+      "search_depth2": "c1f4",
+      "candidates": [
+        [
+          "c1f4",
+          10.0
+        ],
+        [
+          "c1e3",
+          10.0
+        ],
+        [
+          "c1d2",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f3h5",
+        "e2h2",
+        "e2e3",
+        "e2e5",
+        "e2f2",
+        "f3g4"
+      ]
+    },
+    {
+      "rating": 1676,
+      "solution": "c6d6",
+      "greedy": "c6c1",
+      "search_depth2": "c6c3",
+      "candidates": [
+        [
+          "c6c1",
+          50.0
+        ],
+        [
+          "c6c2",
+          10.0
+        ],
+        [
+          "c6c3",
+          81.0
+        ],
+        [
+          "c6c5",
+          10.0
+        ],
+        [
+          "c6c7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e8f8",
+        "c6c2",
+        "c6c1",
+        "c6e4",
+        "e8d8",
+        "e8d8"
+      ]
+    },
+    {
+      "rating": 1511,
+      "solution": "e4e5",
+      "greedy": "e4e5",
+      "search_depth2": "e4e5",
+      "candidates": [
+        [
+          "e4e5",
+          91.0
+        ],
+        [
+          "f4f5",
+          91.0
+        ]
+      ],
+      "samples": [
+        "e4e5",
+        "f4f5",
+        "e4e5",
+        "e4e5",
+        "g6f8",
+        "f4f5"
+      ]
+    },
+    {
+      "rating": 1919,
+      "solution": "h1g1",
+      "greedy": "h1h8",
+      "search_depth2": "h1h8",
+      "candidates": [
+        [
+          "h1h8",
+          10.0
+        ],
+        [
+          "d3h7",
+          10.0
+        ],
+        [
+          "d3d2",
+          10.0
+        ],
+        [
+          "d3c2",
+          10.0
+        ],
+        [
+          "d3e4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "d3h7",
+        "d1d2",
+        "h1h8",
+        "h1h8",
+        "d1d2",
+        "d3h7"
+      ]
+    },
+    {
+      "rating": 1653,
+      "solution": "d6d8",
+      "greedy": "d6e6",
+      "search_depth2": "d6e6",
+      "candidates": [
+        [
+          "d6e6",
+          50.0
+        ],
+        [
+          "d6f6",
+          10.0
+        ],
+        [
+          "d6e7",
+          50.0
+        ],
+        [
+          "d6d8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f8e8",
+        "g8h8",
+        "d6e7",
+        "g8h7",
+        "d6d8",
+        "f8e8"
+      ]
+    },
+    {
+      "rating": 2102,
+      "solution": "e5f3",
+      "greedy": "h4h3",
+      "search_depth2": "h4h3",
+      "candidates": [
+        [
+          "h4h3",
+          71.0
+        ],
+        [
+          "h4g3",
+          51.0
+        ],
+        [
+          "h4g5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g6g3",
+        "h4g3",
+        "h4g3",
+        "h4h5",
+        "h4h3",
+        "h4g3"
+      ]
+    },
+    {
+      "rating": 1838,
+      "solution": "d5c5",
+      "greedy": "d5c5",
+      "search_depth2": "d5c5",
+      "candidates": [
+        [
+          "d5c5",
+          21.0
+        ],
+        [
+          "d5d1",
+          21.0
+        ],
+        [
+          "d5d2",
+          21.0
+        ],
+        [
+          "d5d3",
+          21.0
+        ],
+        [
+          "d5d4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d5c5",
+        "d5c5",
+        "d5c5",
+        "d5d1",
+        "d5c5",
+        "d5c5"
+      ]
+    },
+    {
+      "rating": 2092,
+      "solution": "f6g5",
+      "greedy": "f6g5",
+      "search_depth2": "f6g5",
+      "candidates": [
+        [
+          "f6g5",
+          21.0
+        ],
+        [
+          "f6f5",
+          21.0
+        ],
+        [
+          "f6g7",
+          21.0
+        ]
+      ],
+      "samples": [
+        "e5g3",
+        "f6g5",
+        "f6h6",
+        "f6g5",
+        "e5c3",
+        "f6g5"
+      ]
+    },
+    {
+      "rating": 1779,
+      "solution": "f3g4",
+      "greedy": "f3g4",
+      "search_depth2": "f3g4",
+      "candidates": [
+        [
+          "f3g4",
+          83.0
+        ],
+        [
+          "f3g2",
+          83.0
+        ],
+        [
+          "f3g3",
+          81.0
+        ],
+        [
+          "f3f2",
+          81.0
+        ],
+        [
+          "f3e2",
+          82.0
+        ]
+      ],
+      "samples": [
+        "f3g4",
+        "f3g4",
+        "f3g2",
+        "f3g4",
+        "f3g4",
+        "f3g4"
+      ]
+    },
+    {
+      "rating": 1699,
+      "solution": "e3e2",
+      "greedy": "f4g3",
+      "search_depth2": "f4g3",
+      "candidates": [
+        [
+          "f4g3",
+          50.0
+        ],
+        [
+          "e3e2",
+          50.0
+        ],
+        [
+          "f4f3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g1f1",
+        "e3e2",
+        "f4f3",
+        "f4g5",
+        "e3e2",
+        "f4f3"
+      ]
+    },
+    {
+      "rating": 1598,
+      "solution": "b3h3",
+      "greedy": "b3b7",
+      "search_depth2": "b3b1",
+      "candidates": [
+        [
+          "b3b7",
+          91.0
+        ],
+        [
+          "b3b1",
+          100.0
+        ],
+        [
+          "b3b2",
+          91.0
+        ],
+        [
+          "b3b8",
+          91.0
+        ],
+        [
+          "b3b6",
+          91.0
+        ]
+      ],
+      "samples": [
+        null,
+        null,
+        null,
+        "b3b8",
+        null,
+        null
+      ]
+    },
+    {
+      "rating": 1682,
+      "solution": "e4f6",
+      "greedy": "e4g5",
+      "search_depth2": "e4c3",
+      "candidates": [
+        [
+          "e4g5",
+          10.0
+        ],
+        [
+          "e4f6",
+          50.0
+        ],
+        [
+          "e4g3",
+          10.0
+        ],
+        [
+          "e4c3",
+          90.0
+        ]
+      ],
+      "samples": [
+        "g6g7",
+        "g6g3",
+        "e4g5",
+        "g2g5",
+        "g6g3",
+        "g6h6"
+      ]
+    },
+    {
+      "rating": 1485,
+      "solution": "f8c5",
+      "greedy": "c6b6",
+      "search_depth2": "f6f5",
+      "candidates": [
+        [
+          "c6b6",
+          10.0
+        ],
+        [
+          "c6c5",
+          10.0
+        ],
+        [
+          "c6d6",
+          10.0
+        ],
+        [
+          "f8g7",
+          10.0
+        ],
+        [
+          "f6f5",
+          81.0
+        ]
+      ],
+      "samples": [
+        "f8d6",
+        "f8c5",
+        "f8d6",
+        "c6b6",
+        "c6b6",
+        "c6c5"
+      ]
+    },
+    {
+      "rating": 1564,
+      "solution": "e8h8",
+      "greedy": "a8a7",
+      "search_depth2": "a8a7",
+      "candidates": [
+        [
+          "a8a7",
+          10.0
+        ],
+        [
+          "a8a3",
+          10.0
+        ],
+        [
+          "a8a4",
+          10.0
+        ],
+        [
+          "a8a6",
+          10.0
+        ],
+        [
+          "a8a5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e8e1",
+        "e8d8",
+        "a8e4",
+        "a8a7",
+        "e8e1",
+        "e8d8"
+      ]
+    },
+    {
+      "rating": 1857,
+      "solution": "c8e6",
+      "greedy": "c8d8",
+      "search_depth2": "c8d8",
+      "candidates": [
+        [
+          "c8d8",
+          21.0
+        ],
+        [
+          "c8e6",
+          21.0
+        ],
+        [
+          "c8c7",
+          10.0
+        ],
+        [
+          "c8b7",
+          10.0
+        ],
+        [
+          "c8b8",
+          21.0
+        ]
+      ],
+      "samples": [
+        "c8d8",
+        "c6e5",
+        "c5f2",
+        "f8d8",
+        "c8c7",
+        "c8d8"
+      ]
+    },
+    {
+      "rating": 1857,
+      "solution": "e1e7",
+      "greedy": "f7f3",
+      "search_depth2": "f7f5",
+      "candidates": [
+        [
+          "f7f3",
+          80.0
+        ],
+        [
+          "f7f4",
+          80.0
+        ],
+        [
+          "f7f5",
+          81.0
+        ],
+        [
+          "f7f6",
+          81.0
+        ]
+      ],
+      "samples": [
+        "c4b3",
+        "e1e8",
+        "f7d7",
+        "f7f3",
+        "f7f3",
+        "f7g6"
+      ]
+    },
+    {
+      "rating": 2045,
+      "solution": "e1d2",
+      "greedy": "c3b1",
+      "search_depth2": "c3b1",
+      "candidates": [
+        [
+          "c3b1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c3b1",
+        "c3b1",
+        "c3d1",
+        "c3b1",
+        "e1d2",
+        null
+      ]
+    },
+    {
+      "rating": 2014,
+      "solution": "f3d4",
+      "greedy": "d3d4",
+      "search_depth2": "d3d4",
+      "candidates": [
+        [
+          "d3d4",
+          21.0
+        ],
+        [
+          "d3b3",
+          21.0
+        ],
+        [
+          "d3c3",
+          21.0
+        ],
+        [
+          "d3d2",
+          21.0
+        ],
+        [
+          "d3c4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "f3d4",
+        "e4f6",
+        "d3d4",
+        "d3c4",
+        "d3d4",
+        "d3d4"
+      ]
+    },
+    {
+      "rating": 1801,
+      "solution": "d1d5",
+      "greedy": "d6d5",
+      "search_depth2": "d6d7",
+      "candidates": [
+        [
+          "d6d5",
+          10.0
+        ],
+        [
+          "d6d7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "d1d5",
+        "d1d5",
+        "d6d8",
+        "d6e5",
+        "d1d5",
+        "d1d5"
+      ]
+    },
+    {
+      "rating": 1924,
+      "solution": "f3h4",
+      "greedy": "h6h7",
+      "search_depth2": "h6h7",
+      "candidates": [
+        [
+          "h6h7",
+          53.0
+        ],
+        [
+          "h6g5",
+          50.0
+        ],
+        [
+          "h6h4",
+          10.0
+        ],
+        [
+          "h6d6",
+          50.0
+        ]
+      ],
+      "samples": [
+        "h6h4",
+        "f3g5",
+        "h6g6",
+        "h6h7",
+        "e1g1",
+        "h6h7"
+      ]
+    },
+    {
+      "rating": 1703,
+      "solution": "b4b5",
+      "greedy": "e3e2",
+      "search_depth2": "e3e2",
+      "candidates": [
+        [
+          "e3e2",
+          10.0
+        ]
+      ],
+      "samples": [
+        null,
+        "g3g4",
+        "e3f3",
+        "e3e4",
+        "b4e4",
+        "b4b5"
+      ]
+    },
+    {
+      "rating": 1908,
+      "solution": "f2f5",
+      "greedy": "g4h4",
+      "search_depth2": "g4g5",
+      "candidates": [
+        [
+          "g4h4",
+          21.0
+        ],
+        [
+          "g4f5",
+          10.0
+        ],
+        [
+          "g4e4",
+          21.0
+        ],
+        [
+          "g4g3",
+          21.0
+        ],
+        [
+          "g4g5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g4f5",
+        "c2f5",
+        "f2f4",
+        "h2f3",
+        "f2f5",
+        "g4g3"
+      ]
+    },
+    {
+      "rating": 1747,
+      "solution": "g5g8",
+      "greedy": "g5g4",
+      "search_depth2": "g5h5",
+      "candidates": [
+        [
+          "g5g4",
+          10.0
+        ],
+        [
+          "g5g6",
+          10.0
+        ],
+        [
+          "g5g7",
+          10.0
+        ],
+        [
+          "g5g8",
+          10.0
+        ],
+        [
+          "g5h5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g2f1",
+        "f2f3",
+        "g5g4",
+        "f2f3",
+        "g5g7",
+        "g2h1"
+      ]
+    },
+    {
+      "rating": 1555,
+      "solution": "g3d6",
+      "greedy": "a7a8",
+      "search_depth2": "a7a3",
+      "candidates": [
+        [
+          "a7a8",
+          10.0
+        ],
+        [
+          "a7a1",
+          10.0
+        ],
+        [
+          "a7a3",
+          21.0
+        ],
+        [
+          "a7a2",
+          10.0
+        ],
+        [
+          "a7a6",
+          10.0
+        ]
+      ],
+      "samples": [
+        "a7a8",
+        "a7a5",
+        "a7a8",
+        "a7a5",
+        "a7a8",
+        "g3g6"
+      ]
+    },
+    {
+      "rating": 2067,
+      "solution": "f4e3",
+      "greedy": "f4h6",
+      "search_depth2": "f4h6",
+      "candidates": [
+        [
+          "f4h6",
+          10.0
+        ],
+        [
+          "f4e4",
+          10.0
+        ],
+        [
+          "f4g4",
+          10.0
+        ],
+        [
+          "f4h4",
+          10.0
+        ],
+        [
+          "f4f3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6g5",
+        "f6h4",
+        "c1c6",
+        "f4f5",
+        "f4h6",
+        "f6g5"
+      ]
+    },
+    {
+      "rating": 1967,
+      "solution": "e4g5",
+      "greedy": "f3a3",
+      "search_depth2": "f3f7",
+      "candidates": [
+        [
+          "f3a3",
+          21.0
+        ],
+        [
+          "f3f4",
+          21.0
+        ],
+        [
+          "f3f5",
+          21.0
+        ],
+        [
+          "f3f6",
+          10.0
+        ],
+        [
+          "f3f7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "d1d2",
+        "c1e3",
+        "c1e3",
+        "f3e2",
+        "e4f6",
+        "f3a3"
+      ]
+    },
+    {
+      "rating": 1646,
+      "solution": "d1c1",
+      "greedy": "e2e1",
+      "search_depth2": "e2e1",
+      "candidates": [
+        [
+          "e2e1",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e2e1",
+        "g5g3",
+        null,
+        null,
+        "g5f6",
+        null
+      ]
+    },
+    {
+      "rating": 1529,
+      "solution": "e5h5",
+      "greedy": "e3e1",
+      "search_depth2": "e3g3",
+      "candidates": [
+        [
+          "e3e1",
+          10.0
+        ],
+        [
+          "e3e2",
+          10.0
+        ],
+        [
+          "e3e4",
+          10.0
+        ],
+        [
+          "e3g3",
+          50.0
+        ],
+        [
+          "e3f4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e3e4",
+        "e3e4",
+        "e5a5",
+        "e3f4",
+        "e3e2",
+        "e5a5"
+      ]
+    },
+    {
+      "rating": 1957,
+      "solution": "d1g4",
+      "greedy": "d1g4",
+      "search_depth2": "d1g4",
+      "candidates": [
+        [
+          "d1g4",
+          80.0
+        ],
+        [
+          "d1f3",
+          30.0
+        ],
+        [
+          "d1g1",
+          30.0
+        ],
+        [
+          "d1f1",
+          30.0
+        ],
+        [
+          "d1e2",
+          30.0
+        ]
+      ],
+      "samples": [
+        "d1f3",
+        "d1g4",
+        "d1g4",
+        "d2e2",
+        "d1g4",
+        "e4e5"
+      ]
+    },
+    {
+      "rating": 1413,
+      "solution": "d6e7",
+      "greedy": null,
+      "search_depth2": null,
+      "candidates": [],
+      "samples": [
+        null,
+        "d6e7",
+        null,
+        "d6c6",
+        "d6e7",
+        "d6e5"
+      ]
+    },
+    {
+      "rating": 1751,
+      "solution": "d2d5",
+      "greedy": "c6d4",
+      "search_depth2": "c6d4",
+      "candidates": [
+        [
+          "c6d4",
+          100.0
+        ],
+        [
+          "c6e5",
+          100.0
+        ],
+        [
+          "c6b4",
+          0.0
+        ],
+        [
+          "c6a5",
+          10.0
+        ],
+        [
+          "c6a7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "d2f2",
+        "c6e7",
+        "c6a5",
+        "c6e5",
+        "c6a5",
+        "a4a5"
+      ]
+    },
+    {
+      "rating": 1930,
+      "solution": "b7g2",
+      "greedy": "b7g2",
+      "search_depth2": "b7g2",
+      "candidates": [
+        [
+          "b7g2",
+          50.0
+        ]
+      ],
+      "samples": [
+        "g1h1",
+        "b7g2",
+        "b7g2",
+        "b7g2",
+        "b7g2",
+        "g1h1"
+      ]
+    },
+    {
+      "rating": 2070,
+      "solution": "h6g5",
+      "greedy": "g4g7",
+      "search_depth2": "g4g7",
+      "candidates": [
+        [
+          "g4g7",
+          52.0
+        ],
+        [
+          "g4g3",
+          21.0
+        ],
+        [
+          "g4e2",
+          21.0
+        ],
+        [
+          "g4e4",
+          21.0
+        ],
+        [
+          "g4f3",
+          21.0
+        ]
+      ],
+      "samples": [
+        "g4h5",
+        "g4g3",
+        "e1e7",
+        "g4h3",
+        "g4e6",
+        "g4g6"
+      ]
+    },
+    {
+      "rating": 2155,
+      "solution": "d4c3",
+      "greedy": "c4c3",
+      "search_depth2": "c4c3",
+      "candidates": [
+        [
+          "c4c3",
+          21.0
+        ],
+        [
+          "c4b3",
+          21.0
+        ],
+        [
+          "c4a2",
+          21.0
+        ],
+        [
+          "c4a4",
+          21.0
+        ],
+        [
+          "c4b5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "c4c7",
+        "g8g6",
+        "g8g1",
+        "c4c7",
+        "c4a2",
+        "c4c5"
+      ]
+    },
+    {
+      "rating": 1932,
+      "solution": "f5f2",
+      "greedy": "f5f2",
+      "search_depth2": "f5f7",
+      "candidates": [
+        [
+          "f5f2",
+          10.0
+        ],
+        [
+          "f5f3",
+          10.0
+        ],
+        [
+          "f5f4",
+          10.0
+        ],
+        [
+          "f5f6",
+          10.0
+        ],
+        [
+          "f5f7",
+          50.0
+        ]
+      ],
+      "samples": [
+        "f5f2",
+        "h4h5",
+        null,
+        "h4h5",
+        "f5f2",
+        "f5f2"
+      ]
+    },
+    {
+      "rating": 1429,
+      "solution": "f1d1",
+      "greedy": "c1c6",
+      "search_depth2": "c1c3",
+      "candidates": [
+        [
+          "c1c6",
+          10.0
+        ],
+        [
+          "c1c5",
+          10.0
+        ],
+        [
+          "c1c3",
+          81.0
+        ],
+        [
+          "c1c2",
+          81.0
+        ],
+        [
+          "c1b1",
+          81.0
+        ]
+      ],
+      "samples": [
+        "c1c6",
+        "c1c2",
+        "c1c5",
+        "f1d1",
+        "f1d1",
+        "f1f2"
+      ]
+    },
+    {
+      "rating": 1814,
+      "solution": "b6d8",
+      "greedy": "b5d7",
+      "search_depth2": "b5d7",
+      "candidates": [
+        [
+          "b5d7",
+          30.0
+        ],
+        [
+          "b5c6",
+          30.0
+        ],
+        [
+          "b5e8",
+          30.0
+        ],
+        [
+          "b5a4",
+          30.0
+        ]
+      ],
+      "samples": [
+        "f2c2",
+        "b5e2",
+        "b5e8",
+        "b5e2",
+        "b6d4",
+        "b5c4"
+      ]
+    },
+    {
+      "rating": 1873,
+      "solution": "h6g4",
+      "greedy": "h4h5",
+      "search_depth2": "h4h2",
+      "candidates": [
+        [
+          "h4h5",
+          10.0
+        ],
+        [
+          "h4h2",
+          50.0
+        ],
+        [
+          "h4h1",
+          50.0
+        ],
+        [
+          "h4h3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c6d4",
+        "b6d4",
+        "c6d4",
+        "b6d4",
+        "h6g4",
+        "h4e7"
+      ]
+    },
+    {
+      "rating": 1810,
+      "solution": "a7c7",
+      "greedy": "a5c3",
+      "search_depth2": "a5c3",
+      "candidates": [
+        [
+          "a5c3",
+          21.0
+        ],
+        [
+          "a5b4",
+          21.0
+        ],
+        [
+          "a5a2",
+          10.0
+        ],
+        [
+          "a5a3",
+          10.0
+        ],
+        [
+          "a5a4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "c8b7",
+        "f6g4",
+        "a5c3",
+        "c8b7",
+        "a5c3",
+        "a5g5"
+      ]
+    },
+    {
+      "rating": 1659,
+      "solution": "f3d5",
+      "greedy": "f3f6",
+      "search_depth2": "f3f6",
+      "candidates": [
+        [
+          "f3f6",
+          10.0
+        ],
+        [
+          "e5g6",
+          10.0
+        ],
+        [
+          "e5c6",
+          10.0
+        ],
+        [
+          "e5d7",
+          10.0
+        ],
+        [
+          "e5g4",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e5d7",
+        "f3h1",
+        "f3f6",
+        "e5g6",
+        "e5g6",
+        "f3g2"
+      ]
+    },
+    {
+      "rating": 1947,
+      "solution": "e5d3",
+      "greedy": "e5f3",
+      "search_depth2": "e5f3",
+      "candidates": [
+        [
+          "e5f3",
+          10.0
+        ],
+        [
+          "c7e7",
+          10.0
+        ],
+        [
+          "c7d7",
+          10.0
+        ],
+        [
+          "c7d6",
+          10.0
+        ]
+      ],
+      "samples": [
+        "c7f7",
+        "e5f3",
+        "e5f7",
+        "c7e7",
+        "c7e7",
+        "h8h4"
+      ]
+    },
+    {
+      "rating": 2061,
+      "solution": "e6e5",
+      "greedy": "e4f3",
+      "search_depth2": "e4c2",
+      "candidates": [
+        [
+          "e4f3",
+          80.0
+        ],
+        [
+          "e4d5",
+          53.0
+        ],
+        [
+          "e4b1",
+          80.0
+        ],
+        [
+          "e4c2",
+          81.0
+        ]
+      ],
+      "samples": [
+        "d6h2",
+        "d6h2",
+        "d6f4",
+        "e4f3",
+        "d6e5",
+        "d6c5"
+      ]
+    },
+    {
+      "rating": 2155,
+      "solution": "d8a8",
+      "greedy": "d6h2",
+      "search_depth2": "d6c5",
+      "candidates": [
+        [
+          "d6h2",
+          10.0
+        ],
+        [
+          "d6c5",
+          21.0
+        ],
+        [
+          "d6e5",
+          21.0
+        ],
+        [
+          "d6f4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "g4e6",
+        "e7e3",
+        "g4e6",
+        "f6e4",
+        "e7e3",
+        "e7e4"
+      ]
+    },
+    {
+      "rating": 1666,
+      "solution": "d1d8",
+      "greedy": "b7b8q",
+      "search_depth2": "c5e6",
+      "candidates": [
+        [
+          "b7b8q",
+          50.0
+        ],
+        [
+          "c5e6",
+          81.0
+        ],
+        [
+          "c5d3",
+          0.0
+        ],
+        [
+          "c5a4",
+          0.0
+        ],
+        [
+          "c5b3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g2g4",
+        "d1d7",
+        "c5b3",
+        "b7b8q",
+        "b7b8b",
+        "d1d7"
+      ]
+    },
+    {
+      "rating": 1968,
+      "solution": "h5e8",
+      "greedy": "h5h8",
+      "search_depth2": "h5h8",
+      "candidates": [
+        [
+          "h5h8",
+          50.0
+        ],
+        [
+          "h5h7",
+          50.0
+        ],
+        [
+          "h5h6",
+          10.0
+        ],
+        [
+          "h5g5",
+          10.0
+        ],
+        [
+          "h5f5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "e1e6",
+        "e1e6",
+        "h5h7",
+        "h5h8",
+        "h5f5",
+        "h5g6"
+      ]
+    },
+    {
+      "rating": 2035,
+      "solution": "c2c5",
+      "greedy": "c2c5",
+      "search_depth2": "c2c3",
+      "candidates": [
+        [
+          "c2c5",
+          21.0
+        ],
+        [
+          "c2d1",
+          21.0
+        ],
+        [
+          "c2c3",
+          71.0
+        ],
+        [
+          "c2b2",
+          21.0
+        ]
+      ],
+      "samples": [
+        "f3g5",
+        "f3d4",
+        "f3h4",
+        "c2d3",
+        "c2c5",
+        "f3g5"
+      ]
+    },
+    {
+      "rating": 1513,
+      "solution": "c1c7",
+      "greedy": "f6g5",
+      "search_depth2": "f6g5",
+      "candidates": [
+        [
+          "f6g5",
+          10.0
+        ],
+        [
+          "f6g7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f6g7",
+        "f6g7",
+        "e8f7",
+        "e8f7",
+        "f6g5",
+        null
+      ]
+    },
+    {
+      "rating": 2002,
+      "solution": "h6g5",
+      "greedy": "f3g5",
+      "search_depth2": "f3g5",
+      "candidates": [
+        [
+          "f3g5",
+          21.0
+        ],
+        [
+          "f3e1",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d1h1",
+        "f3g5",
+        "d2e3",
+        "f3e5",
+        "f3e5",
+        "c3d5"
+      ]
+    },
+    {
+      "rating": 1570,
+      "solution": "c3c1",
+      "greedy": "c5c7",
+      "search_depth2": "c5c7",
+      "candidates": [
+        [
+          "c5c7",
+          20.0
+        ],
+        [
+          "c5c8",
+          0.0
+        ],
+        [
+          "c5c6",
+          20.0
+        ],
+        [
+          "c5b4",
+          0.0
+        ]
+      ],
+      "samples": [
+        "c3c1",
+        "c5d6",
+        "c5a3",
+        "c3f3",
+        "c5b5",
+        "c3a3"
+      ]
+    },
+    {
+      "rating": 2051,
+      "solution": "d6g3",
+      "greedy": "d6d2",
+      "search_depth2": "d6d2",
+      "candidates": [
+        [
+          "d6d2",
+          73.0
+        ],
+        [
+          "d6e5",
+          21.0
+        ],
+        [
+          "d6d7",
+          21.0
+        ],
+        [
+          "d6d3",
+          21.0
+        ],
+        [
+          "d6d4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d6g3",
+        "e4f3",
+        "d6d4",
+        "d6d4",
+        "e4d5",
+        "e4g6"
+      ]
+    },
+    {
+      "rating": 2116,
+      "solution": "b4a5",
+      "greedy": "c1c3",
+      "search_depth2": "f1c4",
+      "candidates": [
+        [
+          "c1c3",
+          71.0
+        ],
+        [
+          "f1b5",
+          71.0
+        ],
+        [
+          "f1c4",
+          80.0
+        ],
+        [
+          "f1d3",
+          80.0
+        ],
+        [
+          "f1e2",
+          80.0
+        ]
+      ],
+      "samples": [
+        "c1c3",
+        "c1c3",
+        "c1c3",
+        "c1c3",
+        "c1c3",
+        "c1c3"
+      ]
+    },
+    {
+      "rating": 2090,
+      "solution": "d2d3",
+      "greedy": "d2d3",
+      "search_depth2": "f4f3",
+      "candidates": [
+        [
+          "d2d3",
+          71.0
+        ],
+        [
+          "f4f3",
+          80.0
+        ],
+        [
+          "f4f5",
+          10.0
+        ],
+        [
+          "f4g3",
+          80.0
+        ],
+        [
+          "f4g4",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d2d3",
+        "d2d3",
+        "f4g3",
+        "d2d3",
+        "d2d3",
+        "d2d3"
+      ]
+    },
+    {
+      "rating": 1678,
+      "solution": "c3g7",
+      "greedy": "c3c5",
+      "search_depth2": "c3c5",
+      "candidates": [
+        [
+          "c3c5",
+          50.0
+        ],
+        [
+          "e1e5",
+          10.0
+        ],
+        [
+          "c3e3",
+          10.0
+        ],
+        [
+          "c3d2",
+          50.0
+        ],
+        [
+          "c3b2",
+          50.0
+        ]
+      ],
+      "samples": [
+        "c3c5",
+        "g2g3",
+        "c3f3",
+        "c3c5",
+        "c3c5",
+        "c3c5"
+      ]
+    },
+    {
+      "rating": 1557,
+      "solution": "c8c1",
+      "greedy": "c8c1",
+      "search_depth2": "e7c7",
+      "candidates": [
+        [
+          "c8c1",
+          11.0
+        ],
+        [
+          "e7c7",
+          21.0
+        ],
+        [
+          "e7d8",
+          21.0
+        ],
+        [
+          "e7d6",
+          21.0
+        ],
+        [
+          "e7c5",
+          21.0
+        ]
+      ],
+      "samples": [
+        "e7c5",
+        "c8c1",
+        "e7e1",
+        "e7e1",
+        "c8c1",
+        "e7e1"
+      ]
+    },
+    {
+      "rating": 1536,
+      "solution": "c3c2",
+      "greedy": "d3b2",
+      "search_depth2": "d3f4",
+      "candidates": [
+        [
+          "d3b2",
+          20.0
+        ],
+        [
+          "d3e5",
+          10.0
+        ],
+        [
+          "d3f2",
+          10.0
+        ],
+        [
+          "d3f4",
+          91.0
+        ],
+        [
+          "d3c5",
+          0.0
+        ]
+      ],
+      "samples": [
+        "d5d6",
+        "d3f4",
+        "d3b2",
+        "d5e6",
+        "d5e6",
+        "d3b4"
+      ]
+    },
+    {
+      "rating": 1701,
+      "solution": "e6e5",
+      "greedy": "e6d6",
+      "search_depth2": "e6d6",
+      "candidates": [
+        [
+          "e6d6",
+          81.0
+        ],
+        [
+          "e6f7",
+          81.0
+        ],
+        [
+          "e6e5",
+          0.0
+        ]
+      ],
+      "samples": [
+        "e6f7",
+        "e6f6",
+        "e6d6",
+        "e6f6",
+        "e6e5",
+        "e6d6"
+      ]
+    },
+    {
+      "rating": 2177,
+      "solution": "c7b5",
+      "greedy": "c7b5",
+      "search_depth2": "c7b5",
+      "candidates": [
+        [
+          "c7b5",
+          26.0
+        ]
+      ],
+      "samples": [
+        "c7b5",
+        "c7b5",
+        "c7b5",
+        "c7b5",
+        "c7b5",
+        "c7b5"
+      ]
+    },
+    {
+      "rating": 1434,
+      "solution": "h5h4",
+      "greedy": "f8f2",
+      "search_depth2": "h5h4",
+      "candidates": [
+        [
+          "f8f2",
+          10.0
+        ],
+        [
+          "h5h4",
+          50.0
+        ],
+        [
+          "h5h6",
+          10.0
+        ],
+        [
+          "h5h7",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f8f2",
+        "h5e2",
+        "h5h6",
+        "h5e2",
+        "h5f3",
+        "h5g4"
+      ]
+    },
+    {
+      "rating": 1869,
+      "solution": "e1e5",
+      "greedy": "d3e2",
+      "search_depth2": "d3e2",
+      "candidates": [
+        [
+          "d3e2",
+          21.0
+        ],
+        [
+          "d3e3",
+          21.0
+        ],
+        [
+          "d3d2",
+          21.0
+        ],
+        [
+          "d3f5",
+          21.0
+        ],
+        [
+          "d3c3",
+          21.0
+        ]
+      ],
+      "samples": [
+        "d3d2",
+        "d3g6",
+        "d3g6",
+        "e1e5",
+        "e1e5",
+        "d3g6"
+      ]
+    },
+    {
+      "rating": 1532,
+      "solution": "h7h5",
+      "greedy": "b6b7",
+      "search_depth2": "b6b7",
+      "candidates": [
+        [
+          "b6b7",
+          10.0
+        ],
+        [
+          "b6a5",
+          10.0
+        ]
+      ],
+      "samples": [
+        "h7h5",
+        "b6c7",
+        null,
+        "b6b7",
+        "b6a7",
+        "b6b7"
+      ]
+    },
+    {
+      "rating": 1735,
+      "solution": "a6c7",
+      "greedy": "a3e3",
+      "search_depth2": "a3e3",
+      "candidates": [
+        [
+          "a3e3",
+          100.0
+        ],
+        [
+          "a3a1",
+          10.0
+        ],
+        [
+          "a3a2",
+          10.0
+        ],
+        [
+          "a3d3",
+          100.0
+        ],
+        [
+          "a3b3",
+          100.0
+        ]
+      ],
+      "samples": [
+        "a3e3",
+        "a3a1",
+        "a3d3",
+        "a3d3",
+        "a6b4",
+        "a3e3"
+      ]
+    },
+    {
+      "rating": 2164,
+      "solution": "d4d6",
+      "greedy": "f7e6",
+      "search_depth2": "f7g6",
+      "candidates": [
+        [
+          "f7e6",
+          10.0
+        ],
+        [
+          "f7g6",
+          50.0
+        ],
+        [
+          "f7f4",
+          10.0
+        ],
+        [
+          "f7e7",
+          10.0
+        ],
+        [
+          "f7f5",
+          50.0
+        ]
+      ],
+      "samples": [
+        "f7e8",
+        "f7e7",
+        "f7g7",
+        "d7d6",
+        "f7b3",
+        "f7g7"
+      ]
+    },
+    {
+      "rating": 1920,
+      "solution": "b2c3",
+      "greedy": "a1b1",
+      "search_depth2": "a1b1",
+      "candidates": [
+        [
+          "a1b1",
+          80.0
+        ]
+      ],
+      "samples": [
+        "b3d5",
+        "e1g1",
+        "a1b1",
+        "e3e4",
+        "b3d5",
+        "a1b1"
+      ]
+    },
+    {
+      "rating": 2180,
+      "solution": "d3d5",
+      "greedy": "d3d5",
+      "search_depth2": "d3e3",
+      "candidates": [
+        [
+          "d3d5",
+          71.0
+        ],
+        [
+          "d3e3",
+          80.0
+        ],
+        [
+          "d3d1",
+          80.0
+        ],
+        [
+          "d3d2",
+          80.0
+        ],
+        [
+          "d3e2",
+          80.0
+        ]
+      ],
+      "samples": [
+        "e1e7",
+        "d3d5",
+        "e1e7",
+        "d3d5",
+        "h6g5",
+        "h6f4"
+      ]
+    },
+    {
+      "rating": 1707,
+      "solution": "g1c5",
+      "greedy": "f4g3",
+      "search_depth2": "f4g3",
+      "candidates": [
+        [
+          "f4g3",
+          100.0
+        ],
+        [
+          "f4f3",
+          10.0
+        ]
+      ],
+      "samples": [
+        "g1f2",
+        "f4f3",
+        "f4f5",
+        "f4g5",
+        "g1c5",
+        "f7f5"
+      ]
+    },
+    {
+      "rating": 1450,
+      "solution": "d4e3",
+      "greedy": "d4e3",
+      "search_depth2": "d4e3",
+      "candidates": [
+        [
+          "d4e3",
+          100.0
+        ]
+      ],
+      "samples": [
+        "d4e3",
+        "e4e3",
+        "c3c2",
+        "d4c5",
+        null,
+        "c3c2"
+      ]
+    },
+    {
+      "rating": 2076,
+      "solution": "g5g4",
+      "greedy": "g7f6",
+      "search_depth2": "g7f6",
+      "candidates": [
+        [
+          "g7f6",
+          10.0
+        ],
+        [
+          "e7f6",
+          10.0
+        ],
+        [
+          "e7d8",
+          10.0
+        ],
+        [
+          "e7f8",
+          10.0
+        ]
+      ],
+      "samples": [
+        "f3e5",
+        "g5g4",
+        "e8f6",
+        "f3e5",
+        "g7f6",
+        "e7f6"
+      ]
+    }
+  ],
+  "greedy": {
+    "correct": 36,
+    "pct": 18.0,
+    "ci95": [
+      13.294550662534107,
+      23.91159371623843
+    ]
+  },
+  "sampled": {
+    "correct": 35,
+    "pct": 17.5,
+    "ci95": [
+      12.860441174608933,
+      23.364549210081925
+    ]
+  },
+  "majority": {
+    "correct": 40,
+    "pct": 20.0,
+    "ci95": [
+      15.045120743928825,
+      26.085639611170436
+    ]
+  },
+  "search_depth2": {
+    "correct": 28,
+    "pct": 14.0,
+    "ci95": [
+      9.866918625271481,
+      19.48999380084763
+    ]
+  },
+  "pass_at_k": {
+    "correct": 85,
+    "pct": 42.5,
+    "ci95": [
+      35.85349520924302,
+      49.42919487953179
+    ]
+  },
+  "z_search_vs_greedy": -1.091089451179962
+}

@@ -1,7 +1,7 @@
 [project]
 name = "chess-rlvr"
 version = "0.1.0"
-description = "Uma LLM aprendendo o modelo de mundo do xadrez: estado, regras e valor por lance antes da resposta"
+description = "Teaching a language model a chess world model: board state, rules, and move values before answering"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

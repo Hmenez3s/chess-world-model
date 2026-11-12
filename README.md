@@ -105,6 +105,15 @@ seed 42, decodificação gulosa. A linha de base foi medida **neste mesmo split*
 | Modelo de mundo, 30k posições | 86,33% | 99,71% | 0,00% (0,555) | 8,00% [6,09; 10,45] |
 | Modelo de mundo, 70k posições | 93,83% | 99,90% | 5,17% (0,799) | 13,67% [11,15; 16,65] |
 | **Modelo de mundo, 70k + lance verificado** | 93,83% | 99,90% | 5,17% (0,799) | 16,00% [13,28; 19,15] |
+| + GRPO curto sobre o modelo (não significativo) | 93,67% | 99,90% | 5,00% (0,797) | 16,83% [14,05; 20,04] |
+
+Um GRPO curto por cima do modelo de mundo (100 passos, recompensa de acerto + legalidade + valor
+do Stockfish, 4-bit, 3,03 GB de pico) levou a **16,83%** — +0,83 pp sobre o verificado, com
+**z = +0,39: não significativo**. Está na tabela por completude, não como método principal: o
+plano previa descartá-lo se não melhorasse com significância, e é o que os dados dizem. O
+contraste com o GRPO sobre a resposta direta (6,17%, z = +5,79 contra ele) é o ponto: **RL
+funciona quando o modelo já sabe ler o tabuleiro**, e quase não sobra nada a ganhar quando o
+gargalo era o conhecimento, não a política.
 
 ### Elo
 
@@ -119,6 +128,7 @@ taxa de acerto, não a força em partida.
 | Modelo de mundo, 30k | 600 | 8,00% | **1300** | [1236,85; 1353,25] |
 | Modelo de mundo, 70k | 600 | 13,67% | **1421** | [1370,31; 1475,30] |
 | Modelo de mundo, 70k + verificado | 600 | 16,00% | **1460** | [1407,79; 1509,46] |
+| Modelo de mundo + GRPO | 600 | 16,83% | **1473** | [1421,10; 1517,73] |
 
 Partidas completas, cores alternadas, lances gerados em lote:
 

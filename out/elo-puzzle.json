@@ -68,5 +68,19 @@
     "status": "estimado",
     "razao": null,
     "bootstrap_validos": 1000
+  },
+  {
+    "arquivo": "out/aval-mav-grpo.json",
+    "n": 600,
+    "acertos": 101,
+    "taxa": 0.16833333333333333,
+    "elo_puzzle": 1472.7675408724508,
+    "ic95": [
+      1421.1008997539127,
+      1517.7290787521226
+    ],
+    "status": "estimado",
+    "razao": null,
+    "bootstrap_validos": 1000
   }
 ]

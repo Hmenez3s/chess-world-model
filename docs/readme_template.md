@@ -100,6 +100,14 @@ seed 42, decodificação gulosa. A linha de base foi medida **neste mesmo split*
 
 {{TABELA_CAMADAS}}
 
+Um GRPO curto por cima do modelo de mundo (100 passos, recompensa de acerto + legalidade + valor
+do Stockfish, 4-bit, 3,03 GB de pico) levou a **16,83%** — +0,83 pp sobre o verificado, com
+**z = +0,39: não significativo**. Está na tabela por completude, não como método principal: o
+plano previa descartá-lo se não melhorasse com significância, e é o que os dados dizem. O
+contraste com o GRPO sobre a resposta direta (6,17%, z = +5,79 contra ele) é o ponto: **RL
+funciona quando o modelo já sabe ler o tabuleiro**, e quase não sobra nada a ganhar quando o
+gargalo era o conhecimento, não a política.
+
 ### Elo
 
 Elo de puzzle é estimado por máxima verossimilhança logística sobre os ratings do Lichess

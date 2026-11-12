@@ -1,0 +1,4833 @@
+{
+  "n": 600,
+  "adapter": "out/mav-grpo",
+  "verificado": true,
+  "itens": [
+    {
+      "rating": 2022,
+      "solucao": "e6f4",
+      "melhor": "f5g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1482,
+      "solucao": "b4d4",
+      "melhor": "b4d4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1853,
+      "solucao": "d7g4",
+      "melhor": "d7a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1690,
+      "solucao": "c5e7",
+      "melhor": "c5e7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2192,
+      "solucao": "f4g3",
+      "melhor": "f4f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1436,
+      "solucao": "c5b4",
+      "melhor": "c5b4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2089,
+      "solucao": "g4f2",
+      "melhor": "h4h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1428,
+      "solucao": "d2e2",
+      "melhor": "d2d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1783,
+      "solucao": "g1e1",
+      "melhor": "g1g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1598,
+      "solucao": "g2h3",
+      "melhor": "e4d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2024,
+      "solucao": "h5g6",
+      "melhor": "f1a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2074,
+      "solucao": "f1h1",
+      "melhor": "d1d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1863,
+      "solucao": "e4e5",
+      "melhor": "d3d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2178,
+      "solucao": "a1h1",
+      "melhor": "e5c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2107,
+      "solucao": "g6g7",
+      "melhor": null,
+      "correto": false,
+      "legal": false,
+      "grade_exata": true
+    },
+    {
+      "rating": 2093,
+      "solucao": "h8a8",
+      "melhor": "b6b5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1462,
+      "solucao": "g6e6",
+      "melhor": "a3f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1917,
+      "solucao": "e2f2",
+      "melhor": "e2d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1528,
+      "solucao": "e7f6",
+      "melhor": "e7e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2084,
+      "solucao": "e2d1",
+      "melhor": "c1d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2020,
+      "solucao": "b2b3",
+      "melhor": "d1d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1856,
+      "solucao": "f3d1",
+      "melhor": "c3c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1834,
+      "solucao": "e1e4",
+      "melhor": "h6g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1450,
+      "solucao": "e5e6",
+      "melhor": "e5e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2190,
+      "solucao": "e5g7",
+      "melhor": "e5c7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2091,
+      "solucao": "g3g6",
+      "melhor": "d6c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1832,
+      "solucao": "e3b6",
+      "melhor": "e3e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1820,
+      "solucao": "e8e2",
+      "melhor": "f2f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1858,
+      "solucao": "e6d5",
+      "melhor": "e6f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1473,
+      "solucao": "e6f6",
+      "melhor": "g7h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1883,
+      "solucao": "a1b1",
+      "melhor": "c3b5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2068,
+      "solucao": "f3e5",
+      "melhor": "f3d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2150,
+      "solucao": "g5f4",
+      "melhor": "g5f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1950,
+      "solucao": "g7h6",
+      "melhor": "a1b1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1931,
+      "solucao": "e8e4",
+      "melhor": "d7h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1789,
+      "solucao": "g7g3",
+      "melhor": "g7f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2008,
+      "solucao": "c2c4",
+      "melhor": "g5f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1599,
+      "solucao": "g8g3",
+      "melhor": "f2f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1819,
+      "solucao": "f7g5",
+      "melhor": "f6d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1903,
+      "solucao": "g6h5",
+      "melhor": "h7h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1613,
+      "solucao": "b3f3",
+      "melhor": "g3g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2008,
+      "solucao": "c1d2",
+      "melhor": "b7b8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2094,
+      "solucao": "d8g5",
+      "melhor": "c3c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1448,
+      "solucao": "d1g1",
+      "melhor": "d1d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1915,
+      "solucao": "h3g4",
+      "melhor": "g1g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2137,
+      "solucao": "d2g5",
+      "melhor": "d1c2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1479,
+      "solucao": "f6g6",
+      "melhor": "f6f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1821,
+      "solucao": "e1e4",
+      "melhor": "e1e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1594,
+      "solucao": "f7f6",
+      "melhor": "a6a5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2061,
+      "solucao": "a5g5",
+      "melhor": "a5c5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1782,
+      "solucao": "a2a8",
+      "melhor": "e7f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1410,
+      "solucao": "e5e6",
+      "melhor": "e2f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1820,
+      "solucao": "d5d1",
+      "melhor": "d5d1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1763,
+      "solucao": "b3b7",
+      "melhor": "b3f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1775,
+      "solucao": "c4c3",
+      "melhor": "b4b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2123,
+      "solucao": "f4h3",
+      "melhor": "f4g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1959,
+      "solucao": "h5g6",
+      "melhor": "d1d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1957,
+      "solucao": "d1d8",
+      "melhor": "d1d8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1990,
+      "solucao": "b7g2",
+      "melhor": "f5f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2072,
+      "solucao": "h5d5",
+      "melhor": "h5h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1915,
+      "solucao": "e1e3",
+      "melhor": "a2b3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1597,
+      "solucao": "g5g6",
+      "melhor": "d4e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1596,
+      "solucao": "a8a4",
+      "melhor": "a8a4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1704,
+      "solucao": "f4f5",
+      "melhor": "f4f5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1987,
+      "solucao": "g8h7",
+      "melhor": "a2a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1931,
+      "solucao": "d2c3",
+      "melhor": "e5e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1886,
+      "solucao": "c1c4",
+      "melhor": "h5g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1891,
+      "solucao": "f5e6",
+      "melhor": "f5f8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1614,
+      "solucao": "f1f5",
+      "melhor": "f1f5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1770,
+      "solucao": "e2e4",
+      "melhor": "e2e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1864,
+      "solucao": "f6e8",
+      "melhor": "h4h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1963,
+      "solucao": "f2h4",
+      "melhor": "c7c8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1845,
+      "solucao": "f1b5",
+      "melhor": "d6c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1567,
+      "solucao": "e6f5",
+      "melhor": "c6d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2108,
+      "solucao": "d3e4",
+      "melhor": "d3e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1963,
+      "solucao": "h5g6",
+      "melhor": "d4e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2198,
+      "solucao": "f3e5",
+      "melhor": "f3e5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1540,
+      "solucao": "e2f2",
+      "melhor": "e2e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1994,
+      "solucao": "b5c6",
+      "melhor": "b5a6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1839,
+      "solucao": "a1f6",
+      "melhor": "d2h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1729,
+      "solucao": "c3d2",
+      "melhor": "c3d2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1480,
+      "solucao": "d7d6",
+      "melhor": "a2a8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1669,
+      "solucao": "h3h4",
+      "melhor": "f2f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1654,
+      "solucao": "b5b6",
+      "melhor": "c6f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1561,
+      "solucao": "d8e8",
+      "melhor": "g5f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1513,
+      "solucao": "b7a7",
+      "melhor": "a1a2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1546,
+      "solucao": "b8a6",
+      "melhor": "c7a6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1819,
+      "solucao": "b1b7",
+      "melhor": "b1b7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1990,
+      "solucao": "e4g3",
+      "melhor": "f6f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1847,
+      "solucao": "d2f3",
+      "melhor": "e1e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1506,
+      "solucao": "e3c2",
+      "melhor": "e3c2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1825,
+      "solucao": "b5b3",
+      "melhor": "b5f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1857,
+      "solucao": "f8f7",
+      "melhor": "f8f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1822,
+      "solucao": "h8h7",
+      "melhor": "c7c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1970,
+      "solucao": "c8c4",
+      "melhor": "b6f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2086,
+      "solucao": "e6d5",
+      "melhor": "c7c2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1993,
+      "solucao": "f7f3",
+      "melhor": "f7f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1826,
+      "solucao": "b3b4",
+      "melhor": "d2c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1746,
+      "solucao": "f6f7",
+      "melhor": "f6f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1847,
+      "solucao": "b2b3",
+      "melhor": "h6h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1780,
+      "solucao": "c2e2",
+      "melhor": "c2c7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1400,
+      "solucao": "h4c4",
+      "melhor": "e6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1888,
+      "solucao": "b5a7",
+      "melhor": "e2d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1915,
+      "solucao": "c1f4",
+      "melhor": "f1f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2097,
+      "solucao": "d5f6",
+      "melhor": "d5f6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1794,
+      "solucao": "f6f7",
+      "melhor": "f3f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2014,
+      "solucao": "e2h5",
+      "melhor": "g5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2016,
+      "solucao": "f3h5",
+      "melhor": "f3f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1685,
+      "solucao": "d4e4",
+      "melhor": "d4c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2125,
+      "solucao": "d1f3",
+      "melhor": "e5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2069,
+      "solucao": "d3d4",
+      "melhor": "f1f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2030,
+      "solucao": "d4c5",
+      "melhor": "d4d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2093,
+      "solucao": "c2h7",
+      "melhor": "c2g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1819,
+      "solucao": "c1c2",
+      "melhor": "e3f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1824,
+      "solucao": "c3a4",
+      "melhor": "d4c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1822,
+      "solucao": "a2d5",
+      "melhor": "d7d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1512,
+      "solucao": "e2e5",
+      "melhor": "a7a8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1736,
+      "solucao": "e5e1",
+      "melhor": "f3f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1663,
+      "solucao": "e6f5",
+      "melhor": "b7g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1502,
+      "solucao": "h4h3",
+      "melhor": "h4h3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1544,
+      "solucao": "f3f8",
+      "melhor": "e7e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1569,
+      "solucao": "a5a1",
+      "melhor": "a5a1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2150,
+      "solucao": "f5h5",
+      "melhor": "c7d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2061,
+      "solucao": "e4g6",
+      "melhor": "g4g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1745,
+      "solucao": "f5f3",
+      "melhor": "f5f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1826,
+      "solucao": "d8d4",
+      "melhor": "b6b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2114,
+      "solucao": "d8h4",
+      "melhor": "d8g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1436,
+      "solucao": "b6e6",
+      "melhor": "b6e6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2145,
+      "solucao": "c3d3",
+      "melhor": "c3d3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1815,
+      "solucao": "b2b4",
+      "melhor": "h6g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1621,
+      "solucao": "g5g6",
+      "melhor": "g5g6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1498,
+      "solucao": "b5b6",
+      "melhor": "a2b3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1415,
+      "solucao": "a4d1",
+      "melhor": "a4a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1896,
+      "solucao": "c1e3",
+      "melhor": "c1f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1676,
+      "solucao": "c6d6",
+      "melhor": "c6c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1511,
+      "solucao": "e4e5",
+      "melhor": "e4e5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1919,
+      "solucao": "h1g1",
+      "melhor": "h1h8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1653,
+      "solucao": "d6d8",
+      "melhor": "f8e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2102,
+      "solucao": "e5f3",
+      "melhor": "h4h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1838,
+      "solucao": "d5c5",
+      "melhor": "d5c5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2092,
+      "solucao": "f6g5",
+      "melhor": "f6g5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1779,
+      "solucao": "f3g4",
+      "melhor": "f3g4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1699,
+      "solucao": "e3e2",
+      "melhor": "f4g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1598,
+      "solucao": "b3h3",
+      "melhor": "b3b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1682,
+      "solucao": "e4f6",
+      "melhor": "g6g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1485,
+      "solucao": "f8c5",
+      "melhor": "c6b6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1564,
+      "solucao": "e8h8",
+      "melhor": "a8a7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1857,
+      "solucao": "c8e6",
+      "melhor": "c8d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1857,
+      "solucao": "e1e7",
+      "melhor": "f7f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2045,
+      "solucao": "e1d2",
+      "melhor": "c3b1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2014,
+      "solucao": "f3d4",
+      "melhor": "a3a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1801,
+      "solucao": "d1d5",
+      "melhor": "d6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1924,
+      "solucao": "f3h4",
+      "melhor": "h6h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1703,
+      "solucao": "b4b5",
+      "melhor": "e3e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1908,
+      "solucao": "f2f5",
+      "melhor": "g4h4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1747,
+      "solucao": "g5g8",
+      "melhor": "g2h1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1555,
+      "solucao": "g3d6",
+      "melhor": "a7a8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2067,
+      "solucao": "f4e3",
+      "melhor": "f4h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1967,
+      "solucao": "e4g5",
+      "melhor": "f3a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1646,
+      "solucao": "d1c1",
+      "melhor": "e2e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1529,
+      "solucao": "e5h5",
+      "melhor": "e3e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1957,
+      "solucao": "d1g4",
+      "melhor": "d1g4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1413,
+      "solucao": "d6e7",
+      "melhor": null,
+      "correto": false,
+      "legal": false,
+      "grade_exata": true
+    },
+    {
+      "rating": 1751,
+      "solucao": "d2d5",
+      "melhor": "c6d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1930,
+      "solucao": "b7g2",
+      "melhor": "b7g2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2070,
+      "solucao": "h6g5",
+      "melhor": "g4g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2155,
+      "solucao": "d4c3",
+      "melhor": "c4c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1932,
+      "solucao": "f5f2",
+      "melhor": "f5f2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1429,
+      "solucao": "f1d1",
+      "melhor": "c1c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1814,
+      "solucao": "b6d8",
+      "melhor": "b5d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1873,
+      "solucao": "h6g4",
+      "melhor": "h4h5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1810,
+      "solucao": "a7c7",
+      "melhor": "a5c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1659,
+      "solucao": "f3d5",
+      "melhor": "f3f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1947,
+      "solucao": "e5d3",
+      "melhor": "e5f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2061,
+      "solucao": "e6e5",
+      "melhor": "e4f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2155,
+      "solucao": "d8a8",
+      "melhor": "d6h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1666,
+      "solucao": "d1d8",
+      "melhor": "b7b8q",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1968,
+      "solucao": "h5e8",
+      "melhor": "h5h8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2035,
+      "solucao": "c2c5",
+      "melhor": "c2c5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1513,
+      "solucao": "c1c7",
+      "melhor": "f6g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2002,
+      "solucao": "h6g5",
+      "melhor": "f3g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1570,
+      "solucao": "c3c1",
+      "melhor": "c5c7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2051,
+      "solucao": "d6g3",
+      "melhor": "d6d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2116,
+      "solucao": "b4a5",
+      "melhor": "c1c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2090,
+      "solucao": "d2d3",
+      "melhor": "d2d3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1678,
+      "solucao": "c3g7",
+      "melhor": "c3c5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1557,
+      "solucao": "c8c1",
+      "melhor": "c8c1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1536,
+      "solucao": "c3c2",
+      "melhor": "d3b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1701,
+      "solucao": "e6e5",
+      "melhor": "e6e5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2177,
+      "solucao": "c7b5",
+      "melhor": "c7b5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1434,
+      "solucao": "h5h4",
+      "melhor": "f8f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1869,
+      "solucao": "e1e5",
+      "melhor": "d3e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1532,
+      "solucao": "h7h5",
+      "melhor": "b6b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1735,
+      "solucao": "a6c7",
+      "melhor": "a3e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2164,
+      "solucao": "d4d6",
+      "melhor": "f7e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1920,
+      "solucao": "b2c3",
+      "melhor": "f3d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2180,
+      "solucao": "d3d5",
+      "melhor": "d3d5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1707,
+      "solucao": "g1c5",
+      "melhor": "f4g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1450,
+      "solucao": "d4e3",
+      "melhor": "d4e3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2076,
+      "solucao": "g5g4",
+      "melhor": "g7f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1430,
+      "solucao": "c8c3",
+      "melhor": "f4f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1718,
+      "solucao": "e8e6",
+      "melhor": "d7d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1754,
+      "solucao": "d7c8",
+      "melhor": "g2g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2025,
+      "solucao": "f4d6",
+      "melhor": "f4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1776,
+      "solucao": "d4d2",
+      "melhor": "d4d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2175,
+      "solucao": "e2g3",
+      "melhor": "g2h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2153,
+      "solucao": "g3g4",
+      "melhor": "d5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1488,
+      "solucao": "f6f4",
+      "melhor": "b2b1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1433,
+      "solucao": "e5d4",
+      "melhor": "e5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1446,
+      "solucao": "f4g5",
+      "melhor": "f4g5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1965,
+      "solucao": "g7g3",
+      "melhor": "g7f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1813,
+      "solucao": "c3e4",
+      "melhor": "d3h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2109,
+      "solucao": "b2b6",
+      "melhor": "g7f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1557,
+      "solucao": "d1c2",
+      "melhor": "g7g1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2135,
+      "solucao": "d3e4",
+      "melhor": "d3e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2170,
+      "solucao": "c8h8",
+      "melhor": "c8g8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1996,
+      "solucao": "e4f5",
+      "melhor": "f6g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1897,
+      "solucao": "g3g8",
+      "melhor": "g3f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2111,
+      "solucao": "c2b3",
+      "melhor": "c2b3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1795,
+      "solucao": "g8g4",
+      "melhor": "f5g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1909,
+      "solucao": "f5g5",
+      "melhor": "f4d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1740,
+      "solucao": "e2e8",
+      "melhor": "e2e8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1914,
+      "solucao": "f7d7",
+      "melhor": "f7g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1821,
+      "solucao": "h1h2",
+      "melhor": "b1c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2028,
+      "solucao": "d3c4",
+      "melhor": "e5c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2057,
+      "solucao": "b5c5",
+      "melhor": "b5e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1727,
+      "solucao": "b6b7",
+      "melhor": "b6b1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1822,
+      "solucao": "g5h5",
+      "melhor": "h6h5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1904,
+      "solucao": "f3h4",
+      "melhor": "c4d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1821,
+      "solucao": "h8e8",
+      "melhor": "c5f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2051,
+      "solucao": "f5f4",
+      "melhor": "f6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1921,
+      "solucao": "h7h6",
+      "melhor": "e7g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1892,
+      "solucao": "d1f1",
+      "melhor": "d1f1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1758,
+      "solucao": "a4c5",
+      "melhor": "e5b5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1974,
+      "solucao": "g5h4",
+      "melhor": "g5f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2147,
+      "solucao": "f8f6",
+      "melhor": "a7b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1720,
+      "solucao": "d6d7",
+      "melhor": "d3d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1962,
+      "solucao": "e2g3",
+      "melhor": "b1a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2074,
+      "solucao": "g3f3",
+      "melhor": "h4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1990,
+      "solucao": "d5c3",
+      "melhor": "d5c3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2124,
+      "solucao": "d4b5",
+      "melhor": "d2c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2030,
+      "solucao": "f8f7",
+      "melhor": "g8h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1979,
+      "solucao": "d8d4",
+      "melhor": "c8d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1640,
+      "solucao": "d2e4",
+      "melhor": "a6c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1701,
+      "solucao": "e6f7",
+      "melhor": "f3f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1749,
+      "solucao": "d2c2",
+      "melhor": "d2c2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2031,
+      "solucao": "d5c5",
+      "melhor": "a7a6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1958,
+      "solucao": "c2g6",
+      "melhor": "h4e7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1726,
+      "solucao": "a3c1",
+      "melhor": "b3c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1626,
+      "solucao": "e8e6",
+      "melhor": "e8e6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1867,
+      "solucao": "e7e5",
+      "melhor": "c7b6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2034,
+      "solucao": "e8e5",
+      "melhor": "e8e5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2155,
+      "solucao": "d6d4",
+      "melhor": "e6e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2052,
+      "solucao": "f4g5",
+      "melhor": "e5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1999,
+      "solucao": "h5g6",
+      "melhor": "h5g6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1935,
+      "solucao": "e3g3",
+      "melhor": "e3c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1748,
+      "solucao": "e5d4",
+      "melhor": "e4e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1812,
+      "solucao": "b7e4",
+      "melhor": "b7b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1949,
+      "solucao": "b5e2",
+      "melhor": "g7f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1689,
+      "solucao": "d8d5",
+      "melhor": "d8d5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1976,
+      "solucao": "d6e4",
+      "melhor": "c6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1421,
+      "solucao": "h8h7",
+      "melhor": "a2a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2117,
+      "solucao": "f2f7",
+      "melhor": "f2f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1535,
+      "solucao": "b7c7",
+      "melhor": "b7c7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1558,
+      "solucao": "g4g5",
+      "melhor": "g4g5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1896,
+      "solucao": "e5g4",
+      "melhor": "e5d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2096,
+      "solucao": "e1e4",
+      "melhor": "h3f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1981,
+      "solucao": "b1b8",
+      "melhor": "b1b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1769,
+      "solucao": "d6e5",
+      "melhor": "d6c7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1548,
+      "solucao": "d8d4",
+      "melhor": "c4b4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1614,
+      "solucao": "f4f1",
+      "melhor": "f4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2112,
+      "solucao": "g4g6",
+      "melhor": "g4g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1602,
+      "solucao": "d2c2",
+      "melhor": "d2e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1587,
+      "solucao": "b2d4",
+      "melhor": "b2b1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1702,
+      "solucao": "f5g6",
+      "melhor": "b4c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2099,
+      "solucao": "c2g6",
+      "melhor": "c2g6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1858,
+      "solucao": "g7e5",
+      "melhor": "c7e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1867,
+      "solucao": "c3b1",
+      "melhor": "c3a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2185,
+      "solucao": "g7g6",
+      "melhor": "d6d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1448,
+      "solucao": "c8c6",
+      "melhor": "c8c6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1989,
+      "solucao": "f8d8",
+      "melhor": "f6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1931,
+      "solucao": "e6d5",
+      "melhor": "c7d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1751,
+      "solucao": "c4g8",
+      "melhor": "c4c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1647,
+      "solucao": "f6f5",
+      "melhor": "g6g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1626,
+      "solucao": "c6e6",
+      "melhor": "c6c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2169,
+      "solucao": "g8g3",
+      "melhor": "a7a5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2135,
+      "solucao": "d5f7",
+      "melhor": "d5f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2051,
+      "solucao": "b3b5",
+      "melhor": "b3b5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1977,
+      "solucao": "g2f3",
+      "melhor": "d4f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2048,
+      "solucao": "e4c6",
+      "melhor": "b1b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2120,
+      "solucao": "e4e6",
+      "melhor": "b1c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2140,
+      "solucao": "e5g6",
+      "melhor": "d6g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1870,
+      "solucao": "g5f7",
+      "melhor": "g5f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1811,
+      "solucao": "e5g3",
+      "melhor": "h5h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2102,
+      "solucao": "f5f6",
+      "melhor": "e2d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1913,
+      "solucao": "a8b8",
+      "melhor": "f5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1844,
+      "solucao": "f4d6",
+      "melhor": "g5g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2070,
+      "solucao": "f3d4",
+      "melhor": "f3d4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1969,
+      "solucao": "c3e4",
+      "melhor": "g5g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2169,
+      "solucao": "g4h6",
+      "melhor": "h4f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1487,
+      "solucao": "b5b4",
+      "melhor": "g7g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2089,
+      "solucao": "h4e1",
+      "melhor": "h4h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1886,
+      "solucao": "a1a8",
+      "melhor": "e1e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1651,
+      "solucao": "c5c4",
+      "melhor": "b5b4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1701,
+      "solucao": "c3c4",
+      "melhor": "e2e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2050,
+      "solucao": "f8h6",
+      "melhor": "c6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1937,
+      "solucao": "d1g1",
+      "melhor": "e3g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2183,
+      "solucao": "b7b6",
+      "melhor": "d3c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2169,
+      "solucao": "e5d7",
+      "melhor": "e5f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1629,
+      "solucao": "d1f1",
+      "melhor": "e5e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1878,
+      "solucao": "d4e5",
+      "melhor": "f2f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1800,
+      "solucao": "h1h8",
+      "melhor": "f4h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1476,
+      "solucao": "f8g7",
+      "melhor": "f8g7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1519,
+      "solucao": "h8h7",
+      "melhor": "h8g8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1559,
+      "solucao": "a5f5",
+      "melhor": "a5a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2084,
+      "solucao": "a5a6",
+      "melhor": "d5d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1778,
+      "solucao": "f3e4",
+      "melhor": "e2f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1594,
+      "solucao": "d8f8",
+      "melhor": "d8d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1915,
+      "solucao": "f4f5",
+      "melhor": "c4d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2195,
+      "solucao": "f1f4",
+      "melhor": "d1f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1554,
+      "solucao": "c5b4",
+      "melhor": "c5d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2104,
+      "solucao": "b1b6",
+      "melhor": "e4d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2139,
+      "solucao": "g2e4",
+      "melhor": "d2e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1446,
+      "solucao": "g2h3",
+      "melhor": "g4h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2149,
+      "solucao": "e5g4",
+      "melhor": "e5f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1918,
+      "solucao": "f3h5",
+      "melhor": "f3d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1827,
+      "solucao": "c3e4",
+      "melhor": "e3g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1656,
+      "solucao": "f5e7",
+      "melhor": "f5g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1754,
+      "solucao": "e3e8",
+      "melhor": "e3e8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1888,
+      "solucao": "g6h5",
+      "melhor": "g4f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1433,
+      "solucao": "e2g2",
+      "melhor": "d2d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2171,
+      "solucao": "f5f4",
+      "melhor": "h5g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1424,
+      "solucao": "f4f5",
+      "melhor": "g6h5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2087,
+      "solucao": "h1h2",
+      "melhor": "f1h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1603,
+      "solucao": "h4e4",
+      "melhor": "h4e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1698,
+      "solucao": "d4c3",
+      "melhor": "d4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1514,
+      "solucao": "f6c6",
+      "melhor": "f6f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1686,
+      "solucao": "f3d4",
+      "melhor": "a1c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1971,
+      "solucao": "d8b6",
+      "melhor": "d8b6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1958,
+      "solucao": "e3h6",
+      "melhor": "e3f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1998,
+      "solucao": "f1e1",
+      "melhor": "f1f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2172,
+      "solucao": "c8c1",
+      "melhor": "d7e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2092,
+      "solucao": "d8d1",
+      "melhor": "a6c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2004,
+      "solucao": "g5g6",
+      "melhor": "a1f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2142,
+      "solucao": "f2f7",
+      "melhor": "g5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1904,
+      "solucao": "c8c1",
+      "melhor": "c8c1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1962,
+      "solucao": "d5a8",
+      "melhor": "d5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1930,
+      "solucao": "c5c2",
+      "melhor": "c5c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1409,
+      "solucao": "g5g4",
+      "melhor": "e6f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1563,
+      "solucao": "e6d5",
+      "melhor": "e6f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2143,
+      "solucao": "e4f2",
+      "melhor": "e4c5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1792,
+      "solucao": "h5h1",
+      "melhor": "h5h1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2055,
+      "solucao": "d7e5",
+      "melhor": "d6g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1580,
+      "solucao": "a8c8",
+      "melhor": "f6f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1904,
+      "solucao": "d4f6",
+      "melhor": "d4d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1702,
+      "solucao": "c6c8",
+      "melhor": "c2e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2055,
+      "solucao": "e4g5",
+      "melhor": "h5h1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1420,
+      "solucao": "f5f3",
+      "melhor": "f5f3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1485,
+      "solucao": "e3h6",
+      "melhor": "a6h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1860,
+      "solucao": "g7f5",
+      "melhor": "g7f5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2045,
+      "solucao": "e2h5",
+      "melhor": "e5f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1547,
+      "solucao": "a1e1",
+      "melhor": "f7g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1529,
+      "solucao": "f2g2",
+      "melhor": "g8g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1463,
+      "solucao": "e6f7",
+      "melhor": "e6f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1650,
+      "solucao": "g5g4",
+      "melhor": "c2c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2087,
+      "solucao": "d1e2",
+      "melhor": "d1f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1658,
+      "solucao": "g3g4",
+      "melhor": "d2c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1888,
+      "solucao": "e1e8",
+      "melhor": "g3d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1900,
+      "solucao": "e5g4",
+      "melhor": "e5f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2137,
+      "solucao": "h6f4",
+      "melhor": "d8d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2185,
+      "solucao": "e3g3",
+      "melhor": "f5g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1526,
+      "solucao": "g3h3",
+      "melhor": "g3h3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2190,
+      "solucao": "g3g2",
+      "melhor": "e3e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2141,
+      "solucao": "b6e3",
+      "melhor": "b6b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1842,
+      "solucao": "f8a3",
+      "melhor": "c4e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2032,
+      "solucao": "g7f6",
+      "melhor": "e7e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1419,
+      "solucao": "b8c7",
+      "melhor": "b8c7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1502,
+      "solucao": "h5g4",
+      "melhor": "g2g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2071,
+      "solucao": "e5d7",
+      "melhor": "e5d7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1500,
+      "solucao": "d8b8",
+      "melhor": "g3g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1929,
+      "solucao": "d1d8",
+      "melhor": "d1d8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1929,
+      "solucao": "d8g8",
+      "melhor": "f2g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2177,
+      "solucao": "d4g4",
+      "melhor": "d4d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1448,
+      "solucao": "a5a1",
+      "melhor": "a5a1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1559,
+      "solucao": "b5e8",
+      "melhor": "b5e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1736,
+      "solucao": "g6h5",
+      "melhor": "e4f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1705,
+      "solucao": "d4d5",
+      "melhor": "e7d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1924,
+      "solucao": "g4f5",
+      "melhor": "f4d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1698,
+      "solucao": "e8f7",
+      "melhor": "d2c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1480,
+      "solucao": "a5a6",
+      "melhor": "a5a6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1449,
+      "solucao": "h3h4",
+      "melhor": "h3g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2029,
+      "solucao": "b4d2",
+      "melhor": "b4c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1713,
+      "solucao": "c6b5",
+      "melhor": "c6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1843,
+      "solucao": "d1d2",
+      "melhor": "d1d2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1850,
+      "solucao": "f3e3",
+      "melhor": "a2a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1984,
+      "solucao": "c2a4",
+      "melhor": "e5d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1533,
+      "solucao": "c6c7",
+      "melhor": "f2e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2106,
+      "solucao": "a8e8",
+      "melhor": "d6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1991,
+      "solucao": "f8f4",
+      "melhor": "h5g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2089,
+      "solucao": "c6c2",
+      "melhor": "c6b6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1560,
+      "solucao": "f3h1",
+      "melhor": "f3e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1546,
+      "solucao": "d7c5",
+      "melhor": "d7c5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1484,
+      "solucao": "a8a4",
+      "melhor": "a8a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1881,
+      "solucao": "g1g2",
+      "melhor": "h6g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1606,
+      "solucao": "c4b4",
+      "melhor": "c2c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1492,
+      "solucao": "b8b1",
+      "melhor": "b8b1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1943,
+      "solucao": "e2c4",
+      "melhor": "e2e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1479,
+      "solucao": "h6f5",
+      "melhor": "a4f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1627,
+      "solucao": "d3e4",
+      "melhor": "c7c8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1890,
+      "solucao": "b7f3",
+      "melhor": "d8d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1659,
+      "solucao": "f4e2",
+      "melhor": "f5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1683,
+      "solucao": "g4g3",
+      "melhor": null,
+      "correto": false,
+      "legal": false,
+      "grade_exata": true
+    },
+    {
+      "rating": 2116,
+      "solucao": "e6d5",
+      "melhor": "c5f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1523,
+      "solucao": "a4a6",
+      "melhor": "a4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1898,
+      "solucao": "b6e6",
+      "melhor": "c1c8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2058,
+      "solucao": "c8f5",
+      "melhor": "c5c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2010,
+      "solucao": "e7e1",
+      "melhor": "c6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2131,
+      "solucao": "d1d4",
+      "melhor": "e1e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1784,
+      "solucao": "c4b3",
+      "melhor": "d5e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1829,
+      "solucao": "d8c7",
+      "melhor": "d8d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1808,
+      "solucao": "d2g5",
+      "melhor": "e5e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1553,
+      "solucao": "e4d4",
+      "melhor": "e4d4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1657,
+      "solucao": "d1h1",
+      "melhor": "e6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1738,
+      "solucao": "g1g3",
+      "melhor": "g1g3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1883,
+      "solucao": "e5g4",
+      "melhor": "c3c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2040,
+      "solucao": "d3f5",
+      "melhor": "g7h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2143,
+      "solucao": "d1d5",
+      "melhor": "g7g8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1508,
+      "solucao": "g7h8",
+      "melhor": "e1c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1801,
+      "solucao": "d7h7",
+      "melhor": "f4e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2171,
+      "solucao": "d5d4",
+      "melhor": "c8b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1728,
+      "solucao": "e8c6",
+      "melhor": "d3d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2122,
+      "solucao": "f8f7",
+      "melhor": "h5g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1828,
+      "solucao": "d6c6",
+      "melhor": "d6f8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1871,
+      "solucao": "h5f3",
+      "melhor": "f5g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1884,
+      "solucao": "c6e4",
+      "melhor": "e5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2063,
+      "solucao": "c3b5",
+      "melhor": "c6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2166,
+      "solucao": "e2a6",
+      "melhor": "e2f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1530,
+      "solucao": "f6e7",
+      "melhor": "d3b4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2054,
+      "solucao": "f3h4",
+      "melhor": "b1d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1816,
+      "solucao": "f2g3",
+      "melhor": "g1h1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1483,
+      "solucao": "a6c8",
+      "melhor": "a6c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2154,
+      "solucao": "f8f2",
+      "melhor": "g4e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1815,
+      "solucao": "g4h5",
+      "melhor": "e5d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1804,
+      "solucao": "b3b4",
+      "melhor": "f3d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2150,
+      "solucao": "c5a4",
+      "melhor": "c5d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1699,
+      "solucao": "h8g7",
+      "melhor": "h8h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1948,
+      "solucao": "e4e8",
+      "melhor": "f4e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1607,
+      "solucao": "g3f4",
+      "melhor": "f3e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1963,
+      "solucao": "h7h5",
+      "melhor": "f5e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1890,
+      "solucao": "g7c3",
+      "melhor": "e7f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1942,
+      "solucao": "g6h4",
+      "melhor": "b6d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2055,
+      "solucao": "b3b7",
+      "melhor": "e4d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1431,
+      "solucao": "d4c4",
+      "melhor": "d4c3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1934,
+      "solucao": "b1d2",
+      "melhor": "c2b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1815,
+      "solucao": "b7h1",
+      "melhor": null,
+      "correto": false,
+      "legal": false,
+      "grade_exata": true
+    },
+    {
+      "rating": 2036,
+      "solucao": "h6g5",
+      "melhor": "f7f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1642,
+      "solucao": "e4f4",
+      "melhor": "e4e8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1777,
+      "solucao": "f4f5",
+      "melhor": "f3g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2014,
+      "solucao": "c2f5",
+      "melhor": "f6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2071,
+      "solucao": "h4g6",
+      "melhor": "h6g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1510,
+      "solucao": "c8d8",
+      "melhor": "c8c1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1575,
+      "solucao": "e3e4",
+      "melhor": "c3c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1899,
+      "solucao": "c3d5",
+      "melhor": "g5f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2011,
+      "solucao": "f1f8",
+      "melhor": "e6g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1861,
+      "solucao": "e3e8",
+      "melhor": "c2f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1825,
+      "solucao": "h4f4",
+      "melhor": "h4h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1491,
+      "solucao": "a5e1",
+      "melhor": "f8f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2090,
+      "solucao": "h2g2",
+      "melhor": "h3h4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2078,
+      "solucao": "a7a8q",
+      "melhor": "e1e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2078,
+      "solucao": "g4f3",
+      "melhor": "g4d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2094,
+      "solucao": "g3g6",
+      "melhor": "g3g6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1851,
+      "solucao": "b7g2",
+      "melhor": "d3f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1658,
+      "solucao": "a8a2",
+      "melhor": "a8a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1728,
+      "solucao": "c5b4",
+      "melhor": "c5b4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1478,
+      "solucao": "g7g5",
+      "melhor": "g7g5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1951,
+      "solucao": "b1b2",
+      "melhor": "a2a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1923,
+      "solucao": "e8f8",
+      "melhor": "e7e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1924,
+      "solucao": "b4b2",
+      "melhor": "e6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2095,
+      "solucao": "d5d7",
+      "melhor": "d5e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1627,
+      "solucao": "d8d1",
+      "melhor": "e8a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1524,
+      "solucao": "c2b4",
+      "melhor": "c2b4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1951,
+      "solucao": "f1h1",
+      "melhor": "e4h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1432,
+      "solucao": "g5h6",
+      "melhor": "g5f5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1516,
+      "solucao": "d3e4",
+      "melhor": "e3d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2090,
+      "solucao": "c3b5",
+      "melhor": "a3a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1941,
+      "solucao": "e4e5",
+      "melhor": "d1d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1845,
+      "solucao": "e1e7",
+      "melhor": "f4e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2131,
+      "solucao": "f6h5",
+      "melhor": "d6f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1841,
+      "solucao": "f6h5",
+      "melhor": "f6e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1435,
+      "solucao": "f3f5",
+      "melhor": "f3f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2014,
+      "solucao": "b5g5",
+      "melhor": "b5d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1512,
+      "solucao": "d8d3",
+      "melhor": "h1h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1897,
+      "solucao": "f6e4",
+      "melhor": "f6e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1811,
+      "solucao": "g5f6",
+      "melhor": "d1d8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1550,
+      "solucao": "e7f7",
+      "melhor": "e7f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1722,
+      "solucao": "f6f7",
+      "melhor": "g5h4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1826,
+      "solucao": "f2f3",
+      "melhor": "e1d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1672,
+      "solucao": "d3a6",
+      "melhor": "d3a6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1641,
+      "solucao": "c2c1",
+      "melhor": "f7g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2197,
+      "solucao": "d7h3",
+      "melhor": "d7h3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2180,
+      "solucao": "f5g4",
+      "melhor": "f5f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1579,
+      "solucao": "e5e6",
+      "melhor": "d2e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2135,
+      "solucao": "d2b2",
+      "melhor": "d2b2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2072,
+      "solucao": "h6h2",
+      "melhor": "c6g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2047,
+      "solucao": "e7d5",
+      "melhor": "e6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1639,
+      "solucao": "h8h1",
+      "melhor": "g2f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2146,
+      "solucao": "g4h5",
+      "melhor": "f7f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1499,
+      "solucao": "f8f7",
+      "melhor": "f8f7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2063,
+      "solucao": "d7c6",
+      "melhor": "h3h4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2012,
+      "solucao": "d5f6",
+      "melhor": "d5e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 2066,
+      "solucao": "g8g7",
+      "melhor": "d7g4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1736,
+      "solucao": "c3c2",
+      "melhor": "h7h8",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1868,
+      "solucao": "c6d6",
+      "melhor": "c6d6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1893,
+      "solucao": "b5a7",
+      "melhor": "g2c6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1436,
+      "solucao": "f2f3",
+      "melhor": "f2g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2176,
+      "solucao": "f6d4",
+      "melhor": "c3e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1866,
+      "solucao": "g2g4",
+      "melhor": "f6h4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2068,
+      "solucao": "e1e6",
+      "melhor": "c2h7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1413,
+      "solucao": "c8f5",
+      "melhor": "c8e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1546,
+      "solucao": "h4g3",
+      "melhor": "h4f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2098,
+      "solucao": "d5c5",
+      "melhor": "d5d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1679,
+      "solucao": "e5d4",
+      "melhor": "b4c4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1814,
+      "solucao": "a5d5",
+      "melhor": "d8d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1884,
+      "solucao": "c2d2",
+      "melhor": "f3e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1893,
+      "solucao": "c5a4",
+      "melhor": "c5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2017,
+      "solucao": "d1d2",
+      "melhor": "d1d2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2071,
+      "solucao": "d2d6",
+      "melhor": "d2d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1704,
+      "solucao": "d3b3",
+      "melhor": "d3d7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1628,
+      "solucao": "g6g5",
+      "melhor": "c7b7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1597,
+      "solucao": "g3g8",
+      "melhor": "e4f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1608,
+      "solucao": "f5e4",
+      "melhor": "f5e4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2019,
+      "solucao": "c3b5",
+      "melhor": "e6e7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1703,
+      "solucao": "d6e5",
+      "melhor": "d6e5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1883,
+      "solucao": "e5f3",
+      "melhor": "e4f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2191,
+      "solucao": "g5e7",
+      "melhor": "d4e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1823,
+      "solucao": "e1a1",
+      "melhor": "e1a1",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1594,
+      "solucao": "b7b6",
+      "melhor": "b7b6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1452,
+      "solucao": "h6h5",
+      "melhor": "h2h3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1727,
+      "solucao": "f6f7",
+      "melhor": "d4d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1895,
+      "solucao": "g4f3",
+      "melhor": "e4e3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1826,
+      "solucao": "c8b7",
+      "melhor": "e7e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1805,
+      "solucao": "g8g3",
+      "melhor": "c7g3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1659,
+      "solucao": "f5f4",
+      "melhor": "g3e1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2128,
+      "solucao": "a6b5",
+      "melhor": "d5b4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1853,
+      "solucao": "d2c4",
+      "melhor": "d2c4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1516,
+      "solucao": "d1c1",
+      "melhor": "e1f1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1994,
+      "solucao": "c6b8",
+      "melhor": "c6d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2003,
+      "solucao": "h2h4",
+      "melhor": "d4f6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1952,
+      "solucao": "c8f5",
+      "melhor": "g6d3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2002,
+      "solucao": "a3c5",
+      "melhor": "c4e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1426,
+      "solucao": "a8a6",
+      "melhor": "b7a6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1872,
+      "solucao": "b8c8",
+      "melhor": "d8d2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1509,
+      "solucao": "d2f2",
+      "melhor": "d2f2",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1886,
+      "solucao": "a8a7",
+      "melhor": "a8f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1879,
+      "solucao": "c3e4",
+      "melhor": "d3g6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1797,
+      "solucao": "d6c7",
+      "melhor": "c4f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1904,
+      "solucao": "d3g6",
+      "melhor": "d3g6",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1611,
+      "solucao": "a1a6",
+      "melhor": "f3g2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2012,
+      "solucao": "h6c1",
+      "melhor": "a6d6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2107,
+      "solucao": "c4d4",
+      "melhor": "b4b5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1569,
+      "solucao": "c4b5",
+      "melhor": "f5g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1919,
+      "solucao": "c4c7",
+      "melhor": "c4c7",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1983,
+      "solucao": "h7g6",
+      "melhor": "d8g5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1825,
+      "solucao": "d6e8",
+      "melhor": "d6e8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1841,
+      "solucao": "b7b8",
+      "melhor": "b7b8",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2155,
+      "solucao": "c7f7",
+      "melhor": "c7e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1707,
+      "solucao": "a6d6",
+      "melhor": "a6a3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2168,
+      "solucao": "f6f5",
+      "melhor": "f6f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1945,
+      "solucao": "f6b2",
+      "melhor": "f6f2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2132,
+      "solucao": "e2e8",
+      "melhor": "g5e6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2194,
+      "solucao": "a5b5",
+      "melhor": "a5a1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1747,
+      "solucao": "d6d3",
+      "melhor": "d6d3",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1931,
+      "solucao": "d2c4",
+      "melhor": "d1a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1498,
+      "solucao": "e5e4",
+      "melhor": "a5a4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1403,
+      "solucao": "e1f1",
+      "melhor": "g7h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2188,
+      "solucao": "g3h5",
+      "melhor": "h4h6",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1855,
+      "solucao": "f6g6",
+      "melhor": "f6f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1789,
+      "solucao": "c3d5",
+      "melhor": "c3d5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1938,
+      "solucao": "a4a5",
+      "melhor": "d5d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2037,
+      "solucao": "f1b5",
+      "melhor": "c3d4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1924,
+      "solucao": "e6h6",
+      "melhor": "h4h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1720,
+      "solucao": "h8e8",
+      "melhor": "h8g7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1893,
+      "solucao": "f3a8",
+      "melhor": "a2b3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2001,
+      "solucao": "f3e5",
+      "melhor": "c3e4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1975,
+      "solucao": "e4c5",
+      "melhor": "h5a5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1536,
+      "solucao": "d5b5",
+      "melhor": "d5d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2022,
+      "solucao": "h3h7",
+      "melhor": "h1f3",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1834,
+      "solucao": "d2c2",
+      "melhor": "d4e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2148,
+      "solucao": "b5a7",
+      "melhor": "e3f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1429,
+      "solucao": "e5d4",
+      "melhor": "e5f4",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1677,
+      "solucao": "g5g6",
+      "melhor": "f6f7",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1761,
+      "solucao": "e1e8",
+      "melhor": "e1e2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": false
+    },
+    {
+      "rating": 1619,
+      "solucao": "h2f4",
+      "melhor": "e6d5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1830,
+      "solucao": "b6d4",
+      "melhor": "b6d4",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1716,
+      "solucao": "c8c2",
+      "melhor": "d3d1",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1735,
+      "solucao": "f6f5",
+      "melhor": "f6f5",
+      "correto": true,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1899,
+      "solucao": "g3g2",
+      "melhor": null,
+      "correto": false,
+      "legal": false,
+      "grade_exata": true
+    },
+    {
+      "rating": 1752,
+      "solucao": "a4a3",
+      "melhor": "b3b2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 1820,
+      "solucao": "d4e3",
+      "melhor": "f6e5",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    },
+    {
+      "rating": 2047,
+      "solucao": "h7g6",
+      "melhor": "h4h2",
+      "correto": false,
+      "legal": true,
+      "grade_exata": true
+    }
+  ],
+  "grade_exata_pct": 93.66666666666667,
+  "casas_certas_pct": 99.859375,
+  "cor_certa_pct": 99.90308370044053,
+  "legais_exatos_pct": 5.0,
+  "legais_f1_medio": 0.7971065218359544,
+  "melhor_legal_pct": 99.16666666666667,
+  "melhor_correto": 101,
+  "melhor_correto_pct": 16.833333333333332,
+  "melhor_correto_ic95": [
+    14.052506464395744,
+    20.03616844637556
+  ],
+  "amostras": [
+    {
+      "esperado": "e6f4",
+      "texto": "estado:\n8 . . . . . . . r\n7 . . . . p k b .\n6 p . . . N p r .\n5 . p . q p Q . .\n4 . . . . . . . .\n3 . . . . . . p .\n2 P P P . . . . .\n1 . K . . R . R .\n  a b c d e f g h\nvez: brancas\nlegais: a2a3 a2a4 b1a1 b1c1 b2b3 b2b4 c2c3 c2c4 e1c1 e1d1 e1e2 e1e3 e1e4 e1e5 e1f1 e6c5 e6c7 e6d4 e6d8 e6f4 e6f8 e6g5 e6g7 f5c8 f5d7 f5e4 f5e5 f5f1 f5f2 f5f3 f5f4 f5f6 f5g4 f5g5 f5g6 f5h3 f5h5 f5h7\ntop5: f5g6:90 f5f6:50 f5f4:49 f5f2:48 f5f1:47\nmelhor: f5g6"
+    },
+    {
+      "esperado": "b4d4",
+      "texto": "estado:\n8 . r . . . . k .\n7 . . p . . . . .\n6 . p p . p . . .\n5 . . P . . . p p\n4 P Q . b P . . .\n3 . . N . q . P .\n2 . . . . . . . P\n1 . . . R . K . .\n  a b c d e f g h\nvez: brancas\nlegais: a4a5 b4a3 b4a5 b4b1 b4b2 b4b3 b4b5 b4b6 b4c4 b4c5 b4d4 c3a2 c3b1 c3b5 c3e2 d1a1 d1b1 d1c1 d1d2 d1d3 d1d4 d1e1 e4e5 f1g1 f1g2 f1h1 f1h3 f3f4 g3g4 h2h3 h2h4\ntop5: b4d4:90 d1d4:50 b4b6:18 b4b1:17 b4b2:16\nmelhor: b4d4"
+    },
+    {
+      "esperado": "d7g4",
+      "texto": "estado:\n8 r . k . . . . r\n7 p p p q . . p p\n6 b . . b . . . .\n5 . . . P . . B .\n4 P . . Q P . . .\n3 . . . . . . P .\n2 . . . . . P B P\n1 R . . . K . . R\n  a b c d e f g h\nvez: pretas\nlegais: a6b5 a6c4 a6d3 a6e2 a6f1 a8b8 b7b5 b7b6 c7c5 c7c6 c8b8 c8d8 d6a3 d6b4 d6c5 d6e5 d6e7 d6f4 d6f8 d6g3 d7a4 d7b5 d7c6 d7d8 d7e6 d7e7 d7e8 d7f5 d7f7 d7g4 d7h3 g7g6 h7h5 h7h6 h8d8 h8e8 h8f8 h8g8\ntop5: d7a4:79 d6e5:30 d6f4:29 d6g3:28 d6f8:27\nmelhor: d7a4"
+    }
+  ]
+}

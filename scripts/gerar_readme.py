@@ -61,7 +61,9 @@ def tabela_camadas() -> str:
     for rotulo, arquivo in (("Modelo de mundo, 30k posições", "aval-mav-30k.json"),
                             ("Modelo de mundo, 70k posições", "aval-mav-final.json"),
                             ("**Modelo de mundo, 70k + lance verificado**",
-                             "aval-mav-verificado.json")):
+                             "aval-mav-verificado.json"),
+                            ("+ GRPO curto sobre o modelo (não significativo)",
+                             "aval-mav-grpo.json")):
         d = carregar(arquivo)
         linhas.append("| %s | %s | %s | %s (%s) | %s %s |" % (
             rotulo, pct(d["grade_exata_pct"]), pct(d["cor_certa_pct"]),
@@ -79,6 +81,7 @@ def tabela_elo() -> str:
         "aval-mav-30k": "Modelo de mundo, 30k",
         "aval-mav-final": "Modelo de mundo, 70k",
         "aval-mav-verificado": "Modelo de mundo, 70k + verificado",
+        "aval-mav-grpo": "Modelo de mundo + GRPO",
     }
     for r in dados:
         elo = "indefinido" if r["elo_puzzle"] is None else "%.0f" % r["elo_puzzle"]

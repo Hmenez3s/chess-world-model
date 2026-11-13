@@ -147,8 +147,37 @@ Same model, no extra training, 200 test puzzles.
   than the reverse (13 vs 5). The world model is accurate enough to *simulate* a move, not
   yet accurate enough to *evaluate* the opponent's position.
 - **pass@6 is 42.5%.** The correct move is already among 6 sampled answers more than twice
-  as often as greedy decoding finds it. That is the headroom for rejection-sampling
-  fine-tuning (STaR / expert iteration) and RL on outcome reward — the natural next step.
+  as often as greedy decoding finds it. So the model can *generate* the right move; it cannot
+  reliably *choose* it. That gap is what search or self-training is supposed to close.
+
+### Can the model learn from its own reasoning?
+
+If the right move shows up when sampling, the trace that found it can be used as training
+data — rejection-sampling fine-tuning (STaR / expert iteration). One iteration, same
+base adapter, same budget:
+
+| Model | Puzzles solved (test, n=600) | 95% CI |
+|---|---:|---:|
+| End model, no extra training | 16.00% | [13.28, 19.15] |
+| + STaR on its own correct traces | 17.50% | [14.67, 20.74] |
+| + control: same budget, original data | 17.17% | [14.36, 20.39] |
+
+Training puzzles sampled: 800, 4 answers each (T = 0.8). Correct answers sampled: 11.31%. Usable traces kept: 218 (27.25% of the puzzles).
+
+A trace was kept only if the model's own board was exactly right **and** its raw `best:` was
+the solution. The gain is not distinguishable from the control, which is the same training
+budget spent on the original data. The reason is in the sampling column: on training puzzles
+the model produced a usable trace for only about a quarter of them, so there is little
+correct reasoning to learn from. More sampling would raise that yield, but the ceiling is the
+same 42.5% pass rate — and the control result says the extra training, not the self-generated
+reasoning, is what moved the number.
+
+**What the reasoning evidence says together:** the world-model trace is what carries the model
+from 0% to 16%, and it is the reason its board state is 94% exact. But its *move values* are
+not good enough to support choosing between alternatives: minimax on its own values loses
+ground, and self-training on its own successes adds nothing over plain training. Fixing that
+means better value estimates — which needs value data the model does not currently have —
+not more search over the values it has.
 
 ## Generalization
 

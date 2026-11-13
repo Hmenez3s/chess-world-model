@@ -1,0 +1,12 @@
+{
+  "puzzles": 800,
+  "k": 4,
+  "temperature": 0.8,
+  "samples": 3200,
+  "correct_samples": 362,
+  "sample_accuracy_pct": 11.3125,
+  "board_exact_pct": 95.53125,
+  "puzzles_with_kept_trace": 218,
+  "pass_at_k_pct": 27.25,
+  "kept_examples": 218
+}

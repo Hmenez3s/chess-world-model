@@ -19,6 +19,7 @@ MARKERS = (
     "{{RECIPE}}",
     "{{LAYERS}}",
     "{{INFERENCE}}",
+    "{{STAR}}",
     "{{GENERALIZATION}}",
     "{{MIRROR}}",
     "{{COST}}",
@@ -31,6 +32,7 @@ EVIDENCE_FILES = (
     "games-random-base.json", "games-random-verified.json",
     "games-stockfish-base.json", "games-stockfish-verified.json",
     "game-analysis.json", "puzzle-elo.json", "inference-compute.json",
+    "star-iter1-sampling.json", "eval-mav-star1.json", "eval-mav-ctrl1.json",
     "generalization-base.json", "generalization-trained.json",
     "train-mav-30k.json", "train-mav-70k.json", "other-methods.json",
 )
@@ -206,6 +208,28 @@ def table_inference() -> str:
     return "\n".join(rows)
 
 
+def table_star() -> str:
+    sampling = load("star-iter1-sampling.json")
+    end = load("eval-mav-verified.json")
+    star = load("eval-mav-star1.json")
+    control = load("eval-mav-ctrl1.json")
+    rows = [
+        "| Model | Puzzles solved (test, n=600) | 95% CI |",
+        "|---|---:|---:|",
+        f"| End model, no extra training | {pct(end['best_correct_pct'])} | "
+        f"{ci(end['best_correct_ci95'])} |",
+        f"| + STaR on its own correct traces | {pct(star['best_correct_pct'])} | "
+        f"{ci(star['best_correct_ci95'])} |",
+        f"| + control: same budget, original data | {pct(control['best_correct_pct'])} | "
+        f"{ci(control['best_correct_ci95'])} |",
+        "",
+        f"Training puzzles sampled: {sampling['puzzles']}, {sampling['k']} answers each "
+        f"(T = {sampling['temperature']}). Correct answers sampled: "
+        f"{pct(sampling['sample_accuracy_pct'])}. Usable traces kept: "
+        f"{sampling['kept_examples']} ({pct(sampling['pass_at_k_pct'])} of the puzzles).",
+    ]
+    return "\n".join(rows)
+
 def table_generalization() -> str:
     start = load("generalization-base.json")
     end = load("generalization-trained.json")
@@ -284,6 +308,7 @@ BUILDERS = {
     "{{RECIPE}}": table_recipe,
     "{{LAYERS}}": table_layers,
     "{{INFERENCE}}": table_inference,
+    "{{STAR}}": table_star,
     "{{GENERALIZATION}}": table_generalization,
     "{{MIRROR}}": table_mirror,
     "{{COST}}": table_cost,
